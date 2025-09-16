@@ -5,33 +5,23 @@ import { VideoPager } from '@/components/VideoPager';
 const Index = () => {
   const BASE = import.meta.env.BASE_URL || '/';
 
-  const clonePaths = Object.keys(
-    import.meta.glob('/public/media/cloning/clone*.mov', { eager: true })
-  );
+  const cloneFiles = [
+    'media/cloning/clone_kieks_0_3_3-seg-20001-0535.mov',
+    'media/cloning/clone_scott_0_2_2-seg-10001-0467.mov',
+    'media/cloning/clone_scott_0_4_4-seg-00001-0535.mov'
+  ];
 
-  const sotaPaths = Object.keys(
-    import.meta.glob('/public/media/sota/*.{mp4,mov}', { eager: true })
-  );
+  const sotaFiles = [
+    'media/sota/comparison_kieks_0_1_1-seg-20001-0435.mp4',
+    'media/sota/comparison_scott_0_5_5-seg-30001-0240.mp4',
+    'media/sota/comparison_wayne_0_2_2-seg-20001-0462.mp4',
+    'media/sota/comparison_wayne_0_3_3-seg-20001-0435.mp4'
+  ];
 
-  const failurePaths = Object.keys(
-    import.meta.glob('/public/media/failures/*.{mp4,mov}', { eager: true })
-  );
-
-  const multimodalCloningItems = clonePaths
-    .sort((pathA, pathB) => pathA.localeCompare(pathB))
-    .map((fullPath) => {
-      const relativePath = fullPath.replace(/^\/public\//, '');
-      const normalizedPath = relativePath.startsWith('/') ? relativePath.slice(1) : relativePath;
-      const filename = normalizedPath.split('/').pop() ?? 'clone';
-      const baseId = filename.replace(/\.[^.]+$/, '');
-      return {
-        id: baseId,
-        title: filename,
-        description: '',
-        videoSrc: `${BASE}${normalizedPath}`,
-        posterSrc: '/placeholder.svg'
-      };
-    });
+  const failureFiles = [
+    'media/failures/FAILURE_10001-0330.mp4',
+    'media/failures/Gelina_1_wayne_0_3_3-seg-3.mov'
+  ];
 
   // Demo data - easily replaceable
   // Speech+Gesture section: display videos from tts_gesture folder
@@ -62,22 +52,21 @@ const Index = () => {
   const createItemsFromPaths = (paths: string[]) =>
     paths
       .sort((a, b) => a.localeCompare(b))
-      .map((fullPath) => {
-        const relativePath = fullPath.replace(/^\/public\//, '');
-        const normalizedPath = relativePath.startsWith('/') ? relativePath.slice(1) : relativePath;
-        const filename = normalizedPath.split('/').pop() ?? 'sample';
+      .map((relativePath) => {
+        const filename = relativePath.split('/').pop() ?? 'sample';
         const baseId = filename.replace(/\.[^.]+$/, '');
         return {
           id: baseId,
           title: filename,
           description: '',
-          videoSrc: `${BASE}${normalizedPath}`,
+          videoSrc: `${BASE}${relativePath}`,
           posterSrc: '/placeholder.svg'
         };
       });
 
-  const comparisonItems = createItemsFromPaths(sotaPaths);
-  const failureItems = createItemsFromPaths(failurePaths);
+  const multimodalCloningItems = createItemsFromPaths(cloneFiles);
+  const comparisonItems = createItemsFromPaths(sotaFiles);
+  const failureItems = createItemsFromPaths(failureFiles);
 
   return (
     <div className="min-h-screen bg-background">
