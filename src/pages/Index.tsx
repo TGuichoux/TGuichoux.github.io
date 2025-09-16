@@ -77,36 +77,15 @@ const Index = () => {
         <section className="mb-16">
           <div className="rounded-3xl border border-border/60 bg-card px-8 py-14 shadow-lg sm:px-12">
             <div className="mx-auto flex max-w-5xl flex-col gap-10 md:flex-row md:items-center md:justify-between">
-              <div className="flex-1 space-y-5 text-center md:text-left">
+              <div className="flex-1 space-y-5 text-center">
                 <span className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-1 text-xs font-semibold uppercase tracking-wide text-primary">
                   ICASSP 2026 Demo Preview
                 </span>
                 <h1 className="max-w-2xl">
-                  GELINA unifies speech and gesture synthesis for robust multimodal communication
+                  GELINA: unifies speech and gesture synthesis for robust multimodal communication
                 </h1>
-                <p className="text-lg text-muted-foreground max-w-2xl">
-                  Review anonymised samples covering text-to-speech with gesture, speech-conditioned gestures,
-                  cloning scenarios, and comparisons to current baselines—all rendered directly on this page.
-                </p>
                 <div className="text-sm text-muted-foreground/90">
                   Anonymous Authors · Code will be available soon
-                </div>
-              </div>
-              <div className="flex-1">
-                <div className="grid gap-4 rounded-2xl border border-border/70 bg-secondary/50 p-6 text-left text-sm text-muted-foreground">
-                  <div>
-                    <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground/70">Modalities</p>
-                    <p className="text-base text-foreground">Speech + gesture generation, gesture-only synthesis</p>
-                  </div>
-                  <div className="h-px bg-border/70" aria-hidden />
-                  <div>
-                    <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground/70">Highlights</p>
-                    <ul className="mt-1 space-y-2 list-disc pl-5">
-                      <li>Interleaved token autoregressive backbone</li>
-                      <li>Multi-speaker and multi-style cloning samples</li>
-                      <li>State-of-the-art comparisons in speech-to-gesture mode</li>
-                    </ul>
-                  </div>
                 </div>
               </div>
             </div>
