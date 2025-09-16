@@ -23,8 +23,7 @@ const Index = () => {
     'media/failures/Gelina_1_wayne_0_3_3-seg-3.mov'
   ];
 
-  // Demo data - easily replaceable
-  // Speech+Gesture section: display videos from tts_gesture folder
+  // Speech+Gesture demos
   const textToSpeechGestureItems = [
     {
       id: 'ttsg-01',
@@ -71,22 +70,22 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <Header currentPath="/" />
-      
-      <main className="container max-w-6xl mx-auto px-6 py-12">
+
+      <main className="container mx-auto max-w-6xl px-6 py-12">
         {/* Hero Section */}
         <section className="mb-16">
-          <div className="rounded-3xl border border-border/60 bg-card px-8 py-14 shadow-lg sm:px-12">
-            <div className="mx-auto flex max-w-5xl flex-col gap-10 md:flex-row md:items-center md:justify-between">
-              <div className="flex-1 space-y-5 text-center">
-                <span className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-1 text-xs font-semibold uppercase tracking-wide text-primary">
-                  ICASSP 2026 Demo Preview
+          <div className="rounded-3xl border border-border/60 bg-card/95 px-6 py-12 shadow-lg sm:px-10">
+            <div className="mx-auto max-w-5xl">
+              <div className="space-y-5 text-center md:text-left">
+                <span className="inline-flex items-center justify-center gap-2 rounded-full bg-primary/10 px-4 py-1 text-xs font-semibold uppercase tracking-wide text-primary">
+                  ICASSP 2026 · Demo Preview
                 </span>
-                <h1 className="max-w-2xl">
+                <h1 className="text-balance text-3xl font-semibold leading-tight tracking-tight text-foreground sm:text-4xl md:text-5xl">
                   GELINA: unifies speech and gesture synthesis for robust multimodal communication
                 </h1>
-                <div className="text-sm text-muted-foreground/90">
+                <p className="text-sm text-muted-foreground/90 md:text-base">
                   Anonymous Authors · Code will be available soon
-                </div>
+                </p>
               </div>
             </div>
           </div>
@@ -96,8 +95,13 @@ const Index = () => {
         <section className="mb-16">
           <div className="mx-auto max-w-4xl rounded-3xl border border-border/70 bg-card/95 p-10 shadow">
             <h2 className="mb-4 text-center text-foreground">Abstract</h2>
-            <p className="text-foreground/90 leading-relaxed text-lg">
-              Human communication is multimodal, with speech and gestures tightly coupled, yet most computational methods generate them sequentially, weakening synchrony and prosody alignment. We introduce Gelina, a unified framework that jointly synthesizes speech and co-speech gestures from text using interleaved token sequences in a discrete autoregressive backbone, with modality-specific decoders. Gelina supports multi-speaker and multi-style cloning, and enables gesture-only synthesis from speech inputs. Large-scale subjective and objective evaluations demonstrate competitive speech quality and improved gesture generation over unimodal baselines.
+            <p className="text-foreground/90 text-lg leading-relaxed">
+              Human communication is multimodal, with speech and gestures tightly coupled, yet most computational methods
+              generate them sequentially, weakening synchrony and prosody alignment. We introduce Gelina, a unified framework
+              that jointly synthesizes speech and co-speech gestures from text using interleaved token sequences in a discrete
+              autoregressive backbone, with modality-specific decoders. Gelina supports multi-speaker and multi-style cloning,
+              and enables gesture-only synthesis from speech inputs. Large-scale subjective and objective evaluations demonstrate
+              competitive speech quality and improved gesture generation over unimodal baselines.
             </p>
           </div>
         </section>
@@ -106,9 +110,9 @@ const Index = () => {
         <section id="demos" className="mb-16">
           <div className="mx-auto mb-8 max-w-3xl text-center">
             <h2 className="mb-2 text-foreground">Demos</h2>
-            <p className="text-muted-foreground text-base md:text-lg">
-              Navigate through the carousels to inspect the different operating modes. Keyboard arrows or the
-              on-screen controls let you step through each sample.
+            <p className="text-base text-muted-foreground md:text-lg">
+              Navigate through the carousels to inspect the different operating modes. Keyboard arrows or the on-screen
+              controls let you step through each sample.
             </p>
           </div>
 
@@ -128,9 +132,9 @@ const Index = () => {
               items={comparisonItems}
               className="rounded-2xl border border-border bg-card/95 p-6 shadow-sm"
               subtitle={
-                <p className="text-base md:text-lg text-muted-foreground">
-                  Gelina operates in speech-to-gesture mode for these runs: we condition on reference speech
-                  and synthesise only the gestural modality to compare against other approaches.
+                <p className="text-base text-muted-foreground md:text-lg">
+                  Gelina operates in speech-to-gesture mode for these runs: we condition on reference speech and synthesise
+                  only the gestural modality to compare against other approaches.
                 </p>
               }
             />
@@ -139,12 +143,14 @@ const Index = () => {
               items={failureItems}
               className="rounded-2xl border border-destructive/40 bg-destructive/5 p-4 shadow-sm"
               subtitle={
-                <div className="space-y-2 text-base md:text-lg text-muted-foreground/90">
+                <div className="space-y-2 text-base text-muted-foreground/90 md:text-lg">
                   <p>
-                    We noticed several failures when generating speech and gestures. Some cases show incorrect rotations. Since the same issue appears in EMAGE, it may come from a bug in the shared rotation conversion code.
+                    We noticed several failures when generating speech and gestures. Some cases show incorrect rotations.
+                    Since the same issue appears in EMAGE, it may come from a bug in the shared rotation conversion code.
                   </p>
                   <p>
-                    In random voice generation (without a prompt), some voices have poor quality — they may sound robotic or sometimes only partly understandable.
+                    In random voice generation (without a prompt), some voices have poor quality — they may sound robotic
+                    or sometimes only partly understandable.
                   </p>
                 </div>
               }
@@ -155,10 +161,10 @@ const Index = () => {
 
       {/* Footer */}
       <footer className="border-t border-border bg-background/80">
-        <div className="container max-w-6xl mx-auto px-6 py-8">
+        <div className="container mx-auto max-w-6xl px-6 py-8">
           <div className="flex flex-col gap-3 text-sm text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
             <span>© 2026 GELINA demo. No cookies. No tracking.</span>
-            <a href="#" className="hover:text-primary transition-colors">
+            <a href="#" className="transition-colors hover:text-primary">
               Back to top
             </a>
           </div>
