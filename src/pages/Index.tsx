@@ -86,29 +86,49 @@ const Index = () => {
       <main className="container max-w-6xl mx-auto px-6 py-12">
         {/* Hero Section */}
         <section className="mb-16">
-          <div className="rounded-2xl border border-border bg-card/95 px-6 py-12 shadow-md sm:px-10">
-            <div className="mx-auto flex max-w-4xl flex-col items-center text-center gap-4">
-              <span className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-4 py-1 text-xs font-medium uppercase tracking-wide text-primary">
-                ICASSP 2026 Demo Preview
-              </span>
-              <h1 className="mb-2 max-w-3xl text-foreground text-2xl sm:text-3xl md:text-4xl font-semibold">
-                GELINA: Unified Speech and Gesture Synthesis via Interleaved Token Prediction
-              </h1>
-              <p className="text-muted-foreground text-base md:text-lg">
-                Anonymous Authors
-              </p>
-              <p className="text-sm md:text-base text-muted-foreground/80">
-                Code will be available soon.
-              </p>
+          <div className="rounded-3xl border border-border/60 bg-card px-8 py-14 shadow-lg sm:px-12">
+            <div className="mx-auto flex max-w-5xl flex-col gap-10 md:flex-row md:items-center md:justify-between">
+              <div className="flex-1 space-y-5 text-center md:text-left">
+                <span className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-1 text-xs font-semibold uppercase tracking-wide text-primary">
+                  ICASSP 2026 Demo Preview
+                </span>
+                <h1 className="max-w-2xl">
+                  GELINA unifies speech and gesture synthesis for robust multimodal communication
+                </h1>
+                <p className="text-lg text-muted-foreground max-w-2xl">
+                  Review anonymised samples covering text-to-speech with gesture, speech-conditioned gestures,
+                  cloning scenarios, and comparisons to current baselines—all rendered directly on this page.
+                </p>
+                <div className="text-sm text-muted-foreground/90">
+                  Anonymous Authors · Code will be available soon
+                </div>
+              </div>
+              <div className="flex-1">
+                <div className="grid gap-4 rounded-2xl border border-border/70 bg-secondary/50 p-6 text-left text-sm text-muted-foreground">
+                  <div>
+                    <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground/70">Modalities</p>
+                    <p className="text-base text-foreground">Speech + gesture generation, gesture-only synthesis</p>
+                  </div>
+                  <div className="h-px bg-border/70" aria-hidden />
+                  <div>
+                    <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground/70">Highlights</p>
+                    <ul className="mt-1 space-y-2 list-disc pl-5">
+                      <li>Interleaved token autoregressive backbone</li>
+                      <li>Multi-speaker and multi-style cloning samples</li>
+                      <li>State-of-the-art comparisons in speech-to-gesture mode</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
 
         {/* Abstract Section */}
         <section className="mb-16">
-          <div className="mx-auto max-w-4xl rounded-2xl border border-border bg-card/95 p-10 shadow-sm">
-            <h2 className="mb-4 text-center text-foreground text-xl md:text-2xl font-semibold">Abstract</h2>
-            <p className="text-foreground/85 leading-relaxed text-lg md:text-xl">
+          <div className="mx-auto max-w-4xl rounded-3xl border border-border/70 bg-card/95 p-10 shadow">
+            <h2 className="mb-4 text-center text-foreground">Abstract</h2>
+            <p className="text-foreground/90 leading-relaxed text-lg">
               Human communication is multimodal, with speech and gestures tightly coupled, yet most computational methods generate them sequentially, weakening synchrony and prosody alignment. We introduce Gelina, a unified framework that jointly synthesizes speech and co-speech gestures from text using interleaved token sequences in a discrete autoregressive backbone, with modality-specific decoders. Gelina supports multi-speaker and multi-style cloning, and enables gesture-only synthesis from speech inputs. Large-scale subjective and objective evaluations demonstrate competitive speech quality and improved gesture generation over unimodal baselines.
             </p>
           </div>
@@ -117,8 +137,10 @@ const Index = () => {
         {/* Demos Section */}
         <section id="demos" className="mb-16">
           <div className="mx-auto mb-8 max-w-3xl text-center">
-            <h2 className="mb-2 text-foreground text-xl md:text-2xl font-semibold">Demos</h2>
+            <h2 className="mb-2 text-foreground">Demos</h2>
             <p className="text-muted-foreground text-base md:text-lg">
+              Navigate through the carousels to inspect the different operating modes. Keyboard arrows or the
+              on-screen controls let you step through each sample.
             </p>
           </div>
 

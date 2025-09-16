@@ -63,7 +63,7 @@ export const VideoPager: React.FC<VideoPagerProps> = ({ title, items, className,
         <Button
           variant="outline"
           size="sm"
-          className="absolute left-0 top-1/2 z-10 h-10 w-10 -translate-y-1/2 border-border bg-card text-primary shadow-sm hover:bg-card/80"
+          className="absolute left-0 top-1/2 z-10 h-10 w-10 -translate-y-1/2 border-border/70 bg-card text-primary shadow-sm hover:bg-card"
           onClick={goPrev}
           aria-label="Previous video"
         >
@@ -73,7 +73,7 @@ export const VideoPager: React.FC<VideoPagerProps> = ({ title, items, className,
         <Button
           variant="outline"
           size="sm"
-          className="absolute right-0 top-1/2 z-10 h-10 w-10 -translate-y-1/2 border-border bg-card text-primary shadow-sm hover:bg-card/80"
+          className="absolute right-0 top-1/2 z-10 h-10 w-10 -translate-y-1/2 border-border/70 bg-card text-primary shadow-sm hover:bg-card"
           onClick={goNext}
           aria-label="Next video"
         >
@@ -81,7 +81,7 @@ export const VideoPager: React.FC<VideoPagerProps> = ({ title, items, className,
         </Button>
 
         <div className="px-12">
-          <div className="rounded-xl border border-border bg-background/95 p-6 shadow-sm">
+          <div className="rounded-2xl border border-border/70 bg-card/90 p-6 shadow">
             <div>
               <video
                 key={item.id}
