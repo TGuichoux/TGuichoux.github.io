@@ -29,6 +29,10 @@ jobs:
           node-version: 20
           cache: 'npm'
 
+      # --- Workaround npm optional-deps bug for Rollup on Linux ---
+      - name: Clean lock & modules (Linux re-resolve)
+        run: rm -rf node_modules package-lock.json
+
       - name: Install
         run: npm install
 
