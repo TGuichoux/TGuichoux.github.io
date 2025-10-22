@@ -129,6 +129,30 @@ const Index = () => {
           </div>
         </section>
 
+        <section className="mb-17">
+          <div className="mx-auto max-w-4xl rounded-3xl border border-border/70 bg-card/95 p-10 shadow">
+            <h2 className="mb-4 text-center text-foreground">Abstract</h2>
+            <p className="text-foreground/90 text-lg leading-relaxed">
+            <ul className="list-disc pl-6 space-y-2 text-muted-foreground md:text-base text-sm">
+              <li>
+                First <span className="font-semibold">interleaved token autoregressive</span> architecture for speech–gesture synthesis,
+                aligning both modalities within a unified backbone.
+              </li>
+              <li>
+                A training strategy that leverages large <span className="font-semibold">unimodal text–speech</span> datasets to improve
+                generalization when paired data are scarce.
+              </li>
+              <li>
+                <span className="font-semibold">Flexible input modes</span>: text-only → synthesize speech <em>and</em> gestures; text+speech → synthesize gestures only.
+              </li>
+              <li>
+                <span className="font-semibold">Bimodal style cloning</span> (voice &amp; gesture jointly) via sequence continuation—no explicit speaker embeddings required.
+              </li>
+            </ul>
+            </p>
+          </div>
+        </section>
+
         {/* Demos Section */}
         <section id="demos" className="mb-16">
           <div className="mx-auto mb-8 max-w-3xl text-center">
