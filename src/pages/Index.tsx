@@ -78,14 +78,37 @@ const Index = () => {
             <div className="mx-auto max-w-5xl">
               <div className="space-y-5 text-center md:text-left">
                 <span className="inline-flex items-center justify-center gap-2 rounded-full bg-primary/10 px-4 py-1 text-xs font-semibold uppercase tracking-wide text-primary">
-                  ICASSP 2026 · Demo Preview
+                  · Demo Preview
                 </span>
+
                 <h1 className="text-balance text-3xl font-semibold leading-tight tracking-tight text-foreground sm:text-4xl md:text-5xl">
                   GELINA: unifies speech and gesture synthesis for robust multimodal communication
                 </h1>
+
                 <p className="text-sm text-muted-foreground/90 md:text-base">
-                  Anonymous Authors · Code will be available soon
+                  Téo Guichoux, Théodor Lemerle, Shivam Mehta, Jonas Beskow, Gustav Eje Henter, Laure Soulier, Catherine Pelachaud, Nicolas Obtin · 
                 </p>
+
+                <div className="pt-1">
+                  <a
+                    href="https://github.com/TGuichoux/Gelina/tree/main"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Open Gelina GitHub repository"
+                    className="inline-flex items-center justify-center rounded-xl border border-border bg-primary px-5 py-2.5 text-sm font-medium text-primary-foreground shadow-sm transition hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-primary/40"
+                  >
+                    View on GitHub
+                    <svg
+                      className="ml-2 h-4 w-4"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path d="M12.293 2.293a1 1 0 0 1 1.414 0l4 4A1 1 0 0 1 17 8h-3a1 1 0 1 1 0-2h.586L12 3.414 8.707 6.707a1 1 0 0 1-1.414-1.414l4-4ZM5 5a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-3a1 1 0 1 0-2 0v3H5V7h3a1 1 0 1 0 0-2H5Z" />
+                    </svg>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
