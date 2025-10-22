@@ -131,7 +131,7 @@ const Index = () => {
 
         <section className="mb-17">
           <div className="mx-auto max-w-4xl rounded-3xl border border-border/70 bg-card/95 p-10 shadow">
-            <h2 className="mb-4 text-center text-foreground">Abstract</h2>
+            <h2 className="mb-4 text-center text-foreground">Contributions</h2>
             <p className="text-foreground/90 text-lg leading-relaxed">
             <ul className="list-disc pl-6 space-y-2 text-muted-foreground md:text-base text-sm">
               <li>
