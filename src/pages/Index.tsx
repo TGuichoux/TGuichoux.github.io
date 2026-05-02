@@ -82,7 +82,7 @@ const Index = () => {
                 </span>
 
                 <h1 className="text-balance text-3xl font-semibold leading-tight tracking-tight text-foreground sm:text-4xl md:text-5xl">
-                  GELINA: unifies speech and gesture synthesis for robust multimodal communication
+                  GELINA: unified speech and gesture synthesis via interleaved token generation.
                 </h1>
 
                 <p className="text-sm text-muted-foreground/90 md:text-base">
