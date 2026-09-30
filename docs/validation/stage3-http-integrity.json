@@ -1,0 +1,848 @@
+{
+  "scope": "Independent real localhost HTTP requests (not browser navigation)",
+  "builds": [
+    {
+      "baseurl": "",
+      "requests": [
+        {
+          "path": "/",
+          "query": "",
+          "status": 200,
+          "bytes": 9887
+        },
+        {
+          "path": "/404.html",
+          "query": "",
+          "status": 200,
+          "bytes": 3314
+        },
+        {
+          "path": "/assets/css/main.css",
+          "query": "v=1790800064",
+          "status": 200,
+          "bytes": 26285
+        },
+        {
+          "path": "/assets/images/IMG_2954.jpeg",
+          "query": "",
+          "status": 200,
+          "bytes": 1101451
+        },
+        {
+          "path": "/assets/images/favicon.svg",
+          "query": "",
+          "status": 200,
+          "bytes": 292
+        },
+        {
+          "path": "/assets/images/gaspard_mos.png",
+          "query": "",
+          "status": 200,
+          "bytes": 257229
+        },
+        {
+          "path": "/assets/images/gelina_ar.png",
+          "query": "",
+          "status": 200,
+          "bytes": 182317
+        },
+        {
+          "path": "/assets/images/gelina_mos.png",
+          "query": "",
+          "status": 200,
+          "bytes": 87497
+        },
+        {
+          "path": "/assets/images/latent_properties.png",
+          "query": "",
+          "status": 200,
+          "bytes": 447681
+        },
+        {
+          "path": "/assets/images/left_side.png",
+          "query": "",
+          "status": 200,
+          "bytes": 483194
+        },
+        {
+          "path": "/assets/images/mel.png",
+          "query": "",
+          "status": 200,
+          "bytes": 2028568
+        },
+        {
+          "path": "/assets/images/much_later.png",
+          "query": "",
+          "status": 200,
+          "bytes": 839011
+        },
+        {
+          "path": "/assets/images/signal_properties.png",
+          "query": "",
+          "status": 200,
+          "bytes": 577681
+        },
+        {
+          "path": "/assets/images/the_world.png",
+          "query": "",
+          "status": 200,
+          "bytes": 479126
+        },
+        {
+          "path": "/assets/images/tone_gesture_units.png",
+          "query": "",
+          "status": 200,
+          "bytes": 482811
+        },
+        {
+          "path": "/assets/js/carousel.js",
+          "query": "v=1790800064",
+          "status": 200,
+          "bytes": 16647
+        },
+        {
+          "path": "/assets/js/math.js",
+          "query": "",
+          "status": 200,
+          "bytes": 834
+        },
+        {
+          "path": "/assets/js/site.js",
+          "query": "v=1790800064",
+          "status": 200,
+          "bytes": 2545
+        },
+        {
+          "path": "/assets/posters/561_2-1.jpg",
+          "query": "v=1790800064",
+          "status": 200,
+          "bytes": 96509
+        },
+        {
+          "path": "/assets/posters/561_2-65.jpg",
+          "query": "v=1790800064",
+          "status": 200,
+          "bytes": 96838
+        },
+        {
+          "path": "/assets/posters/561_2-cacaded.jpg",
+          "query": "v=1790800064",
+          "status": 200,
+          "bytes": 96578
+        },
+        {
+          "path": "/assets/posters/561_2-gt.jpg",
+          "query": "v=1790800064",
+          "status": 200,
+          "bytes": 98561
+        },
+        {
+          "path": "/assets/posters/739_2-1.jpg",
+          "query": "v=1790800064",
+          "status": 200,
+          "bytes": 97508
+        },
+        {
+          "path": "/assets/posters/739_2-65.jpg",
+          "query": "v=1790800064",
+          "status": 200,
+          "bytes": 97007
+        },
+        {
+          "path": "/assets/posters/739_2-cascaded.jpg",
+          "query": "v=1790800064",
+          "status": 200,
+          "bytes": 96053
+        },
+        {
+          "path": "/assets/posters/739_2-gt.jpg",
+          "query": "v=1790800064",
+          "status": 200,
+          "bytes": 98768
+        },
+        {
+          "path": "/assets/posters/831_3-1.jpg",
+          "query": "v=1790800064",
+          "status": 200,
+          "bytes": 97533
+        },
+        {
+          "path": "/assets/posters/831_3-65.jpg",
+          "query": "v=1790800064",
+          "status": 200,
+          "bytes": 96357
+        },
+        {
+          "path": "/assets/posters/831_3-cascaded.jpg",
+          "query": "v=1790800064",
+          "status": 200,
+          "bytes": 96959
+        },
+        {
+          "path": "/assets/posters/831_3-gt.jpg",
+          "query": "v=1790800064",
+          "status": 200,
+          "bytes": 94368
+        },
+        {
+          "path": "/assets/posters/93_0-1.jpg",
+          "query": "v=1790800064",
+          "status": 200,
+          "bytes": 97053
+        },
+        {
+          "path": "/assets/posters/93_0-65.jpg",
+          "query": "v=1790800064",
+          "status": 200,
+          "bytes": 95553
+        },
+        {
+          "path": "/assets/posters/93_0-cascaded.jpg",
+          "query": "v=1790800064",
+          "status": 200,
+          "bytes": 96577
+        },
+        {
+          "path": "/assets/posters/93_0-gt.jpg",
+          "query": "v=1790800064",
+          "status": 200,
+          "bytes": 97906
+        },
+        {
+          "path": "/assets/posters/A-421.jpg",
+          "query": "v=1790800064",
+          "status": 200,
+          "bytes": 28738
+        },
+        {
+          "path": "/assets/posters/A-564.jpg",
+          "query": "v=1790800064",
+          "status": 200,
+          "bytes": 31748
+        },
+        {
+          "path": "/assets/posters/B-421.jpg",
+          "query": "v=1790800064",
+          "status": 200,
+          "bytes": 28649
+        },
+        {
+          "path": "/assets/posters/B-92.jpg",
+          "query": "v=1790800064",
+          "status": 200,
+          "bytes": 27446
+        },
+        {
+          "path": "/assets/posters/C-93.jpg",
+          "query": "v=1790800064",
+          "status": 200,
+          "bytes": 27048
+        },
+        {
+          "path": "/assets/posters/D-655.jpg",
+          "query": "v=1790800064",
+          "status": 200,
+          "bytes": 30374
+        },
+        {
+          "path": "/assets/posters/D-694.jpg",
+          "query": "v=1790800064",
+          "status": 200,
+          "bytes": 29406
+        },
+        {
+          "path": "/assets/posters/E-421.jpg",
+          "query": "v=1790800064",
+          "status": 200,
+          "bytes": 31517
+        },
+        {
+          "path": "/assets/posters/F-695.jpg",
+          "query": "v=1790800064",
+          "status": 200,
+          "bytes": 29413
+        },
+        {
+          "path": "/assets/posters/G-93.jpg",
+          "query": "v=1790800064",
+          "status": 200,
+          "bytes": 30735
+        },
+        {
+          "path": "/assets/posters/gelina-clone_kieks_0_3_3.jpg",
+          "query": "v=1790800064",
+          "status": 200,
+          "bytes": 48201
+        },
+        {
+          "path": "/assets/posters/gelina-clone_scott_0_2_2.jpg",
+          "query": "v=1790800064",
+          "status": 200,
+          "bytes": 55054
+        },
+        {
+          "path": "/assets/posters/gelina-clone_scott_0_4_4.jpg",
+          "query": "v=1790800064",
+          "status": 200,
+          "bytes": 54435
+        },
+        {
+          "path": "/assets/posters/gelina-comparison_kieks_0_1_1.jpg",
+          "query": "v=1790800064",
+          "status": 200,
+          "bytes": 96306
+        },
+        {
+          "path": "/assets/posters/gelina-comparison_scott_0_5_5.jpg",
+          "query": "v=1790800064",
+          "status": 200,
+          "bytes": 97963
+        },
+        {
+          "path": "/assets/posters/gelina-comparison_wayne_0_2_2.jpg",
+          "query": "v=1790800064",
+          "status": 200,
+          "bytes": 98580
+        },
+        {
+          "path": "/assets/posters/gelina-comparison_wayne_0_3_3.jpg",
+          "query": "v=1790800064",
+          "status": 200,
+          "bytes": 97800
+        },
+        {
+          "path": "/assets/posters/gelina-duck_female.jpg",
+          "query": "v=1790800064",
+          "status": 200,
+          "bytes": 28029
+        },
+        {
+          "path": "/assets/posters/gelina-failure-2.jpg",
+          "query": "v=1790800064",
+          "status": 200,
+          "bytes": 38886
+        },
+        {
+          "path": "/assets/posters/gelina-failure-wayne.jpg",
+          "query": "v=1790800064",
+          "status": 200,
+          "bytes": 35006
+        },
+        {
+          "path": "/assets/posters/gelina-gelina-female.jpg",
+          "query": "v=1790800064",
+          "status": 200,
+          "bytes": 30547
+        },
+        {
+          "path": "/assets/posters/gelina-kings-male.jpg",
+          "query": "v=1790800064",
+          "status": 200,
+          "bytes": 29589
+        },
+        {
+          "path": "/assets/posters/letme_figure_out.jpg",
+          "query": "v=1790800064",
+          "status": 200,
+          "bytes": 30323
+        },
+        {
+          "path": "/assets/posters/signals.jpg",
+          "query": "v=1790800064",
+          "status": 200,
+          "bytes": 28855
+        },
+        {
+          "path": "/papers/",
+          "query": "",
+          "status": 200,
+          "bytes": 9383
+        },
+        {
+          "path": "/papers/paper-01/",
+          "query": "",
+          "status": 200,
+          "bytes": 32573
+        },
+        {
+          "path": "/papers/paper-02/",
+          "query": "",
+          "status": 200,
+          "bytes": 6847
+        },
+        {
+          "path": "/papers/paper-03/",
+          "query": "",
+          "status": 200,
+          "bytes": 6308
+        },
+        {
+          "path": "/papers/paper-04/",
+          "query": "",
+          "status": 200,
+          "bytes": 6693
+        },
+        {
+          "path": "/papers/paper-05/",
+          "query": "",
+          "status": 200,
+          "bytes": 5258
+        },
+        {
+          "path": "/thesis/",
+          "query": "",
+          "status": 200,
+          "bytes": 7809
+        },
+        {
+          "path": "/thesis/chapter-02/",
+          "query": "",
+          "status": 200,
+          "bytes": 9300
+        },
+        {
+          "path": "/thesis/chapter-04/",
+          "query": "",
+          "status": 200,
+          "bytes": 30794
+        },
+        {
+          "path": "/thesis/chapter-05/",
+          "query": "",
+          "status": 200,
+          "bytes": 38406
+        },
+        {
+          "path": "/thesis/chapter-06/",
+          "query": "",
+          "status": 200,
+          "bytes": 27841
+        }
+      ],
+      "passed": 69
+    },
+    {
+      "baseurl": "/repository-test",
+      "requests": [
+        {
+          "path": "/repository-test/",
+          "query": "",
+          "status": 200,
+          "bytes": 10223
+        },
+        {
+          "path": "/repository-test/404.html",
+          "query": "",
+          "status": 200,
+          "bytes": 3522
+        },
+        {
+          "path": "/repository-test/assets/css/main.css",
+          "query": "v=1790800064",
+          "status": 200,
+          "bytes": 26285
+        },
+        {
+          "path": "/repository-test/assets/images/IMG_2954.jpeg",
+          "query": "",
+          "status": 200,
+          "bytes": 1101451
+        },
+        {
+          "path": "/repository-test/assets/images/favicon.svg",
+          "query": "",
+          "status": 200,
+          "bytes": 292
+        },
+        {
+          "path": "/repository-test/assets/images/gaspard_mos.png",
+          "query": "",
+          "status": 200,
+          "bytes": 257229
+        },
+        {
+          "path": "/repository-test/assets/images/gelina_ar.png",
+          "query": "",
+          "status": 200,
+          "bytes": 182317
+        },
+        {
+          "path": "/repository-test/assets/images/gelina_mos.png",
+          "query": "",
+          "status": 200,
+          "bytes": 87497
+        },
+        {
+          "path": "/repository-test/assets/images/latent_properties.png",
+          "query": "",
+          "status": 200,
+          "bytes": 447681
+        },
+        {
+          "path": "/repository-test/assets/images/left_side.png",
+          "query": "",
+          "status": 200,
+          "bytes": 483194
+        },
+        {
+          "path": "/repository-test/assets/images/mel.png",
+          "query": "",
+          "status": 200,
+          "bytes": 2028568
+        },
+        {
+          "path": "/repository-test/assets/images/much_later.png",
+          "query": "",
+          "status": 200,
+          "bytes": 839011
+        },
+        {
+          "path": "/repository-test/assets/images/signal_properties.png",
+          "query": "",
+          "status": 200,
+          "bytes": 577681
+        },
+        {
+          "path": "/repository-test/assets/images/the_world.png",
+          "query": "",
+          "status": 200,
+          "bytes": 479126
+        },
+        {
+          "path": "/repository-test/assets/images/tone_gesture_units.png",
+          "query": "",
+          "status": 200,
+          "bytes": 482811
+        },
+        {
+          "path": "/repository-test/assets/js/carousel.js",
+          "query": "v=1790800064",
+          "status": 200,
+          "bytes": 16647
+        },
+        {
+          "path": "/repository-test/assets/js/math.js",
+          "query": "",
+          "status": 200,
+          "bytes": 834
+        },
+        {
+          "path": "/repository-test/assets/js/site.js",
+          "query": "v=1790800064",
+          "status": 200,
+          "bytes": 2545
+        },
+        {
+          "path": "/repository-test/assets/posters/561_2-1.jpg",
+          "query": "v=1790800064",
+          "status": 200,
+          "bytes": 96509
+        },
+        {
+          "path": "/repository-test/assets/posters/561_2-65.jpg",
+          "query": "v=1790800064",
+          "status": 200,
+          "bytes": 96838
+        },
+        {
+          "path": "/repository-test/assets/posters/561_2-cacaded.jpg",
+          "query": "v=1790800064",
+          "status": 200,
+          "bytes": 96578
+        },
+        {
+          "path": "/repository-test/assets/posters/561_2-gt.jpg",
+          "query": "v=1790800064",
+          "status": 200,
+          "bytes": 98561
+        },
+        {
+          "path": "/repository-test/assets/posters/739_2-1.jpg",
+          "query": "v=1790800064",
+          "status": 200,
+          "bytes": 97508
+        },
+        {
+          "path": "/repository-test/assets/posters/739_2-65.jpg",
+          "query": "v=1790800064",
+          "status": 200,
+          "bytes": 97007
+        },
+        {
+          "path": "/repository-test/assets/posters/739_2-cascaded.jpg",
+          "query": "v=1790800064",
+          "status": 200,
+          "bytes": 96053
+        },
+        {
+          "path": "/repository-test/assets/posters/739_2-gt.jpg",
+          "query": "v=1790800064",
+          "status": 200,
+          "bytes": 98768
+        },
+        {
+          "path": "/repository-test/assets/posters/831_3-1.jpg",
+          "query": "v=1790800064",
+          "status": 200,
+          "bytes": 97533
+        },
+        {
+          "path": "/repository-test/assets/posters/831_3-65.jpg",
+          "query": "v=1790800064",
+          "status": 200,
+          "bytes": 96357
+        },
+        {
+          "path": "/repository-test/assets/posters/831_3-cascaded.jpg",
+          "query": "v=1790800064",
+          "status": 200,
+          "bytes": 96959
+        },
+        {
+          "path": "/repository-test/assets/posters/831_3-gt.jpg",
+          "query": "v=1790800064",
+          "status": 200,
+          "bytes": 94368
+        },
+        {
+          "path": "/repository-test/assets/posters/93_0-1.jpg",
+          "query": "v=1790800064",
+          "status": 200,
+          "bytes": 97053
+        },
+        {
+          "path": "/repository-test/assets/posters/93_0-65.jpg",
+          "query": "v=1790800064",
+          "status": 200,
+          "bytes": 95553
+        },
+        {
+          "path": "/repository-test/assets/posters/93_0-cascaded.jpg",
+          "query": "v=1790800064",
+          "status": 200,
+          "bytes": 96577
+        },
+        {
+          "path": "/repository-test/assets/posters/93_0-gt.jpg",
+          "query": "v=1790800064",
+          "status": 200,
+          "bytes": 97906
+        },
+        {
+          "path": "/repository-test/assets/posters/A-421.jpg",
+          "query": "v=1790800064",
+          "status": 200,
+          "bytes": 28738
+        },
+        {
+          "path": "/repository-test/assets/posters/A-564.jpg",
+          "query": "v=1790800064",
+          "status": 200,
+          "bytes": 31748
+        },
+        {
+          "path": "/repository-test/assets/posters/B-421.jpg",
+          "query": "v=1790800064",
+          "status": 200,
+          "bytes": 28649
+        },
+        {
+          "path": "/repository-test/assets/posters/B-92.jpg",
+          "query": "v=1790800064",
+          "status": 200,
+          "bytes": 27446
+        },
+        {
+          "path": "/repository-test/assets/posters/C-93.jpg",
+          "query": "v=1790800064",
+          "status": 200,
+          "bytes": 27048
+        },
+        {
+          "path": "/repository-test/assets/posters/D-655.jpg",
+          "query": "v=1790800064",
+          "status": 200,
+          "bytes": 30374
+        },
+        {
+          "path": "/repository-test/assets/posters/D-694.jpg",
+          "query": "v=1790800064",
+          "status": 200,
+          "bytes": 29406
+        },
+        {
+          "path": "/repository-test/assets/posters/E-421.jpg",
+          "query": "v=1790800064",
+          "status": 200,
+          "bytes": 31517
+        },
+        {
+          "path": "/repository-test/assets/posters/F-695.jpg",
+          "query": "v=1790800064",
+          "status": 200,
+          "bytes": 29413
+        },
+        {
+          "path": "/repository-test/assets/posters/G-93.jpg",
+          "query": "v=1790800064",
+          "status": 200,
+          "bytes": 30735
+        },
+        {
+          "path": "/repository-test/assets/posters/gelina-clone_kieks_0_3_3.jpg",
+          "query": "v=1790800064",
+          "status": 200,
+          "bytes": 48201
+        },
+        {
+          "path": "/repository-test/assets/posters/gelina-clone_scott_0_2_2.jpg",
+          "query": "v=1790800064",
+          "status": 200,
+          "bytes": 55054
+        },
+        {
+          "path": "/repository-test/assets/posters/gelina-clone_scott_0_4_4.jpg",
+          "query": "v=1790800064",
+          "status": 200,
+          "bytes": 54435
+        },
+        {
+          "path": "/repository-test/assets/posters/gelina-comparison_kieks_0_1_1.jpg",
+          "query": "v=1790800064",
+          "status": 200,
+          "bytes": 96306
+        },
+        {
+          "path": "/repository-test/assets/posters/gelina-comparison_scott_0_5_5.jpg",
+          "query": "v=1790800064",
+          "status": 200,
+          "bytes": 97963
+        },
+        {
+          "path": "/repository-test/assets/posters/gelina-comparison_wayne_0_2_2.jpg",
+          "query": "v=1790800064",
+          "status": 200,
+          "bytes": 98580
+        },
+        {
+          "path": "/repository-test/assets/posters/gelina-comparison_wayne_0_3_3.jpg",
+          "query": "v=1790800064",
+          "status": 200,
+          "bytes": 97800
+        },
+        {
+          "path": "/repository-test/assets/posters/gelina-duck_female.jpg",
+          "query": "v=1790800064",
+          "status": 200,
+          "bytes": 28029
+        },
+        {
+          "path": "/repository-test/assets/posters/gelina-failure-2.jpg",
+          "query": "v=1790800064",
+          "status": 200,
+          "bytes": 38886
+        },
+        {
+          "path": "/repository-test/assets/posters/gelina-failure-wayne.jpg",
+          "query": "v=1790800064",
+          "status": 200,
+          "bytes": 35006
+        },
+        {
+          "path": "/repository-test/assets/posters/gelina-gelina-female.jpg",
+          "query": "v=1790800064",
+          "status": 200,
+          "bytes": 30547
+        },
+        {
+          "path": "/repository-test/assets/posters/gelina-kings-male.jpg",
+          "query": "v=1790800064",
+          "status": 200,
+          "bytes": 29589
+        },
+        {
+          "path": "/repository-test/assets/posters/letme_figure_out.jpg",
+          "query": "v=1790800064",
+          "status": 200,
+          "bytes": 30323
+        },
+        {
+          "path": "/repository-test/assets/posters/signals.jpg",
+          "query": "v=1790800064",
+          "status": 200,
+          "bytes": 28855
+        },
+        {
+          "path": "/repository-test/papers/",
+          "query": "",
+          "status": 200,
+          "bytes": 9703
+        },
+        {
+          "path": "/repository-test/papers/paper-01/",
+          "query": "",
+          "status": 200,
+          "bytes": 33005
+        },
+        {
+          "path": "/repository-test/papers/paper-02/",
+          "query": "",
+          "status": 200,
+          "bytes": 7039
+        },
+        {
+          "path": "/repository-test/papers/paper-03/",
+          "query": "",
+          "status": 200,
+          "bytes": 6500
+        },
+        {
+          "path": "/repository-test/papers/paper-04/",
+          "query": "",
+          "status": 200,
+          "bytes": 6885
+        },
+        {
+          "path": "/repository-test/papers/paper-05/",
+          "query": "",
+          "status": 200,
+          "bytes": 5450
+        },
+        {
+          "path": "/repository-test/thesis/",
+          "query": "",
+          "status": 200,
+          "bytes": 8113
+        },
+        {
+          "path": "/repository-test/thesis/chapter-02/",
+          "query": "",
+          "status": 200,
+          "bytes": 9652
+        },
+        {
+          "path": "/repository-test/thesis/chapter-04/",
+          "query": "",
+          "status": 200,
+          "bytes": 31322
+        },
+        {
+          "path": "/repository-test/thesis/chapter-05/",
+          "query": "",
+          "status": 200,
+          "bytes": 39046
+        },
+        {
+          "path": "/repository-test/thesis/chapter-06/",
+          "query": "",
+          "status": 200,
+          "bytes": 28401
+        }
+      ],
+      "passed": 69
+    }
+  ],
+  "failures": [],
+  "passed": 138,
+  "failed": 0
+}

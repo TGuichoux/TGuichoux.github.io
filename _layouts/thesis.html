@@ -1,0 +1,25 @@
+---
+layout: default
+---
+<header class="page-header">
+  <p class="eyebrow">Thesis overview</p>
+  <h1>{{ site.data.thesis.title | escape }}</h1>
+  <p class="page-deck">{{ site.data.thesis.subtitle | escape }}</p>
+  <p class="thesis-author">{{ site.data.author.name | escape }}</p>
+</header>
+<dl class="thesis-metadata">
+  <div><dt>Institution</dt><dd>{{ site.data.thesis.institution | escape }}</dd></div>
+  <div><dt>Degree</dt><dd>{{ site.data.thesis.degree | escape }}</dd></div>
+  <div><dt>Supervisors</dt><dd>{{ site.data.thesis.supervisors | join: ', ' | escape }}</dd></div>
+  <div><dt>Year</dt><dd>{{ site.data.thesis.year | escape }}</dd></div>
+  <div><dt>Defense</dt><dd>{{ site.data.thesis.defense_date | escape }}</dd></div>
+</dl>
+{% include resource-links.html item=site.data.thesis %}
+<section class="prose" aria-labelledby="abstract-heading"><h2 id="abstract-heading">Abstract</h2>{{ site.data.thesis.abstract | markdownify }}</section>
+<section class="prose thesis-materials">
+  <h2>{{ site.data.thesis.materials_title }}</h2>
+
+  {{ site.data.thesis.materials_intro | markdownify }}
+</section>
+<section class="home-section" aria-labelledby="chapters-heading"><div class="section-heading"><h2 id="chapters-heading">Chapters</h2><span>{{ site.chapters | size }} chapters</span></div>{% include chapter-list.html %}</section>
+{% include citation.html text=site.data.thesis.bibtex id='thesis-citation' %}

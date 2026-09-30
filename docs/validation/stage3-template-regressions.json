@@ -1,0 +1,100 @@
+{
+  "checks": [
+    {
+      "test": "edited title and HTML escaping",
+      "status": "passed",
+      "details": {
+        "expected_title": "Changed title — <Research> & \"Demos\"",
+        "heading_and_tab_match": true
+      }
+    },
+    {
+      "test": "blank title falls back to site title",
+      "status": "passed",
+      "details": {
+        "expected_title": "Academic supplementary material",
+        "heading_and_tab_match": true
+      }
+    },
+    {
+      "test": "missing frontpage file falls back to site title",
+      "status": "passed",
+      "details": {
+        "expected_title": "Academic supplementary material",
+        "heading_and_tab_match": true
+      }
+    },
+    {
+      "test": "both titles blank fall back to Home",
+      "status": "passed",
+      "details": {
+        "expected_title": "Home",
+        "heading_and_tab_match": true
+      }
+    },
+    {
+      "test": "explicit poster wins over generated manifest",
+      "status": "passed",
+      "details": {
+        "poster": "/repository-test/assets/posters/letme_figure_out.jpg?v=1790800216",
+        "dynamic_fallback": false
+      }
+    },
+    {
+      "test": "matching generated poster fallback",
+      "status": "passed",
+      "details": {
+        "poster": "/repository-test/assets/posters/A-421.jpg?v=1790800217",
+        "dynamic_fallback": false
+      }
+    },
+    {
+      "test": "stale generated poster is ignored",
+      "status": "passed",
+      "details": {
+        "poster": null,
+        "dynamic_fallback": true
+      }
+    },
+    {
+      "test": "local poster query and baseurl escaped once",
+      "status": "passed",
+      "details": {
+        "poster": "/repository-test/assets/posters/A-421.jpg?a=1&b=2&v=1790800218"
+      }
+    },
+    {
+      "test": "external poster URL is not prefixed or altered",
+      "status": "passed",
+      "details": {
+        "poster": "https://images.example.test/cover.jpg?a=1&b=2"
+      }
+    },
+    {
+      "test": "source checker rejects missing poster",
+      "status": "passed",
+      "details": "Validator rejected missing image as intended."
+    },
+    {
+      "test": "build checker rejects incorrect heading",
+      "status": "passed",
+      "details": "Validator rejected incorrect built H1 as intended."
+    },
+    {
+      "test": "launcher pins directory with spaces and forwards arguments",
+      "status": "passed",
+      "details": {
+        "commands": [
+          "/tmp/poster-title-fixtures-i70hu88q/website with spaces|check",
+          "/tmp/poster-title-fixtures-i70hu88q/website with spaces|exec jekyll clean",
+          "/tmp/poster-title-fixtures-i70hu88q/website with spaces|exec jekyll serve --livereload --baseurl  --port 4100"
+        ],
+        "scope": "wrapper only; bundle mocked; real source validator executed"
+      }
+    }
+  ],
+  "failures": [],
+  "scope": "Jekyll through external offline build driver; all fixture changes are temporary.",
+  "passed": 12,
+  "failed": 0
+}

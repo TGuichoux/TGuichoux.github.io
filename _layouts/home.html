@@ -1,0 +1,48 @@
+---
+layout: default
+---
+
+<header class="page-header home-header">
+  <!-- <p class="eyebrow">PhD thesis &amp; research papers</p> -->
+  <h1 id="home-title">{% include home-title.html %}</h1>
+  <!-- <p class="page-deck">Supplementary material</p> -->
+</header>
+
+<div class="prose home-introduction">
+  {{ content }}
+</div>
+
+<section class="home-section" aria-labelledby="papers-heading">
+  <div class="section-heading">
+    <h2 id="papers-heading">Papers</h2>
+
+    <a href="{{ '/papers/' | relative_url }}">
+      All papers <span aria-hidden="true">→</span>
+    </a>
+  </div>
+
+  {% include paper-list.html %}
+</section>
+
+<section class="home-section" aria-labelledby="thesis-heading">
+  <div class="section-heading">
+    <h2 id="thesis-heading">Thesis overview and supplementary materials</h2>
+  </div>
+
+  <p class="section-intro">
+    {{ site.data.thesis.institution | escape }}
+    <span aria-hidden="true">·</span>
+    {{ site.data.thesis.year | escape }}
+  </p>
+
+  <p>
+    {{ site.data.thesis.subtitle | escape }}
+  </p>
+
+  <p>
+    <a class="btn" href="{{ '/thesis/' | relative_url }}">
+      Open the thesis
+      <span aria-hidden="true">→</span>
+    </a>
+  </p>
+</section>

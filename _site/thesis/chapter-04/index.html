@@ -1,0 +1,596 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Unified speech-gesture generation via interleaved token prediction · Academic supplementary material</title>
+  <meta name="description" content="Supplementary figures, videos, and notes for a PhD thesis and associated papers.">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="canonical" href="http://localhost:4000/thesis/chapter-04/">
+  <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg">
+  <link rel="stylesheet" href="/assets/css/main.css?v=1790806294">
+  
+    <script defer src="/assets/js/math.js"></script>
+    <script defer id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-svg.js"></script>
+  
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="masthead">
+  <div class="masthead__inner-wrap">
+    <a class="site-title" href="/">Téo Guichoux</a>
+    <nav class="site-nav" aria-label="Main navigation">
+  <ul>
+    
+      
+      
+      
+      <li><a href="/">Home</a></li>
+    
+      
+      
+      
+      <li><a href="/thesis/" aria-current="page">Thesis</a></li>
+    
+      
+      
+      
+      <li><a href="/papers/">Papers</a></li>
+    
+  </ul>
+</nav>
+
+  </div>
+</header>
+
+  <div class="site-shell">
+    <aside class="sidebar" aria-label="Author and contextual navigation">
+  <div class="author-profile">
+    
+      <img class="author__avatar" src="/assets/images/IMG_2315.JPG" alt="Téo Guichoux" width="136" height="136">
+    
+    <div class="author__details">
+      <p class="author__name">Téo Guichoux</p>
+      <p class="author__role">PhD student</p>
+      <p class="author__bio">My work focuses text-to-speech and co-speech gesture generation, with a specific focus on the joint modeling of both modalities.</p>
+      <p class="author__affiliation">Sorbonne Univeristy, ISIR-IRCAM<br></p>
+      <div class="author__links">
+        <a href="mailto:teo.guichoux@sorbonne-universite.fr">Email</a>
+        <a href="https://orcid.org/0009-0008-3711-1405">ORCID</a>
+        <a href="https://scholar.google.com/citations?user=QPxDtkkAAAAJ&amp;hl=en">Google Scholar</a>
+        <a href="https://github.com/TGuichoux">GitHub</a>
+        <a href="https://www.linkedin.com/in/teo-guichoux/">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+  
+    
+    <details class="chapter-nav" data-responsive-details open>
+      <summary>Thesis chapters</summary>
+      <nav aria-label="Thesis chapters">
+        <ol>
+          
+            <li><a href="/thesis/chapter-02/"><span class="chapter-nav__number">02</span><span>Background and Related Work</span></a></li>
+          
+            <li><a href="/thesis/chapter-04/" aria-current="page"><span class="chapter-nav__number">04</span><span>Unified speech-gesture generation via interleaved token prediction</span></a></li>
+          
+            <li><a href="/thesis/chapter-05/"><span class="chapter-nav__number">05</span><span>Expressive speech and gesture synthesis with autoregressive continuous diffusion and decoupled classifier-free guidance</span></a></li>
+          
+            <li><a href="/thesis/chapter-06/"><span class="chapter-nav__number">06</span><span>Qualitative analysis of generated behaviors</span></a></li>
+          
+        </ol>
+        <a class="chapter-nav__overview" href="/thesis/">Thesis overview</a>
+      </nav>
+    </details>
+  
+</aside>
+
+    <main id="main-content" tabindex="-1">
+      
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+  <ol>
+    <li><a href="/">Home</a></li>
+    
+      <li><a href="/thesis/">Thesis</a></li>
+      <li aria-current="page">Chapter 4</li>
+    
+  </ol>
+</nav>
+
+
+      <article>
+  <header class="page-header">
+    <p class="eyebrow">Thesis · Chapter 04</p>
+    <h1>Unified speech-gesture generation via interleaved token prediction</h1>
+    <p class="page-deck"></p>
+    
+
+
+
+
+  </header>
+  <div class="page__content"><div class="toc">
+  <p><strong>On this page</strong></p>
+
+<ul id="markdown-toc">
+  <li><a href="#results-of-the-user-study" id="markdown-toc-results-of-the-user-study">Results of the user study</a></li>
+  <li><a href="#illustrative-examples" id="markdown-toc-illustrative-examples">Illustrative examples</a>    <ul>
+      <li><a href="#speech-gesture-generation-capabilities" id="markdown-toc-speech-gesture-generation-capabilities">Speech-gesture generation capabilities</a></li>
+      <li><a href="#cloning-capabilities" id="markdown-toc-cloning-capabilities">Cloning capabilities</a></li>
+      <li><a href="#comparison-to-state-of-the-art-gesture-generation-models" id="markdown-toc-comparison-to-state-of-the-art-gesture-generation-models">Comparison to state-of-the-art gesture generation models</a></li>
+      <li><a href="#failure-cases" id="markdown-toc-failure-cases">Failure cases</a></li>
+    </ul>
+  </li>
+</ul>
+
+</div>
+
+<h2 id="results-of-the-user-study">Results of the user study</h2>
+
+<figure class="media-figure media-figure--wide" id="fig-ch04-4-5" aria-labelledby="fig-ch04-4-5-caption">
+  <div class="figure-image">
+    <img src="/assets/images/gelina_mos.png" alt="Mean Opinion Scores with 95\% confidence intervals from user evaluation across three aspects: Voice human-likeness, speech-gesture synchrony, and Gesture human-likeness." loading="lazy" decoding="async" />
+  </div>
+
+  <figcaption id="fig-ch04-4-5-caption">
+    <strong>Figure 4.5</strong>
+
+    <span>Mean Opinion Scores with 95\% confidence intervals from user evaluation across three aspects: Voice human-likeness, speech-gesture synchrony, and Gesture human-likeness.</span>
+
+    
+  </figcaption>
+</figure>
+
+<h2 id="illustrative-examples">Illustrative examples</h2>
+
+<h3 id="speech-gesture-generation-capabilities">Speech-gesture generation capabilities</h3>
+
+<p>These videos illustrate the capabilities of Gelina for speech and gesture generation from a textual input.</p>
+
+<div class="video-carousel" id="carousel-ch04-4-1" data-video-carousel="" data-carousel-version="3" role="region" aria-label="Speech-gesture generation capabilities">
+  <div class="video-carousel__controls" data-carousel-controls="" hidden="">
+    <button type="button" class="video-carousel__button" data-carousel-previous="" aria-label="Previous video" aria-controls="carousel-ch04-4-1-track"><span aria-hidden="true">←</span> Previous</button>
+    <span class="video-carousel__counter" data-carousel-counter="" role="status" aria-live="polite" aria-atomic="true">1 / 3</span>
+    <button type="button" class="video-carousel__button" data-carousel-next="" aria-label="Next video" aria-controls="carousel-ch04-4-1-track">Next <span aria-hidden="true">→</span></button>
+    <label class="video-carousel__picker">
+      <span>Go to video</span>
+      <select class="video-carousel__select" data-carousel-select="" aria-controls="carousel-ch04-4-1-track"><option value="0">1. Video 4.1</option><option value="1">2. Video 4.2</option><option value="2">3. Video 4.3</option></select>
+    </label>
+  </div>
+  <div class="video-carousel__slides" id="carousel-ch04-4-1-track" data-carousel-slides="" tabindex="0" aria-label="Video slides. Scroll horizontally to browse."><div class="video-carousel__slide" data-carousel-slide="" role="group" aria-roledescription="slide" aria-label="1 of 3: Video 4.1">
+        <nav class="video-carousel__fallback" aria-label="Video navigation">
+          <span aria-disabled="true">← Previous</span>
+          <span>1 / 3</span>
+          <a href="#ch04-4-2" data-carousel-link="">Next →</a>
+        </nav>
+        
+<figure class="media-video" id="ch04-4-1" aria-labelledby="ch04-4-1-caption">
+  <video controls="" playsinline="" preload="none" width="1280" height="720" data-video="" poster="/assets/posters/gelina-gelina-female.jpg?v=1790806294" aria-label="Video 4.1" aria-describedby="ch04-4-1-caption">
+    <source src="https://zenodo.org/records/23059630/files/gelina-gelina-female.mp4" type="video/mp4" />
+    
+    Your browser cannot play this video.
+    <a href="https://zenodo.org/records/23059630/files/gelina-gelina-female.mp4">Open the MP4 file</a>.
+  </video>
+  <p class="video-load-status" data-video-status="" role="status" hidden="">
+    The video could not be loaded from its host.
+    <a href="https://zenodo.org/records/23059630/files/gelina-gelina-female.mp4" target="_blank" rel="noopener">Open the original video</a>
+    <button type="button" data-video-retry="">Retry</button>
+  </p>
+  <figcaption id="ch04-4-1-caption">
+    <strong>Video 4.1</strong>
+    
+    
+    
+    
+  </figcaption>
+</figure>
+
+      </div><div class="video-carousel__slide" data-carousel-slide="" role="group" aria-roledescription="slide" aria-label="2 of 3: Video 4.2">
+        <nav class="video-carousel__fallback" aria-label="Video navigation">
+          <a href="#ch04-4-1" data-carousel-link="">← Previous</a>
+          <span>2 / 3</span>
+          <a href="#ch04-4-3" data-carousel-link="">Next →</a>
+        </nav>
+        
+<figure class="media-video" id="ch04-4-2" aria-labelledby="ch04-4-2-caption">
+  <video controls="" playsinline="" preload="none" width="1280" height="720" data-video="" poster="/assets/posters/gelina-kings-male.jpg?v=1790806294" aria-label="Video 4.2" aria-describedby="ch04-4-2-caption">
+    <source src="https://zenodo.org/records/23059630/files/gelina-kings-male.mp4" type="video/mp4" />
+    
+    Your browser cannot play this video.
+    <a href="https://zenodo.org/records/23059630/files/gelina-kings-male.mp4">Open the MP4 file</a>.
+  </video>
+  <p class="video-load-status" data-video-status="" role="status" hidden="">
+    The video could not be loaded from its host.
+    <a href="https://zenodo.org/records/23059630/files/gelina-kings-male.mp4" target="_blank" rel="noopener">Open the original video</a>
+    <button type="button" data-video-retry="">Retry</button>
+  </p>
+  <figcaption id="ch04-4-2-caption">
+    <strong>Video 4.2</strong>
+    
+    
+    
+    
+  </figcaption>
+</figure>
+
+      </div><div class="video-carousel__slide" data-carousel-slide="" role="group" aria-roledescription="slide" aria-label="3 of 3: Video 4.3">
+        <nav class="video-carousel__fallback" aria-label="Video navigation">
+          <a href="#ch04-4-2" data-carousel-link="">← Previous</a>
+          <span>3 / 3</span>
+          <span aria-disabled="true">Next →</span>
+        </nav>
+        
+<figure class="media-video" id="ch04-4-3" aria-labelledby="ch04-4-3-caption">
+  <video controls="" playsinline="" preload="none" width="1280" height="720" data-video="" poster="/assets/posters/gelina-duck_female.jpg?v=1790806294" aria-label="Video 4.3" aria-describedby="ch04-4-3-caption">
+    <source src="https://zenodo.org/records/23059630/files/gelina-duck-female.mp4" type="video/mp4" />
+    
+    Your browser cannot play this video.
+    <a href="https://zenodo.org/records/23059630/files/gelina-duck-female.mp4">Open the MP4 file</a>.
+  </video>
+  <p class="video-load-status" data-video-status="" role="status" hidden="">
+    The video could not be loaded from its host.
+    <a href="https://zenodo.org/records/23059630/files/gelina-duck-female.mp4" target="_blank" rel="noopener">Open the original video</a>
+    <button type="button" data-video-retry="">Retry</button>
+  </p>
+  <figcaption id="ch04-4-3-caption">
+    <strong>Video 4.3</strong>
+    
+    
+    
+    
+  </figcaption>
+</figure>
+
+      </div></div>
+  <p class="video-carousel__hint">Swipe or scroll sideways to browse. Use the video controls to play.</p>
+</div>
+
+<h3 id="cloning-capabilities">Cloning capabilities</h3>
+
+<p>These videos illustrate the <em>cloning</em> capabilities of Gelina. Speech-gesture generation is conditioned on a short prefix (around 5-7s), enabling voice and gestural style cloning.</p>
+
+<div class="video-carousel" id="carousel-ch04-4-4" data-video-carousel="" data-carousel-version="3" role="region" aria-label="Cloning capabilities">
+  <div class="video-carousel__controls" data-carousel-controls="" hidden="">
+    <button type="button" class="video-carousel__button" data-carousel-previous="" aria-label="Previous video" aria-controls="carousel-ch04-4-4-track"><span aria-hidden="true">←</span> Previous</button>
+    <span class="video-carousel__counter" data-carousel-counter="" role="status" aria-live="polite" aria-atomic="true">1 / 3</span>
+    <button type="button" class="video-carousel__button" data-carousel-next="" aria-label="Next video" aria-controls="carousel-ch04-4-4-track">Next <span aria-hidden="true">→</span></button>
+    <label class="video-carousel__picker">
+      <span>Go to video</span>
+      <select class="video-carousel__select" data-carousel-select="" aria-controls="carousel-ch04-4-4-track"><option value="0">1. Video 4.4</option><option value="1">2. Video 4.5</option><option value="2">3. Video 4.6</option></select>
+    </label>
+  </div>
+  <div class="video-carousel__slides" id="carousel-ch04-4-4-track" data-carousel-slides="" tabindex="0" aria-label="Video slides. Scroll horizontally to browse."><div class="video-carousel__slide" data-carousel-slide="" role="group" aria-roledescription="slide" aria-label="1 of 3: Video 4.4">
+        <nav class="video-carousel__fallback" aria-label="Video navigation">
+          <span aria-disabled="true">← Previous</span>
+          <span>1 / 3</span>
+          <a href="#ch04-4-5" data-carousel-link="">Next →</a>
+        </nav>
+        
+<figure class="media-video" id="ch04-4-4" aria-labelledby="ch04-4-4-caption">
+  <video controls="" playsinline="" preload="none" width="1280" height="720" data-video="" poster="/assets/posters/gelina-clone_kieks_0_3_3.jpg?v=1790806294" aria-label="Video 4.4" aria-describedby="ch04-4-4-caption">
+    <source src="https://zenodo.org/records/23059630/files/gelina-clone_kieks_0_3_3.mp4" type="video/mp4" />
+    
+    Your browser cannot play this video.
+    <a href="https://zenodo.org/records/23059630/files/gelina-clone_kieks_0_3_3.mp4">Open the MP4 file</a>.
+  </video>
+  <p class="video-load-status" data-video-status="" role="status" hidden="">
+    The video could not be loaded from its host.
+    <a href="https://zenodo.org/records/23059630/files/gelina-clone_kieks_0_3_3.mp4" target="_blank" rel="noopener">Open the original video</a>
+    <button type="button" data-video-retry="">Retry</button>
+  </p>
+  <figcaption id="ch04-4-4-caption">
+    <strong>Video 4.4</strong>
+    
+    
+    
+    
+  </figcaption>
+</figure>
+
+      </div><div class="video-carousel__slide" data-carousel-slide="" role="group" aria-roledescription="slide" aria-label="2 of 3: Video 4.5">
+        <nav class="video-carousel__fallback" aria-label="Video navigation">
+          <a href="#ch04-4-4" data-carousel-link="">← Previous</a>
+          <span>2 / 3</span>
+          <a href="#ch04-4-6" data-carousel-link="">Next →</a>
+        </nav>
+        
+<figure class="media-video" id="ch04-4-5" aria-labelledby="ch04-4-5-caption">
+  <video controls="" playsinline="" preload="none" width="1280" height="720" data-video="" poster="/assets/posters/gelina-clone_scott_0_2_2.jpg?v=1790806294" aria-label="Video 4.5" aria-describedby="ch04-4-5-caption">
+    <source src="https://zenodo.org/records/23059630/files/gelina-clone_scott_0_2_2.mp4" type="video/mp4" />
+    
+    Your browser cannot play this video.
+    <a href="https://zenodo.org/records/23059630/files/gelina-clone_scott_0_2_2.mp4">Open the MP4 file</a>.
+  </video>
+  <p class="video-load-status" data-video-status="" role="status" hidden="">
+    The video could not be loaded from its host.
+    <a href="https://zenodo.org/records/23059630/files/gelina-clone_scott_0_2_2.mp4" target="_blank" rel="noopener">Open the original video</a>
+    <button type="button" data-video-retry="">Retry</button>
+  </p>
+  <figcaption id="ch04-4-5-caption">
+    <strong>Video 4.5</strong>
+    
+    
+    
+    
+  </figcaption>
+</figure>
+
+      </div><div class="video-carousel__slide" data-carousel-slide="" role="group" aria-roledescription="slide" aria-label="3 of 3: Video 4.6">
+        <nav class="video-carousel__fallback" aria-label="Video navigation">
+          <a href="#ch04-4-5" data-carousel-link="">← Previous</a>
+          <span>3 / 3</span>
+          <span aria-disabled="true">Next →</span>
+        </nav>
+        
+<figure class="media-video" id="ch04-4-6" aria-labelledby="ch04-4-6-caption">
+  <video controls="" playsinline="" preload="none" width="1280" height="720" data-video="" poster="/assets/posters/gelina-clone_scott_0_4_4.jpg?v=1790806294" aria-label="Video 4.6" aria-describedby="ch04-4-6-caption">
+    <source src="https://zenodo.org/records/23059630/files/gelina-clone_scott_0_4_4.mp4" type="video/mp4" />
+    
+    Your browser cannot play this video.
+    <a href="https://zenodo.org/records/23059630/files/gelina-clone_scott_0_4_4.mp4">Open the MP4 file</a>.
+  </video>
+  <p class="video-load-status" data-video-status="" role="status" hidden="">
+    The video could not be loaded from its host.
+    <a href="https://zenodo.org/records/23059630/files/gelina-clone_scott_0_4_4.mp4" target="_blank" rel="noopener">Open the original video</a>
+    <button type="button" data-video-retry="">Retry</button>
+  </p>
+  <figcaption id="ch04-4-6-caption">
+    <strong>Video 4.6</strong>
+    
+    
+    
+    
+  </figcaption>
+</figure>
+
+      </div></div>
+  <p class="video-carousel__hint">Swipe or scroll sideways to browse. Use the video controls to play.</p>
+</div>
+
+<h3 id="comparison-to-state-of-the-art-gesture-generation-models">Comparison to state-of-the-art gesture generation models</h3>
+
+<p>These videos illustrate the differences between Gelina and other gesture generation models. In these examples, Gelina is used in the <em>Speech-to-gesture</em> mode, allowing the comparison of temporally aligned gestures.</p>
+
+<div class="video-carousel" id="carousel-ch04-4-7" data-video-carousel="" data-carousel-version="3" role="region" aria-label="Comparison against unimodal gesture generation models">
+  <div class="video-carousel__controls" data-carousel-controls="" hidden="">
+    <button type="button" class="video-carousel__button" data-carousel-previous="" aria-label="Previous video" aria-controls="carousel-ch04-4-7-track"><span aria-hidden="true">←</span> Previous</button>
+    <span class="video-carousel__counter" data-carousel-counter="" role="status" aria-live="polite" aria-atomic="true">1 / 4</span>
+    <button type="button" class="video-carousel__button" data-carousel-next="" aria-label="Next video" aria-controls="carousel-ch04-4-7-track">Next <span aria-hidden="true">→</span></button>
+    <label class="video-carousel__picker">
+      <span>Go to video</span>
+      <select class="video-carousel__select" data-carousel-select="" aria-controls="carousel-ch04-4-7-track"><option value="0">1. Video 4.7</option><option value="1">2. Video 4.8</option><option value="2">3. Video 4.9</option><option value="3">4. Video 4.10</option></select>
+    </label>
+  </div>
+  <div class="video-carousel__slides" id="carousel-ch04-4-7-track" data-carousel-slides="" tabindex="0" aria-label="Video slides. Scroll horizontally to browse."><div class="video-carousel__slide" data-carousel-slide="" role="group" aria-roledescription="slide" aria-label="1 of 4: Video 4.7">
+        <nav class="video-carousel__fallback" aria-label="Video navigation">
+          <span aria-disabled="true">← Previous</span>
+          <span>1 / 4</span>
+          <a href="#ch04-4-8" data-carousel-link="">Next →</a>
+        </nav>
+        
+<figure class="media-video" id="ch04-4-7" aria-labelledby="ch04-4-7-caption">
+  <video controls="" playsinline="" preload="none" width="1280" height="720" data-video="" poster="/assets/posters/gelina-comparison_scott_0_5_5.jpg?v=1790806294" aria-label="Video 4.7" aria-describedby="ch04-4-7-caption">
+    <source src="https://zenodo.org/records/23059630/files/gelina-comparison_scott_0_5_5.mp4" type="video/mp4" />
+    
+    Your browser cannot play this video.
+    <a href="https://zenodo.org/records/23059630/files/gelina-comparison_scott_0_5_5.mp4">Open the MP4 file</a>.
+  </video>
+  <p class="video-load-status" data-video-status="" role="status" hidden="">
+    The video could not be loaded from its host.
+    <a href="https://zenodo.org/records/23059630/files/gelina-comparison_scott_0_5_5.mp4" target="_blank" rel="noopener">Open the original video</a>
+    <button type="button" data-video-retry="">Retry</button>
+  </p>
+  <figcaption id="ch04-4-7-caption">
+    <strong>Video 4.7</strong>
+    
+    
+    
+    
+  </figcaption>
+</figure>
+
+      </div><div class="video-carousel__slide" data-carousel-slide="" role="group" aria-roledescription="slide" aria-label="2 of 4: Video 4.8">
+        <nav class="video-carousel__fallback" aria-label="Video navigation">
+          <a href="#ch04-4-7" data-carousel-link="">← Previous</a>
+          <span>2 / 4</span>
+          <a href="#ch04-4-9" data-carousel-link="">Next →</a>
+        </nav>
+        
+<figure class="media-video" id="ch04-4-8" aria-labelledby="ch04-4-8-caption">
+  <video controls="" playsinline="" preload="none" width="1280" height="720" data-video="" poster="/assets/posters/gelina-comparison_kieks_0_1_1.jpg?v=1790806294" aria-label="Video 4.8" aria-describedby="ch04-4-8-caption">
+    <source src="https://zenodo.org/records/23059630/files/gelina-comparison_kieks_0_1_1.mp4" type="video/mp4" />
+    
+    Your browser cannot play this video.
+    <a href="https://zenodo.org/records/23059630/files/gelina-comparison_kieks_0_1_1.mp4">Open the MP4 file</a>.
+  </video>
+  <p class="video-load-status" data-video-status="" role="status" hidden="">
+    The video could not be loaded from its host.
+    <a href="https://zenodo.org/records/23059630/files/gelina-comparison_kieks_0_1_1.mp4" target="_blank" rel="noopener">Open the original video</a>
+    <button type="button" data-video-retry="">Retry</button>
+  </p>
+  <figcaption id="ch04-4-8-caption">
+    <strong>Video 4.8</strong>
+    
+    
+    
+    
+  </figcaption>
+</figure>
+
+      </div><div class="video-carousel__slide" data-carousel-slide="" role="group" aria-roledescription="slide" aria-label="3 of 4: Video 4.9">
+        <nav class="video-carousel__fallback" aria-label="Video navigation">
+          <a href="#ch04-4-8" data-carousel-link="">← Previous</a>
+          <span>3 / 4</span>
+          <a href="#ch04-4-10" data-carousel-link="">Next →</a>
+        </nav>
+        
+<figure class="media-video" id="ch04-4-9" aria-labelledby="ch04-4-9-caption">
+  <video controls="" playsinline="" preload="none" width="1280" height="720" data-video="" poster="/assets/posters/gelina-comparison_wayne_0_2_2.jpg?v=1790806294" aria-label="Video 4.9" aria-describedby="ch04-4-9-caption">
+    <source src="https://zenodo.org/records/23059630/files/gelina-comparison_wayne_0_2_2.mp4" type="video/mp4" />
+    
+    Your browser cannot play this video.
+    <a href="https://zenodo.org/records/23059630/files/gelina-comparison_wayne_0_2_2.mp4">Open the MP4 file</a>.
+  </video>
+  <p class="video-load-status" data-video-status="" role="status" hidden="">
+    The video could not be loaded from its host.
+    <a href="https://zenodo.org/records/23059630/files/gelina-comparison_wayne_0_2_2.mp4" target="_blank" rel="noopener">Open the original video</a>
+    <button type="button" data-video-retry="">Retry</button>
+  </p>
+  <figcaption id="ch04-4-9-caption">
+    <strong>Video 4.9</strong>
+    
+    
+    
+    
+  </figcaption>
+</figure>
+
+      </div><div class="video-carousel__slide" data-carousel-slide="" role="group" aria-roledescription="slide" aria-label="4 of 4: Video 4.10">
+        <nav class="video-carousel__fallback" aria-label="Video navigation">
+          <a href="#ch04-4-9" data-carousel-link="">← Previous</a>
+          <span>4 / 4</span>
+          <span aria-disabled="true">Next →</span>
+        </nav>
+        
+<figure class="media-video" id="ch04-4-10" aria-labelledby="ch04-4-10-caption">
+  <video controls="" playsinline="" preload="none" width="1280" height="720" data-video="" poster="/assets/posters/gelina-comparison_wayne_0_3_3.jpg?v=1790806294" aria-label="Video 4.10" aria-describedby="ch04-4-10-caption">
+    <source src="https://zenodo.org/records/23059630/files/gelina-comparison_wayne_0_3_3.mp4" type="video/mp4" />
+    
+    Your browser cannot play this video.
+    <a href="https://zenodo.org/records/23059630/files/gelina-comparison_wayne_0_3_3.mp4">Open the MP4 file</a>.
+  </video>
+  <p class="video-load-status" data-video-status="" role="status" hidden="">
+    The video could not be loaded from its host.
+    <a href="https://zenodo.org/records/23059630/files/gelina-comparison_wayne_0_3_3.mp4" target="_blank" rel="noopener">Open the original video</a>
+    <button type="button" data-video-retry="">Retry</button>
+  </p>
+  <figcaption id="ch04-4-10-caption">
+    <strong>Video 4.10</strong>
+    
+    
+    
+    
+  </figcaption>
+</figure>
+
+      </div></div>
+  <p class="video-carousel__hint">Swipe or scroll sideways to browse. Use the video controls to play.</p>
+</div>
+
+<h3 id="failure-cases">Failure cases</h3>
+
+<p>We noticed several failures when generating speech and gestures. Some cases show incorrect rotations. Since the same issue appears in EMAGE, it may come from a bug in the shared rotation conversion code.</p>
+
+<p>In random voice generation (without a prompt), some voices have poor quality — they may sound robotic or sometimes only partly understandable</p>
+
+<div class="video-carousel" id="carousel-ch04-4-11" data-video-carousel="" data-carousel-version="3" role="region" aria-label="Failure cases">
+  <div class="video-carousel__controls" data-carousel-controls="" hidden="">
+    <button type="button" class="video-carousel__button" data-carousel-previous="" aria-label="Previous video" aria-controls="carousel-ch04-4-11-track"><span aria-hidden="true">←</span> Previous</button>
+    <span class="video-carousel__counter" data-carousel-counter="" role="status" aria-live="polite" aria-atomic="true">1 / 2</span>
+    <button type="button" class="video-carousel__button" data-carousel-next="" aria-label="Next video" aria-controls="carousel-ch04-4-11-track">Next <span aria-hidden="true">→</span></button>
+    <label class="video-carousel__picker">
+      <span>Go to video</span>
+      <select class="video-carousel__select" data-carousel-select="" aria-controls="carousel-ch04-4-11-track"><option value="0">1. Video 4.9</option><option value="1">2. Video 4.10</option></select>
+    </label>
+  </div>
+  <div class="video-carousel__slides" id="carousel-ch04-4-11-track" data-carousel-slides="" tabindex="0" aria-label="Video slides. Scroll horizontally to browse."><div class="video-carousel__slide" data-carousel-slide="" role="group" aria-roledescription="slide" aria-label="1 of 2: Video 4.9">
+        <nav class="video-carousel__fallback" aria-label="Video navigation">
+          <span aria-disabled="true">← Previous</span>
+          <span>1 / 2</span>
+          <a href="#ch04-4-12" data-carousel-link="">Next →</a>
+        </nav>
+        
+<figure class="media-video" id="ch04-4-11" aria-labelledby="ch04-4-11-caption">
+  <video controls="" playsinline="" preload="none" width="1280" height="720" data-video="" poster="/assets/posters/gelina-failure-wayne.jpg?v=1790806294" aria-label="Video 4.9" aria-describedby="ch04-4-11-caption">
+    <source src="https://zenodo.org/records/23059630/files/gelina-failure-wayne.mp4" type="video/mp4" />
+    
+    Your browser cannot play this video.
+    <a href="https://zenodo.org/records/23059630/files/gelina-failure-wayne.mp4">Open the MP4 file</a>.
+  </video>
+  <p class="video-load-status" data-video-status="" role="status" hidden="">
+    The video could not be loaded from its host.
+    <a href="https://zenodo.org/records/23059630/files/gelina-failure-wayne.mp4" target="_blank" rel="noopener">Open the original video</a>
+    <button type="button" data-video-retry="">Retry</button>
+  </p>
+  <figcaption id="ch04-4-11-caption">
+    <strong>Video 4.9</strong>
+    
+    
+    
+    
+  </figcaption>
+</figure>
+
+      </div><div class="video-carousel__slide" data-carousel-slide="" role="group" aria-roledescription="slide" aria-label="2 of 2: Video 4.10">
+        <nav class="video-carousel__fallback" aria-label="Video navigation">
+          <a href="#ch04-4-11" data-carousel-link="">← Previous</a>
+          <span>2 / 2</span>
+          <span aria-disabled="true">Next →</span>
+        </nav>
+        
+<figure class="media-video" id="ch04-4-12" aria-labelledby="ch04-4-12-caption">
+  <video controls="" playsinline="" preload="none" width="1280" height="720" data-video="" poster="/assets/posters/gelina-failure-2.jpg?v=1790806294" aria-label="Video 4.10" aria-describedby="ch04-4-12-caption">
+    <source src="https://zenodo.org/records/23059630/files/gelina-failure-2.mp4" type="video/mp4" />
+    
+    Your browser cannot play this video.
+    <a href="https://zenodo.org/records/23059630/files/gelina-failure-2.mp4">Open the MP4 file</a>.
+  </video>
+  <p class="video-load-status" data-video-status="" role="status" hidden="">
+    The video could not be loaded from its host.
+    <a href="https://zenodo.org/records/23059630/files/gelina-failure-2.mp4" target="_blank" rel="noopener">Open the original video</a>
+    <button type="button" data-video-retry="">Retry</button>
+  </p>
+  <figcaption id="ch04-4-12-caption">
+    <strong>Video 4.10</strong>
+    
+    
+    
+    
+  </figcaption>
+</figure>
+
+      </div></div>
+  <p class="video-carousel__hint">Swipe or scroll sideways to browse. Use the video controls to play.</p>
+</div>
+</div>
+</article>
+
+<nav class="chapter-pagination" aria-label="Chapter pagination">
+  
+    
+  
+    
+      
+        
+        
+        <a class="chapter-pagination__previous" rel="prev" href="/thesis/chapter-02/"><span>← Previous chapter</span><strong>Background and Related Work</strong></a>
+      
+      
+        
+        
+        <a class="chapter-pagination__next" rel="next" href="/thesis/chapter-05/"><span>Next chapter →</span><strong>Expressive speech and gesture synthesis with autoregressive continuous diffusion and decoupled classifier-free guidance</strong></a>
+      
+    
+  
+    
+  
+    
+  
+  <a class="chapter-pagination__overview" href="/thesis/">Return to thesis overview</a>
+</nav>
+
+
+    </main>
+  </div>
+  <footer class="page__footer">
+  <div class="footer__inner">
+    <p>Téo Guichoux <span aria-hidden="true">·</span> Academic supplementary material</p>
+    <p class="footer__credit">Adapted from <a href="https://academicpages.github.io/">AcademicPages</a> / <a href="https://mmistakes.github.io/minimal-mistakes/">Minimal Mistakes</a>.</p>
+  </div>
+</footer>
+
+  <!-- Local interactions do not wait for MathJax or external video hosts. -->
+  <script src="/assets/js/carousel.js?v=1790806294"></script>
+  <script src="/assets/js/site.js?v=1790806294"></script>
+</body>
+</html>

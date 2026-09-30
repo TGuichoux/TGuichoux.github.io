@@ -1,0 +1,8 @@
+{%- assign address = include.value | default: '' | strip -%}
+{%- assign prefix = address | slice: 0, 2 -%}
+{%- assign first = address | slice: 0, 1 -%}
+{%- if address contains '://' or prefix == '//' or address contains 'mailto:' or address contains 'tel:' or first == '#' -%}
+  {{- address | escape -}}
+{%- else -%}
+  {{- address | relative_url | escape -}}
+{%- endif -%}

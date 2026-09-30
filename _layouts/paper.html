@@ -1,0 +1,13 @@
+---
+layout: default
+---
+<article>
+  <header class="page-header">
+    <p class="eyebrow">Paper · Supplementary material</p>
+    <h1>{{ page.title | escape }}</h1>
+    {% include paper_metadata.html paper=page %}
+  </header>
+  <div class="page__content">{{ content }}</div>
+  {% include citation.html text=page.bibtex id=page.uid %}
+</article>
+<p class="return-link"><a href="{{ '/papers/' | relative_url }}">← Return to all papers</a></p>

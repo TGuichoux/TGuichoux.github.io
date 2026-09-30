@@ -1,0 +1,13 @@
+---
+layout: default
+---
+<article>
+  <header class="page-header">
+    <p class="eyebrow">Thesis · Chapter {{ page.chapter_number | prepend: '0' | slice: -2, 2 }}</p>
+    <h1>{{ page.title | escape }}</h1>
+    <p class="page-deck">{{ page.description | escape }}</p>
+    {% include resource-links.html item=page %}
+  </header>
+  <div class="page__content">{{ content }}</div>
+</article>
+{% include chapter-pagination.html %}

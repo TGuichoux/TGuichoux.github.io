@@ -1,0 +1,5 @@
+---
+layout: null
+---
+User-agent: *
+{% if site.noindex %}Disallow: /{% else %}Allow: /{% endif %}

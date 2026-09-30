@@ -1,0 +1,5 @@
+<div class="paper-metadata">
+  <p class="paper-authors">{{ include.paper.authors | join: ', ' | escape }}</p>
+  <p class="paper-venue">{{ include.paper.venue | escape }} <span aria-hidden="true">·</span> {{ include.paper.year | escape }}</p>
+  {% include resource-links.html item=include.paper %}
+</div>

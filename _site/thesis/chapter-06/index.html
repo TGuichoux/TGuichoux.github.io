@@ -1,0 +1,610 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Qualitative analysis of generated behaviors · Academic supplementary material</title>
+  <meta name="description" content="Supplementary figures, videos, and notes for a PhD thesis and associated papers.">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="canonical" href="http://localhost:4000/thesis/chapter-06/">
+  <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg">
+  <link rel="stylesheet" href="/assets/css/main.css?v=1790806294">
+  
+    <script defer src="/assets/js/math.js"></script>
+    <script defer id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-svg.js"></script>
+  
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="masthead">
+  <div class="masthead__inner-wrap">
+    <a class="site-title" href="/">Téo Guichoux</a>
+    <nav class="site-nav" aria-label="Main navigation">
+  <ul>
+    
+      
+      
+      
+      <li><a href="/">Home</a></li>
+    
+      
+      
+      
+      <li><a href="/thesis/" aria-current="page">Thesis</a></li>
+    
+      
+      
+      
+      <li><a href="/papers/">Papers</a></li>
+    
+  </ul>
+</nav>
+
+  </div>
+</header>
+
+  <div class="site-shell">
+    <aside class="sidebar" aria-label="Author and contextual navigation">
+  <div class="author-profile">
+    
+      <img class="author__avatar" src="/assets/images/IMG_2315.JPG" alt="Téo Guichoux" width="136" height="136">
+    
+    <div class="author__details">
+      <p class="author__name">Téo Guichoux</p>
+      <p class="author__role">PhD student</p>
+      <p class="author__bio">My work focuses text-to-speech and co-speech gesture generation, with a specific focus on the joint modeling of both modalities.</p>
+      <p class="author__affiliation">Sorbonne Univeristy, ISIR-IRCAM<br></p>
+      <div class="author__links">
+        <a href="mailto:teo.guichoux@sorbonne-universite.fr">Email</a>
+        <a href="https://orcid.org/0009-0008-3711-1405">ORCID</a>
+        <a href="https://scholar.google.com/citations?user=QPxDtkkAAAAJ&amp;hl=en">Google Scholar</a>
+        <a href="https://github.com/TGuichoux">GitHub</a>
+        <a href="https://www.linkedin.com/in/teo-guichoux/">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+  
+    
+    <details class="chapter-nav" data-responsive-details open>
+      <summary>Thesis chapters</summary>
+      <nav aria-label="Thesis chapters">
+        <ol>
+          
+            <li><a href="/thesis/chapter-02/"><span class="chapter-nav__number">02</span><span>Background and Related Work</span></a></li>
+          
+            <li><a href="/thesis/chapter-04/"><span class="chapter-nav__number">04</span><span>Unified speech-gesture generation via interleaved token prediction</span></a></li>
+          
+            <li><a href="/thesis/chapter-05/"><span class="chapter-nav__number">05</span><span>Expressive speech and gesture synthesis with autoregressive continuous diffusion and decoupled classifier-free guidance</span></a></li>
+          
+            <li><a href="/thesis/chapter-06/" aria-current="page"><span class="chapter-nav__number">06</span><span>Qualitative analysis of generated behaviors</span></a></li>
+          
+        </ol>
+        <a class="chapter-nav__overview" href="/thesis/">Thesis overview</a>
+      </nav>
+    </details>
+  
+</aside>
+
+    <main id="main-content" tabindex="-1">
+      
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+  <ol>
+    <li><a href="/">Home</a></li>
+    
+      <li><a href="/thesis/">Thesis</a></li>
+      <li aria-current="page">Chapter 6</li>
+    
+  </ol>
+</nav>
+
+
+      <article>
+  <header class="page-header">
+    <p class="eyebrow">Thesis · Chapter 06</p>
+    <h1>Qualitative analysis of generated behaviors</h1>
+    <p class="page-deck"></p>
+    
+
+
+
+
+  </header>
+  <div class="page__content"><div class="toc">
+  <p><strong>On this page</strong></p>
+
+<ul id="markdown-toc">
+  <li><a href="#632---mcneills-gesture-categories" id="markdown-toc-632---mcneills-gesture-categories">6.3.2 - McNeill’s gesture categories</a></li>
+  <li><a href="#633-speech-gesture-synchrony-and-temporal-organization" id="markdown-toc-633-speech-gesture-synchrony-and-temporal-organization">6.3.3 Speech-gesture synchrony and temporal organization</a>    <ul>
+      <li><a href="#example-1---gesture-slightly-preceding-the-stressed-syllable" id="markdown-toc-example-1---gesture-slightly-preceding-the-stressed-syllable">Example 1 - Gesture slightly preceding the stressed syllable:</a></li>
+      <li><a href="#example-2---one-gesture-for-two-stressed-syllables" id="markdown-toc-example-2---one-gesture-for-two-stressed-syllables">Example 2 - One gesture for two stressed syllables:</a></li>
+      <li><a href="#example-3---silent-pause-during-the-preparation-phase" id="markdown-toc-example-3---silent-pause-during-the-preparation-phase">Example 3 - Silent pause during the preparation phase:</a></li>
+      <li><a href="#example-4---higher-level-temporal-organization" id="markdown-toc-example-4---higher-level-temporal-organization">Example 4 - Higher-level temporal organization:</a></li>
+    </ul>
+  </li>
+</ul>
+
+</div>
+
+<h2 id="632---mcneills-gesture-categories">6.3.2 - McNeill’s gesture categories</h2>
+
+<div class="video-carousel" id="carousel-ch06-6-1" data-video-carousel="" data-carousel-version="3" role="region" aria-label="Segments of interest">
+  <div class="video-carousel__controls" data-carousel-controls="" hidden="">
+    <button type="button" class="video-carousel__button" data-carousel-previous="" aria-label="Previous video" aria-controls="carousel-ch06-6-1-track"><span aria-hidden="true">←</span> Previous</button>
+    <span class="video-carousel__counter" data-carousel-counter="" role="status" aria-live="polite" aria-atomic="true">1 / 10</span>
+    <button type="button" class="video-carousel__button" data-carousel-next="" aria-label="Next video" aria-controls="carousel-ch06-6-1-track">Next <span aria-hidden="true">→</span></button>
+    <label class="video-carousel__picker">
+      <span>Go to video</span>
+      <select class="video-carousel__select" data-carousel-select="" aria-controls="carousel-ch06-6-1-track"><option value="0">1. Video 6.1 — Segment A-421</option><option value="1">2. Video 6.2 — Segment A-564</option><option value="2">3. Video 6.3 — Segment B-421</option><option value="3">4. Video 6.4 — Segment B-92</option><option value="4">5. Video 6.5 — Segment C-93</option><option value="5">6. Video 6.6 — Segment D-655</option><option value="6">7. Video 6.7 — Segment D-694</option><option value="7">8. Video 6.8 — Segment E-421</option><option value="8">9. Video 6.9 — Segment F-695</option><option value="9">10. Video 6.10 — Segment G-93</option></select>
+    </label>
+  </div>
+  <div class="video-carousel__slides" id="carousel-ch06-6-1-track" data-carousel-slides="" tabindex="0" aria-label="Video slides. Scroll horizontally to browse."><div class="video-carousel__slide" data-carousel-slide="" role="group" aria-roledescription="slide" aria-label="1 of 10: Video 6.1">
+        <nav class="video-carousel__fallback" aria-label="Video navigation">
+          <span aria-disabled="true">← Previous</span>
+          <span>1 / 10</span>
+          <a href="#ch06-6-2" data-carousel-link="">Next →</a>
+        </nav>
+        
+<figure class="media-video" id="ch06-6-1" aria-labelledby="ch06-6-1-caption">
+  <video controls="" playsinline="" preload="none" width="1280" height="720" data-video="" poster="/assets/posters/A-421.jpg?v=1790806294" aria-label="Segment A-421" aria-describedby="ch06-6-1-caption">
+    <source src="https://zenodo.org/records/23059630/files/A-421.mp4" type="video/mp4" />
+    
+    Your browser cannot play this video.
+    <a href="https://zenodo.org/records/23059630/files/A-421.mp4">Open the MP4 file</a>.
+  </video>
+  <p class="video-load-status" data-video-status="" role="status" hidden="">
+    The video could not be loaded from its host.
+    <a href="https://zenodo.org/records/23059630/files/A-421.mp4" target="_blank" rel="noopener">Open the original video</a>
+    <button type="button" data-video-retry="">Retry</button>
+  </p>
+  <figcaption id="ch06-6-1-caption">
+    <strong>Video 6.1  Segment A-421</strong>
+    
+    
+    
+    
+  </figcaption>
+</figure>
+
+      </div><div class="video-carousel__slide" data-carousel-slide="" role="group" aria-roledescription="slide" aria-label="2 of 10: Video 6.2">
+        <nav class="video-carousel__fallback" aria-label="Video navigation">
+          <a href="#ch06-6-1" data-carousel-link="">← Previous</a>
+          <span>2 / 10</span>
+          <a href="#ch06-6-3" data-carousel-link="">Next →</a>
+        </nav>
+        
+<figure class="media-video" id="ch06-6-2" aria-labelledby="ch06-6-2-caption">
+  <video controls="" playsinline="" preload="none" width="1280" height="720" data-video="" poster="/assets/posters/A-564.jpg?v=1790806294" aria-label="Segment A-564" aria-describedby="ch06-6-2-caption">
+    <source src="https://zenodo.org/records/23059630/files/A-564.mp4" type="video/mp4" />
+    
+    Your browser cannot play this video.
+    <a href="https://zenodo.org/records/23059630/files/A-564.mp4">Open the MP4 file</a>.
+  </video>
+  <p class="video-load-status" data-video-status="" role="status" hidden="">
+    The video could not be loaded from its host.
+    <a href="https://zenodo.org/records/23059630/files/A-564.mp4" target="_blank" rel="noopener">Open the original video</a>
+    <button type="button" data-video-retry="">Retry</button>
+  </p>
+  <figcaption id="ch06-6-2-caption">
+    <strong>Video 6.2  Segment A-564</strong>
+    
+    
+    
+    
+  </figcaption>
+</figure>
+
+      </div><div class="video-carousel__slide" data-carousel-slide="" role="group" aria-roledescription="slide" aria-label="3 of 10: Video 6.3">
+        <nav class="video-carousel__fallback" aria-label="Video navigation">
+          <a href="#ch06-6-2" data-carousel-link="">← Previous</a>
+          <span>3 / 10</span>
+          <a href="#ch06-6-4" data-carousel-link="">Next →</a>
+        </nav>
+        
+<figure class="media-video" id="ch06-6-3" aria-labelledby="ch06-6-3-caption">
+  <video controls="" playsinline="" preload="none" width="1280" height="720" data-video="" poster="/assets/posters/B-421.jpg?v=1790806294" aria-label="Segment B-421" aria-describedby="ch06-6-3-caption">
+    <source src="https://zenodo.org/records/23059630/files/B-421.mp4" type="video/mp4" />
+    
+    Your browser cannot play this video.
+    <a href="https://zenodo.org/records/23059630/files/B-421.mp4">Open the MP4 file</a>.
+  </video>
+  <p class="video-load-status" data-video-status="" role="status" hidden="">
+    The video could not be loaded from its host.
+    <a href="https://zenodo.org/records/23059630/files/B-421.mp4" target="_blank" rel="noopener">Open the original video</a>
+    <button type="button" data-video-retry="">Retry</button>
+  </p>
+  <figcaption id="ch06-6-3-caption">
+    <strong>Video 6.3  Segment B-421</strong>
+    
+    
+    
+    
+  </figcaption>
+</figure>
+
+      </div><div class="video-carousel__slide" data-carousel-slide="" role="group" aria-roledescription="slide" aria-label="4 of 10: Video 6.4">
+        <nav class="video-carousel__fallback" aria-label="Video navigation">
+          <a href="#ch06-6-3" data-carousel-link="">← Previous</a>
+          <span>4 / 10</span>
+          <a href="#ch06-6-5" data-carousel-link="">Next →</a>
+        </nav>
+        
+<figure class="media-video" id="ch06-6-4" aria-labelledby="ch06-6-4-caption">
+  <video controls="" playsinline="" preload="none" width="1280" height="720" data-video="" poster="/assets/posters/B-92.jpg?v=1790806294" aria-label="Segment B-92" aria-describedby="ch06-6-4-caption">
+    <source src="https://zenodo.org/records/23059630/files/B-92.mp4" type="video/mp4" />
+    
+    Your browser cannot play this video.
+    <a href="https://zenodo.org/records/23059630/files/B-92.mp4">Open the MP4 file</a>.
+  </video>
+  <p class="video-load-status" data-video-status="" role="status" hidden="">
+    The video could not be loaded from its host.
+    <a href="https://zenodo.org/records/23059630/files/B-92.mp4" target="_blank" rel="noopener">Open the original video</a>
+    <button type="button" data-video-retry="">Retry</button>
+  </p>
+  <figcaption id="ch06-6-4-caption">
+    <strong>Video 6.4  Segment B-92</strong>
+    
+    
+    
+    
+  </figcaption>
+</figure>
+
+      </div><div class="video-carousel__slide" data-carousel-slide="" role="group" aria-roledescription="slide" aria-label="5 of 10: Video 6.5">
+        <nav class="video-carousel__fallback" aria-label="Video navigation">
+          <a href="#ch06-6-4" data-carousel-link="">← Previous</a>
+          <span>5 / 10</span>
+          <a href="#ch06-6-6" data-carousel-link="">Next →</a>
+        </nav>
+        
+<figure class="media-video" id="ch06-6-5" aria-labelledby="ch06-6-5-caption">
+  <video controls="" playsinline="" preload="none" width="1280" height="720" data-video="" poster="/assets/posters/C-93.jpg?v=1790806294" aria-label="Segment C-93" aria-describedby="ch06-6-5-caption">
+    <source src="https://zenodo.org/records/23059630/files/C-93.mp4" type="video/mp4" />
+    
+    Your browser cannot play this video.
+    <a href="https://zenodo.org/records/23059630/files/C-93.mp4">Open the MP4 file</a>.
+  </video>
+  <p class="video-load-status" data-video-status="" role="status" hidden="">
+    The video could not be loaded from its host.
+    <a href="https://zenodo.org/records/23059630/files/C-93.mp4" target="_blank" rel="noopener">Open the original video</a>
+    <button type="button" data-video-retry="">Retry</button>
+  </p>
+  <figcaption id="ch06-6-5-caption">
+    <strong>Video 6.5  Segment C-93</strong>
+    
+    
+    
+    
+  </figcaption>
+</figure>
+
+      </div><div class="video-carousel__slide" data-carousel-slide="" role="group" aria-roledescription="slide" aria-label="6 of 10: Video 6.6">
+        <nav class="video-carousel__fallback" aria-label="Video navigation">
+          <a href="#ch06-6-5" data-carousel-link="">← Previous</a>
+          <span>6 / 10</span>
+          <a href="#ch06-6-7" data-carousel-link="">Next →</a>
+        </nav>
+        
+<figure class="media-video" id="ch06-6-6" aria-labelledby="ch06-6-6-caption">
+  <video controls="" playsinline="" preload="none" width="1280" height="720" data-video="" poster="/assets/posters/D-655.jpg?v=1790806294" aria-label="Segment D-655" aria-describedby="ch06-6-6-caption">
+    <source src="https://zenodo.org/records/23059630/files/D-655.mp4" type="video/mp4" />
+    
+    Your browser cannot play this video.
+    <a href="https://zenodo.org/records/23059630/files/D-655.mp4">Open the MP4 file</a>.
+  </video>
+  <p class="video-load-status" data-video-status="" role="status" hidden="">
+    The video could not be loaded from its host.
+    <a href="https://zenodo.org/records/23059630/files/D-655.mp4" target="_blank" rel="noopener">Open the original video</a>
+    <button type="button" data-video-retry="">Retry</button>
+  </p>
+  <figcaption id="ch06-6-6-caption">
+    <strong>Video 6.6  Segment D-655</strong>
+    
+    
+    
+    
+  </figcaption>
+</figure>
+
+      </div><div class="video-carousel__slide" data-carousel-slide="" role="group" aria-roledescription="slide" aria-label="7 of 10: Video 6.7">
+        <nav class="video-carousel__fallback" aria-label="Video navigation">
+          <a href="#ch06-6-6" data-carousel-link="">← Previous</a>
+          <span>7 / 10</span>
+          <a href="#ch06-6-8" data-carousel-link="">Next →</a>
+        </nav>
+        
+<figure class="media-video" id="ch06-6-7" aria-labelledby="ch06-6-7-caption">
+  <video controls="" playsinline="" preload="none" width="1280" height="720" data-video="" poster="/assets/posters/D-694.jpg?v=1790806294" aria-label="Segment D-694" aria-describedby="ch06-6-7-caption">
+    <source src="https://zenodo.org/records/23059630/files/D-694.mp4" type="video/mp4" />
+    
+    Your browser cannot play this video.
+    <a href="https://zenodo.org/records/23059630/files/D-694.mp4">Open the MP4 file</a>.
+  </video>
+  <p class="video-load-status" data-video-status="" role="status" hidden="">
+    The video could not be loaded from its host.
+    <a href="https://zenodo.org/records/23059630/files/D-694.mp4" target="_blank" rel="noopener">Open the original video</a>
+    <button type="button" data-video-retry="">Retry</button>
+  </p>
+  <figcaption id="ch06-6-7-caption">
+    <strong>Video 6.7  Segment D-694</strong>
+    
+    
+    
+    
+  </figcaption>
+</figure>
+
+      </div><div class="video-carousel__slide" data-carousel-slide="" role="group" aria-roledescription="slide" aria-label="8 of 10: Video 6.8">
+        <nav class="video-carousel__fallback" aria-label="Video navigation">
+          <a href="#ch06-6-7" data-carousel-link="">← Previous</a>
+          <span>8 / 10</span>
+          <a href="#ch06-6-9" data-carousel-link="">Next →</a>
+        </nav>
+        
+<figure class="media-video" id="ch06-6-8" aria-labelledby="ch06-6-8-caption">
+  <video controls="" playsinline="" preload="none" width="1280" height="720" data-video="" poster="/assets/posters/E-421.jpg?v=1790806294" aria-label="Segment E-421" aria-describedby="ch06-6-8-caption">
+    <source src="https://zenodo.org/records/23059630/files/E-421.mp4" type="video/mp4" />
+    
+    Your browser cannot play this video.
+    <a href="https://zenodo.org/records/23059630/files/E-421.mp4">Open the MP4 file</a>.
+  </video>
+  <p class="video-load-status" data-video-status="" role="status" hidden="">
+    The video could not be loaded from its host.
+    <a href="https://zenodo.org/records/23059630/files/E-421.mp4" target="_blank" rel="noopener">Open the original video</a>
+    <button type="button" data-video-retry="">Retry</button>
+  </p>
+  <figcaption id="ch06-6-8-caption">
+    <strong>Video 6.8  Segment E-421</strong>
+    
+    
+    
+    
+  </figcaption>
+</figure>
+
+      </div><div class="video-carousel__slide" data-carousel-slide="" role="group" aria-roledescription="slide" aria-label="9 of 10: Video 6.9">
+        <nav class="video-carousel__fallback" aria-label="Video navigation">
+          <a href="#ch06-6-8" data-carousel-link="">← Previous</a>
+          <span>9 / 10</span>
+          <a href="#ch06-6-10" data-carousel-link="">Next →</a>
+        </nav>
+        
+<figure class="media-video" id="ch06-6-9" aria-labelledby="ch06-6-9-caption">
+  <video controls="" playsinline="" preload="none" width="1280" height="720" data-video="" poster="/assets/posters/F-695.jpg?v=1790806294" aria-label="Segment F-695" aria-describedby="ch06-6-9-caption">
+    <source src="https://zenodo.org/records/23059630/files/F-695.mp4" type="video/mp4" />
+    
+    Your browser cannot play this video.
+    <a href="https://zenodo.org/records/23059630/files/F-695.mp4">Open the MP4 file</a>.
+  </video>
+  <p class="video-load-status" data-video-status="" role="status" hidden="">
+    The video could not be loaded from its host.
+    <a href="https://zenodo.org/records/23059630/files/F-695.mp4" target="_blank" rel="noopener">Open the original video</a>
+    <button type="button" data-video-retry="">Retry</button>
+  </p>
+  <figcaption id="ch06-6-9-caption">
+    <strong>Video 6.9  Segment F-695</strong>
+    
+    
+    
+    
+  </figcaption>
+</figure>
+
+      </div><div class="video-carousel__slide" data-carousel-slide="" role="group" aria-roledescription="slide" aria-label="10 of 10: Video 6.10">
+        <nav class="video-carousel__fallback" aria-label="Video navigation">
+          <a href="#ch06-6-9" data-carousel-link="">← Previous</a>
+          <span>10 / 10</span>
+          <span aria-disabled="true">Next →</span>
+        </nav>
+        
+<figure class="media-video" id="ch06-6-10" aria-labelledby="ch06-6-10-caption">
+  <video controls="" playsinline="" preload="none" width="1280" height="720" data-video="" poster="/assets/posters/G-93.jpg?v=1790806294" aria-label="Segment G-93" aria-describedby="ch06-6-10-caption">
+    <source src="https://zenodo.org/records/23059630/files/G-93.mp4" type="video/mp4" />
+    
+    Your browser cannot play this video.
+    <a href="https://zenodo.org/records/23059630/files/G-93.mp4">Open the MP4 file</a>.
+  </video>
+  <p class="video-load-status" data-video-status="" role="status" hidden="">
+    The video could not be loaded from its host.
+    <a href="https://zenodo.org/records/23059630/files/G-93.mp4" target="_blank" rel="noopener">Open the original video</a>
+    <button type="button" data-video-retry="">Retry</button>
+  </p>
+  <figcaption id="ch06-6-10-caption">
+    <strong>Video 6.10  Segment G-93</strong>
+    
+    
+    
+    
+  </figcaption>
+</figure>
+
+      </div></div>
+  <p class="video-carousel__hint">Swipe or scroll sideways to browse. Use the video controls to play.</p>
+</div>
+
+<h2 id="633-speech-gesture-synchrony-and-temporal-organization">6.3.3 Speech-gesture synchrony and temporal organization</h2>
+
+<h3 id="example-1---gesture-slightly-preceding-the-stressed-syllable">Example 1 - Gesture slightly preceding the stressed syllable:</h3>
+
+<figure class="media-figure media-figure--wide" id="fig-ch06-6-2" aria-labelledby="fig-ch06-6-2-caption">
+  <div class="figure-image">
+    <img src="/assets/images/the_world.png" alt="Speech waveform, F0, energy, and wrist velocity for segment E-421. The metaphoric gesture illustrating *the world** reaches its maximum velocity approximately 175~ms before the stressed syllable, while the full gesture stroke overlaps with it." loading="lazy" decoding="async" />
+  </div>
+
+  <figcaption id="fig-ch06-6-2-caption">
+    <strong>Figure 6.2</strong>
+
+    <span>Speech waveform, F0, energy, and wrist velocity for segment E-421. The metaphoric gesture illustrating *the world** reaches its maximum velocity approximately 175~ms before the stressed syllable, while the full gesture stroke overlaps with it.</span>
+
+    
+  </figcaption>
+</figure>
+
+<figure class="media-video" id="ch06-6-11" aria-labelledby="ch06-6-11-caption">
+  <video controls="" playsinline="" preload="none" width="1280" height="720" data-video="" poster="/assets/posters/E-421.jpg?v=1790806294" aria-label="Segment E-421" aria-describedby="ch06-6-11-caption">
+    <source src="https://zenodo.org/records/23059630/files/E-421.mp4" type="video/mp4" />
+    
+    Your browser cannot play this video.
+    <a href="https://zenodo.org/records/23059630/files/E-421.mp4">Open the MP4 file</a>.
+  </video>
+  <p class="video-load-status" data-video-status="" role="status" hidden="">
+    The video could not be loaded from its host.
+    <a href="https://zenodo.org/records/23059630/files/E-421.mp4" target="_blank" rel="noopener">Open the original video</a>
+    <button type="button" data-video-retry="">Retry</button>
+  </p>
+  <figcaption id="ch06-6-11-caption">
+    <strong>Video 6.11  Segment E-421</strong>
+    
+    
+    
+    
+  </figcaption>
+</figure>
+
+<h3 id="example-2---one-gesture-for-two-stressed-syllables">Example 2 - One gesture for two stressed syllables:</h3>
+
+<figure class="media-figure media-figure--wide" id="fig-ch06-6-3" aria-labelledby="fig-ch06-6-3-caption">
+  <div class="figure-image">
+    <img src="/assets/images/left_side.png" alt="Speech waveform, F0, energy, and wrist velocity for segment D-655. The deictic gesture accompanying the left side is here overlaps with the prominence on left, while preceding the later F0 prominence on here, during which the animated figure remained in a hold position." loading="lazy" decoding="async" />
+  </div>
+
+  <figcaption id="fig-ch06-6-3-caption">
+    <strong>Figure 6.3</strong>
+
+    <span>Speech waveform, F0, energy, and wrist velocity for segment D-655. The deictic gesture accompanying <em>the left side is here</em> overlaps with the prominence on <em>left</em>, while preceding the later F0 prominence on <em>here</em>, during which the animated figure remained in a <em>hold</em> position.</span>
+
+    
+  </figcaption>
+</figure>
+
+<figure class="media-video" id="ch06-6-12" aria-labelledby="ch06-6-12-caption">
+  <video controls="" playsinline="" preload="none" width="1280" height="720" data-video="" poster="/assets/posters/D-655.jpg?v=1790806294" aria-label="Segment D-655" aria-describedby="ch06-6-12-caption">
+    <source src="https://zenodo.org/records/23059630/files/D-655.mp4" type="video/mp4" />
+    
+    Your browser cannot play this video.
+    <a href="https://zenodo.org/records/23059630/files/D-655.mp4">Open the MP4 file</a>.
+  </video>
+  <p class="video-load-status" data-video-status="" role="status" hidden="">
+    The video could not be loaded from its host.
+    <a href="https://zenodo.org/records/23059630/files/D-655.mp4" target="_blank" rel="noopener">Open the original video</a>
+    <button type="button" data-video-retry="">Retry</button>
+  </p>
+  <figcaption id="ch06-6-12-caption">
+    <strong>Video 6.12  Segment D-655</strong>
+    
+    
+    
+    
+  </figcaption>
+</figure>
+
+<h3 id="example-3---silent-pause-during-the-preparation-phase">Example 3 - Silent pause during the preparation phase:</h3>
+
+<figure class="media-figure media-figure--wide" id="fig-ch06-6-4" aria-labelledby="fig-ch06-6-4-caption">
+  <div class="figure-image">
+    <img src="/assets/images/much_later.png" alt="Pose keyframes, speech waveform, F0, and intensity for segment G-93. The preparation, hold, and stroke phases of the gesture are indicated between \(t=2\)~s and \(t=3\)~s, illustrating the temporal organization of the gesture around the stressed expression much later." loading="lazy" decoding="async" />
+  </div>
+
+  <figcaption id="fig-ch06-6-4-caption">
+    <strong>Figure 6.4</strong>
+
+    <span>Pose keyframes, speech waveform, F0, and intensity for segment G-93. The preparation, hold, and stroke phases of the gesture are indicated between \(t=2\)~s and \(t=3\)~s, illustrating the temporal organization of the gesture around the stressed expression <em>much later</em>.</span>
+
+    
+  </figcaption>
+</figure>
+
+<figure class="media-video" id="ch06-6-13" aria-labelledby="ch06-6-13-caption">
+  <video controls="" playsinline="" preload="none" width="1280" height="720" data-video="" poster="/assets/posters/G-93.jpg?v=1790806294" aria-label="Segment G-93" aria-describedby="ch06-6-13-caption">
+    <source src="https://zenodo.org/records/23059630/files/G-93.mp4" type="video/mp4" />
+    
+    Your browser cannot play this video.
+    <a href="https://zenodo.org/records/23059630/files/G-93.mp4">Open the MP4 file</a>.
+  </video>
+  <p class="video-load-status" data-video-status="" role="status" hidden="">
+    The video could not be loaded from its host.
+    <a href="https://zenodo.org/records/23059630/files/G-93.mp4" target="_blank" rel="noopener">Open the original video</a>
+    <button type="button" data-video-retry="">Retry</button>
+  </p>
+  <figcaption id="ch06-6-13-caption">
+    <strong>Video 6.13  Segment G-93</strong>
+    
+    
+    
+    
+  </figcaption>
+</figure>
+
+<h3 id="example-4---higher-level-temporal-organization">Example 4 - Higher-level temporal organization:</h3>
+
+<figure class="media-figure media-figure--wide" id="fig-ch06-6-1" aria-labelledby="fig-ch06-6-1-caption">
+  <div class="figure-image">
+    <img src="/assets/images/one_day.png" alt="Pose keyframes, waveform, and F0 for the segment A-421. The sequence begins with a beat gesture emphasizing one day (\(s=0.5 \rightarrow s=1.3\)), which then develops into a metaphoric gesture illustrating out of nowhere (\(s=1.5.5 \rightarrow s=2.5\)). A subsequent beat gesture emphasizes show up again (\(s=4\)), followed by a hold phase during the silence (\(s=4.5 \rightarrow s=5.5\)), before a deictic gesture illustrating right in the middle (\(s=5.5 \rightarrow s=8\))." loading="lazy" decoding="async" />
+  </div>
+
+  <figcaption id="fig-ch06-6-1-caption">
+    <strong>Figure 6.1</strong>
+
+    <span>Pose keyframes, waveform, and F0 for the segment A-421. The sequence begins with a beat gesture emphasizing <em>one day</em> (\(s=0.5 \rightarrow s=1.3\)), which then develops into a metaphoric gesture illustrating <em>out of nowhere</em> (\(s=1.5.5 \rightarrow s=2.5\)). A subsequent beat gesture emphasizes <em>show up again</em> (\(s=4\)), followed by a <em>hold</em> phase during the silence (\(s=4.5 \rightarrow s=5.5\)), before a deictic gesture illustrating <em>right in the middle</em> (\(s=5.5 \rightarrow s=8\)).</span>
+
+    
+  </figcaption>
+</figure>
+
+<figure class="media-video" id="ch06-6-14" aria-labelledby="ch06-6-14-caption">
+  <video controls="" playsinline="" preload="none" width="1280" height="720" data-video="" poster="/assets/posters/A-421.jpg?v=1790806294" aria-label="Segment A-421" aria-describedby="ch06-6-14-caption">
+    <source src="https://zenodo.org/records/23059630/files/A-421.mp4" type="video/mp4" />
+    
+    Your browser cannot play this video.
+    <a href="https://zenodo.org/records/23059630/files/A-421.mp4">Open the MP4 file</a>.
+  </video>
+  <p class="video-load-status" data-video-status="" role="status" hidden="">
+    The video could not be loaded from its host.
+    <a href="https://zenodo.org/records/23059630/files/A-421.mp4" target="_blank" rel="noopener">Open the original video</a>
+    <button type="button" data-video-retry="">Retry</button>
+  </p>
+  <figcaption id="ch06-6-14-caption">
+    <strong>Video 6.14  Segment A-421</strong>
+    
+    
+    
+    
+  </figcaption>
+</figure>
+</div>
+</article>
+
+<nav class="chapter-pagination" aria-label="Chapter pagination">
+  
+    
+  
+    
+  
+    
+  
+    
+      
+        
+        
+        <a class="chapter-pagination__previous" rel="prev" href="/thesis/chapter-05/"><span>← Previous chapter</span><strong>Expressive speech and gesture synthesis with autoregressive continuous diffusion and decoupled classifier-free guidance</strong></a>
+      
+      
+    
+  
+  <a class="chapter-pagination__overview" href="/thesis/">Return to thesis overview</a>
+</nav>
+
+
+    </main>
+  </div>
+  <footer class="page__footer">
+  <div class="footer__inner">
+    <p>Téo Guichoux <span aria-hidden="true">·</span> Academic supplementary material</p>
+    <p class="footer__credit">Adapted from <a href="https://academicpages.github.io/">AcademicPages</a> / <a href="https://mmistakes.github.io/minimal-mistakes/">Minimal Mistakes</a>.</p>
+  </div>
+</footer>
+
+  <!-- Local interactions do not wait for MathJax or external video hosts. -->
+  <script src="/assets/js/carousel.js?v=1790806294"></script>
+  <script src="/assets/js/site.js?v=1790806294"></script>
+</body>
+</html>

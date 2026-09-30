@@ -1,0 +1,35 @@
+{
+  "source_archive": "supplementary-website-stage2(1).zip",
+  "modified_original_files": [
+    "README-CONTENT.md",
+    "README.md",
+    "_data/videos.yml",
+    "_includes/video.html",
+    "_layouts/default.html",
+    "_layouts/home.html",
+    "assets/js/carousel.js",
+    "scripts/check.rb",
+    "scripts/test_carousel.py"
+  ],
+  "missing_original_files": [],
+  "unchanged_original_file_count": 130,
+  "all_chapters_papers_and_image_assets_byte_identical": true,
+  "all_42_supplied_poster_jpegs_byte_identical": true,
+  "protected_files_byte_identical": [
+    "chapter-template.md",
+    "_data/frontpage.yml",
+    "assets/css/main.css",
+    "Gemfile",
+    "Gemfile.lock",
+    "_config.yml"
+  ],
+  "video_data_changes": [
+    {
+      "key": "ch04-4_3",
+      "field": "poster",
+      "before": "/assets/posters/gelina-duck-female.jpg",
+      "after": "/assets/posters/gelina-duck_female.jpg"
+    }
+  ],
+  "chapter_template_sha256": "580fb1877a77aef31acb8c5677059e3d894befb19db7df6d884cfb8620fc471c"
+}

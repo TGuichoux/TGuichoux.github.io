@@ -1,0 +1,18 @@
+{% assign ordered_chapters = site.chapters | sort: 'chapter_number' %}
+<nav class="chapter-pagination" aria-label="Chapter pagination">
+  {% for chapter in ordered_chapters %}
+    {% if chapter.url == page.url %}
+      {% unless forloop.first %}
+        {% assign previous_index = forloop.index0 | minus: 1 %}
+        {% assign previous_chapter = ordered_chapters[previous_index] %}
+        <a class="chapter-pagination__previous" rel="prev" href="{{ previous_chapter.url | relative_url }}"><span>← Previous chapter</span><strong>{{ previous_chapter.title | escape }}</strong></a>
+      {% endunless %}
+      {% unless forloop.last %}
+        {% assign next_index = forloop.index0 | plus: 1 %}
+        {% assign next_chapter = ordered_chapters[next_index] %}
+        <a class="chapter-pagination__next" rel="next" href="{{ next_chapter.url | relative_url }}"><span>Next chapter →</span><strong>{{ next_chapter.title | escape }}</strong></a>
+      {% endunless %}
+    {% endif %}
+  {% endfor %}
+  <a class="chapter-pagination__overview" href="{{ '/thesis/' | relative_url }}">Return to thesis overview</a>
+</nav>

@@ -1,0 +1,837 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Expressive speech and gesture synthesis with autoregressive continuous diffusion and decoupled classifier-free guidance · Academic supplementary material</title>
+  <meta name="description" content="Supplementary figures, videos, and notes for a PhD thesis and associated papers.">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="canonical" href="http://localhost:4000/thesis/chapter-05/">
+  <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg">
+  <link rel="stylesheet" href="/assets/css/main.css?v=1790806294">
+  
+    <script defer src="/assets/js/math.js"></script>
+    <script defer id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-svg.js"></script>
+  
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="masthead">
+  <div class="masthead__inner-wrap">
+    <a class="site-title" href="/">Téo Guichoux</a>
+    <nav class="site-nav" aria-label="Main navigation">
+  <ul>
+    
+      
+      
+      
+      <li><a href="/">Home</a></li>
+    
+      
+      
+      
+      <li><a href="/thesis/" aria-current="page">Thesis</a></li>
+    
+      
+      
+      
+      <li><a href="/papers/">Papers</a></li>
+    
+  </ul>
+</nav>
+
+  </div>
+</header>
+
+  <div class="site-shell">
+    <aside class="sidebar" aria-label="Author and contextual navigation">
+  <div class="author-profile">
+    
+      <img class="author__avatar" src="/assets/images/IMG_2315.JPG" alt="Téo Guichoux" width="136" height="136">
+    
+    <div class="author__details">
+      <p class="author__name">Téo Guichoux</p>
+      <p class="author__role">PhD student</p>
+      <p class="author__bio">My work focuses text-to-speech and co-speech gesture generation, with a specific focus on the joint modeling of both modalities.</p>
+      <p class="author__affiliation">Sorbonne Univeristy, ISIR-IRCAM<br></p>
+      <div class="author__links">
+        <a href="mailto:teo.guichoux@sorbonne-universite.fr">Email</a>
+        <a href="https://orcid.org/0009-0008-3711-1405">ORCID</a>
+        <a href="https://scholar.google.com/citations?user=QPxDtkkAAAAJ&amp;hl=en">Google Scholar</a>
+        <a href="https://github.com/TGuichoux">GitHub</a>
+        <a href="https://www.linkedin.com/in/teo-guichoux/">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+  
+    
+    <details class="chapter-nav" data-responsive-details open>
+      <summary>Thesis chapters</summary>
+      <nav aria-label="Thesis chapters">
+        <ol>
+          
+            <li><a href="/thesis/chapter-02/"><span class="chapter-nav__number">02</span><span>Background and Related Work</span></a></li>
+          
+            <li><a href="/thesis/chapter-04/"><span class="chapter-nav__number">04</span><span>Unified speech-gesture generation via interleaved token prediction</span></a></li>
+          
+            <li><a href="/thesis/chapter-05/" aria-current="page"><span class="chapter-nav__number">05</span><span>Expressive speech and gesture synthesis with autoregressive continuous diffusion and decoupled classifier-free guidance</span></a></li>
+          
+            <li><a href="/thesis/chapter-06/"><span class="chapter-nav__number">06</span><span>Qualitative analysis of generated behaviors</span></a></li>
+          
+        </ol>
+        <a class="chapter-nav__overview" href="/thesis/">Thesis overview</a>
+      </nav>
+    </details>
+  
+</aside>
+
+    <main id="main-content" tabindex="-1">
+      
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+  <ol>
+    <li><a href="/">Home</a></li>
+    
+      <li><a href="/thesis/">Thesis</a></li>
+      <li aria-current="page">Chapter 5</li>
+    
+  </ol>
+</nav>
+
+
+      <article>
+  <header class="page-header">
+    <p class="eyebrow">Thesis · Chapter 05</p>
+    <h1>Expressive speech and gesture synthesis with autoregressive continuous diffusion and decoupled classifier-free guidance</h1>
+    <p class="page-deck"></p>
+    
+
+
+
+
+  </header>
+  <div class="page__content"><div class="toc">
+  <p><strong>On this page</strong></p>
+
+<ul id="markdown-toc">
+  <li><a href="#difference-in-the-dynamics-of-the-speech-and-gesture-signals" id="markdown-toc-difference-in-the-dynamics-of-the-speech-and-gesture-signals">Difference in the dynamics of the speech and gesture signals</a></li>
+  <li><a href="#results-of-the-user-study" id="markdown-toc-results-of-the-user-study">Results of the user study</a>    <ul>
+      <li><a href="#example-stimuli-fromm-the-user-study" id="markdown-toc-example-stimuli-fromm-the-user-study">Example stimuli fromm the user study:</a></li>
+    </ul>
+  </li>
+  <li><a href="#speech-adaptation-to-gestures" id="markdown-toc-speech-adaptation-to-gestures">Speech adaptation to gestures</a></li>
+</ul>
+
+</div>
+
+<h2 id="difference-in-the-dynamics-of-the-speech-and-gesture-signals">Difference in the dynamics of the speech and gesture signals</h2>
+
+<figure class="media-figure media-figure--wide" id="fig-ch05-5-2-1" aria-labelledby="fig-ch05-5-2-1-caption">
+  <div class="figure-image">
+    <img src="/assets/images/latent_properties.png" alt="Top and middle: PCA views of gesture and speech latent sequences. Gesture and speech embedding sequences exhibit different properties. Gesture latent sequences (top) are smooth and slow-evolving, as demonstrated by repetitive patterns. As opposed to speech latent sequence is fast-varying and discontinuous. Bottom: Latent velocity of speech and gesture sequences. Velocity is computed as the difference between consecutive steps. Speech latent velocity (green) is much higher and more stable than the gesture latent velocity (blue), illustrating the different nature of both signals." loading="lazy" decoding="async" />
+  </div>
+
+  <figcaption id="fig-ch05-5-2-1-caption">
+    <strong>Figure 5.2.1</strong>
+
+    <span><em>Top and middle:</em> PCA views of gesture and speech latent sequences. Gesture and speech embedding sequences exhibit different properties. Gesture latent sequences (top) are smooth and slow-evolving, as demonstrated by repetitive patterns. As opposed to speech latent sequence is fast-varying and discontinuous. <em>Bottom:</em> Latent velocity of speech and gesture sequences. Velocity is computed as the difference between consecutive steps. Speech latent velocity (green) is much higher and more stable than the gesture latent velocity (blue), illustrating the different nature of both signals.</span>
+
+    
+  </figcaption>
+</figure>
+
+<figure class="media-figure media-figure--wide" id="fig-ch05-5-2-2" aria-labelledby="fig-ch05-5-2-2-caption">
+  <div class="figure-image">
+    <img src="/assets/images/signal_properties.png" alt="Top: Rotation-space motion velocity of the example segment. Velocity in the rotation space (before gesture encoding) and in the latent space are highly correlated. Middle: F0 of the corresponding segment. Bottom: Waveform of the corresponding segment" loading="lazy" decoding="async" />
+  </div>
+
+  <figcaption id="fig-ch05-5-2-2-caption">
+    <strong>Figure 5.2.2</strong>
+
+    <span><em>Top:</em> Rotation-space motion velocity of the example segment. Velocity in the rotation space (before gesture encoding) and in the latent space are highly correlated. <em>Middle:</em> F0 of the corresponding segment. <em>Bottom:</em> Waveform of the corresponding segment</span>
+
+    
+  </figcaption>
+</figure>
+
+<p>The associated speech-gesture animated sequence is provided bellow:</p>
+
+<figure class="media-video" id="ch05-5-1" aria-labelledby="ch05-5-1-caption">
+  <video controls="" playsinline="" preload="none" width="1280" height="720" data-video="" poster="/assets/posters/signals.jpg?v=1790806294" aria-label="Video 5.1" aria-describedby="ch05-5-1-caption">
+    <source src="https://zenodo.org/records/23059630/files/signals.mp4" type="video/mp4" />
+    
+    Your browser cannot play this video.
+    <a href="https://zenodo.org/records/23059630/files/signals.mp4">Open the MP4 file</a>.
+  </video>
+  <p class="video-load-status" data-video-status="" role="status" hidden="">
+    The video could not be loaded from its host.
+    <a href="https://zenodo.org/records/23059630/files/signals.mp4" target="_blank" rel="noopener">Open the original video</a>
+    <button type="button" data-video-retry="">Retry</button>
+  </p>
+  <figcaption id="ch05-5-1-caption">
+    <strong>Video 5.1</strong>
+    
+    
+    
+    
+  </figcaption>
+</figure>
+
+<h2 id="results-of-the-user-study">Results of the user study</h2>
+
+<figure class="media-figure media-figure--wide" id="fig-ch05-5-11" aria-labelledby="fig-ch05-5-11-caption">
+  <div class="figure-image">
+    <img src="/assets/images/gaspard_mos.png" alt="Mean Opinion Scores with 95\% confidence intervals from user evaluation across three aspects: Voice human-likeness, speech-gesture synchrony, and Gesture human-likeness." loading="lazy" decoding="async" />
+  </div>
+
+  <figcaption id="fig-ch05-5-11-caption">
+    <strong>Figure 5.11</strong>
+
+    <span>Mean Opinion Scores with 95\% confidence intervals from user evaluation across three aspects: Voice human-likeness, speech-gesture synchrony, and Gesture human-likeness.</span>
+
+    
+  </figcaption>
+</figure>
+
+<h3 id="example-stimuli-fromm-the-user-study">Example stimuli fromm the user study:</h3>
+
+<p>We provide below illustrative samples from the user study conducted in Chapter 5.</p>
+
+<h4 id="human-recordings">Human recordings</h4>
+
+<div class="video-carousel" id="carousel-ch05-5-2" data-video-carousel="" data-carousel-version="3" role="region" aria-label="Examples from the user study.">
+  <div class="video-carousel__controls" data-carousel-controls="" hidden="">
+    <button type="button" class="video-carousel__button" data-carousel-previous="" aria-label="Previous video" aria-controls="carousel-ch05-5-2-track"><span aria-hidden="true">←</span> Previous</button>
+    <span class="video-carousel__counter" data-carousel-counter="" role="status" aria-live="polite" aria-atomic="true">1 / 4</span>
+    <button type="button" class="video-carousel__button" data-carousel-next="" aria-label="Next video" aria-controls="carousel-ch05-5-2-track">Next <span aria-hidden="true">→</span></button>
+    <label class="video-carousel__picker">
+      <span>Go to video</span>
+      <select class="video-carousel__select" data-carousel-select="" aria-controls="carousel-ch05-5-2-track"><option value="0">1. Video 5.2</option><option value="1">2. Video 5.3</option><option value="2">3. Video 5.4</option><option value="3">4. Video 5.5</option></select>
+    </label>
+  </div>
+  <div class="video-carousel__slides" id="carousel-ch05-5-2-track" data-carousel-slides="" tabindex="0" aria-label="Video slides. Scroll horizontally to browse."><div class="video-carousel__slide" data-carousel-slide="" role="group" aria-roledescription="slide" aria-label="1 of 4: Video 5.2">
+        <nav class="video-carousel__fallback" aria-label="Video navigation">
+          <span aria-disabled="true">← Previous</span>
+          <span>1 / 4</span>
+          <a href="#ch05-5-3" data-carousel-link="">Next →</a>
+        </nav>
+        
+<figure class="media-video" id="ch05-5-2" aria-labelledby="ch05-5-2-caption">
+  <video controls="" playsinline="" preload="none" width="1280" height="720" data-video="" poster="/assets/posters/93_0-gt.jpg?v=1790806294" aria-label="Video 5.2" aria-describedby="ch05-5-2-caption">
+    <source src="https://zenodo.org/records/23059630/files/93_0-gt.mp4" type="video/mp4" />
+    
+    Your browser cannot play this video.
+    <a href="https://zenodo.org/records/23059630/files/93_0-gt.mp4">Open the MP4 file</a>.
+  </video>
+  <p class="video-load-status" data-video-status="" role="status" hidden="">
+    The video could not be loaded from its host.
+    <a href="https://zenodo.org/records/23059630/files/93_0-gt.mp4" target="_blank" rel="noopener">Open the original video</a>
+    <button type="button" data-video-retry="">Retry</button>
+  </p>
+  <figcaption id="ch05-5-2-caption">
+    <strong>Video 5.2</strong>
+    
+    
+    
+    
+  </figcaption>
+</figure>
+
+      </div><div class="video-carousel__slide" data-carousel-slide="" role="group" aria-roledescription="slide" aria-label="2 of 4: Video 5.3">
+        <nav class="video-carousel__fallback" aria-label="Video navigation">
+          <a href="#ch05-5-2" data-carousel-link="">← Previous</a>
+          <span>2 / 4</span>
+          <a href="#ch05-5-4" data-carousel-link="">Next →</a>
+        </nav>
+        
+<figure class="media-video" id="ch05-5-3" aria-labelledby="ch05-5-3-caption">
+  <video controls="" playsinline="" preload="none" width="1280" height="720" data-video="" poster="/assets/posters/561_2-gt.jpg?v=1790806294" aria-label="Video 5.3" aria-describedby="ch05-5-3-caption">
+    <source src="https://zenodo.org/records/23059630/files/561_2-gt.mp4" type="video/mp4" />
+    
+    Your browser cannot play this video.
+    <a href="https://zenodo.org/records/23059630/files/561_2-gt.mp4">Open the MP4 file</a>.
+  </video>
+  <p class="video-load-status" data-video-status="" role="status" hidden="">
+    The video could not be loaded from its host.
+    <a href="https://zenodo.org/records/23059630/files/561_2-gt.mp4" target="_blank" rel="noopener">Open the original video</a>
+    <button type="button" data-video-retry="">Retry</button>
+  </p>
+  <figcaption id="ch05-5-3-caption">
+    <strong>Video 5.3</strong>
+    
+    
+    
+    
+  </figcaption>
+</figure>
+
+      </div><div class="video-carousel__slide" data-carousel-slide="" role="group" aria-roledescription="slide" aria-label="3 of 4: Video 5.4">
+        <nav class="video-carousel__fallback" aria-label="Video navigation">
+          <a href="#ch05-5-3" data-carousel-link="">← Previous</a>
+          <span>3 / 4</span>
+          <a href="#ch05-5-5" data-carousel-link="">Next →</a>
+        </nav>
+        
+<figure class="media-video" id="ch05-5-4" aria-labelledby="ch05-5-4-caption">
+  <video controls="" playsinline="" preload="none" width="1280" height="720" data-video="" poster="/assets/posters/739_2-gt.jpg?v=1790806294" aria-label="Video 5.4" aria-describedby="ch05-5-4-caption">
+    <source src="https://zenodo.org/records/23059630/files/739_2-gt.mp4" type="video/mp4" />
+    
+    Your browser cannot play this video.
+    <a href="https://zenodo.org/records/23059630/files/739_2-gt.mp4">Open the MP4 file</a>.
+  </video>
+  <p class="video-load-status" data-video-status="" role="status" hidden="">
+    The video could not be loaded from its host.
+    <a href="https://zenodo.org/records/23059630/files/739_2-gt.mp4" target="_blank" rel="noopener">Open the original video</a>
+    <button type="button" data-video-retry="">Retry</button>
+  </p>
+  <figcaption id="ch05-5-4-caption">
+    <strong>Video 5.4</strong>
+    
+    
+    
+    
+  </figcaption>
+</figure>
+
+      </div><div class="video-carousel__slide" data-carousel-slide="" role="group" aria-roledescription="slide" aria-label="4 of 4: Video 5.5">
+        <nav class="video-carousel__fallback" aria-label="Video navigation">
+          <a href="#ch05-5-4" data-carousel-link="">← Previous</a>
+          <span>4 / 4</span>
+          <span aria-disabled="true">Next →</span>
+        </nav>
+        
+<figure class="media-video" id="ch05-5-5" aria-labelledby="ch05-5-5-caption">
+  <video controls="" playsinline="" preload="none" width="1280" height="720" data-video="" poster="/assets/posters/831_3-gt.jpg?v=1790806294" aria-label="Video 5.5" aria-describedby="ch05-5-5-caption">
+    <source src="https://zenodo.org/records/23059630/files/831_3-gt.mp4" type="video/mp4" />
+    
+    Your browser cannot play this video.
+    <a href="https://zenodo.org/records/23059630/files/831_3-gt.mp4">Open the MP4 file</a>.
+  </video>
+  <p class="video-load-status" data-video-status="" role="status" hidden="">
+    The video could not be loaded from its host.
+    <a href="https://zenodo.org/records/23059630/files/831_3-gt.mp4" target="_blank" rel="noopener">Open the original video</a>
+    <button type="button" data-video-retry="">Retry</button>
+  </p>
+  <figcaption id="ch05-5-5-caption">
+    <strong>Video 5.5</strong>
+    
+    
+    
+    
+  </figcaption>
+</figure>
+
+      </div></div>
+  <p class="video-carousel__hint">Swipe or scroll sideways to browse. Use the video controls to play.</p>
+</div>
+
+<h4 id="gaspard-with-gammag_g--10-gammag_s--25">Gaspard with \(\gamma^G_g = 1.0\) \(\gamma^G_s = 2.5\)</h4>
+
+<div class="video-carousel" id="carousel-ch05-5-6" data-video-carousel="" data-carousel-version="3" role="region" aria-label="Examples from the user study.">
+  <div class="video-carousel__controls" data-carousel-controls="" hidden="">
+    <button type="button" class="video-carousel__button" data-carousel-previous="" aria-label="Previous video" aria-controls="carousel-ch05-5-6-track"><span aria-hidden="true">←</span> Previous</button>
+    <span class="video-carousel__counter" data-carousel-counter="" role="status" aria-live="polite" aria-atomic="true">1 / 4</span>
+    <button type="button" class="video-carousel__button" data-carousel-next="" aria-label="Next video" aria-controls="carousel-ch05-5-6-track">Next <span aria-hidden="true">→</span></button>
+    <label class="video-carousel__picker">
+      <span>Go to video</span>
+      <select class="video-carousel__select" data-carousel-select="" aria-controls="carousel-ch05-5-6-track"><option value="0">1. Video 5.6</option><option value="1">2. Video 5.7</option><option value="2">3. Video 5.8</option><option value="3">4. Video 5.9</option></select>
+    </label>
+  </div>
+  <div class="video-carousel__slides" id="carousel-ch05-5-6-track" data-carousel-slides="" tabindex="0" aria-label="Video slides. Scroll horizontally to browse."><div class="video-carousel__slide" data-carousel-slide="" role="group" aria-roledescription="slide" aria-label="1 of 4: Video 5.6">
+        <nav class="video-carousel__fallback" aria-label="Video navigation">
+          <span aria-disabled="true">← Previous</span>
+          <span>1 / 4</span>
+          <a href="#ch05-5-7" data-carousel-link="">Next →</a>
+        </nav>
+        
+<figure class="media-video" id="ch05-5-6" aria-labelledby="ch05-5-6-caption">
+  <video controls="" playsinline="" preload="none" width="1280" height="720" data-video="" poster="/assets/posters/93_0-1.jpg?v=1790806294" aria-label="Video 5.6" aria-describedby="ch05-5-6-caption">
+    <source src="https://zenodo.org/records/23059630/files/93_0-1.mp4" type="video/mp4" />
+    
+    Your browser cannot play this video.
+    <a href="https://zenodo.org/records/23059630/files/93_0-1.mp4">Open the MP4 file</a>.
+  </video>
+  <p class="video-load-status" data-video-status="" role="status" hidden="">
+    The video could not be loaded from its host.
+    <a href="https://zenodo.org/records/23059630/files/93_0-1.mp4" target="_blank" rel="noopener">Open the original video</a>
+    <button type="button" data-video-retry="">Retry</button>
+  </p>
+  <figcaption id="ch05-5-6-caption">
+    <strong>Video 5.6</strong>
+    
+    
+    
+    
+  </figcaption>
+</figure>
+
+      </div><div class="video-carousel__slide" data-carousel-slide="" role="group" aria-roledescription="slide" aria-label="2 of 4: Video 5.7">
+        <nav class="video-carousel__fallback" aria-label="Video navigation">
+          <a href="#ch05-5-6" data-carousel-link="">← Previous</a>
+          <span>2 / 4</span>
+          <a href="#ch05-5-8" data-carousel-link="">Next →</a>
+        </nav>
+        
+<figure class="media-video" id="ch05-5-7" aria-labelledby="ch05-5-7-caption">
+  <video controls="" playsinline="" preload="none" width="1280" height="720" data-video="" poster="/assets/posters/561_2-1.jpg?v=1790806294" aria-label="Video 5.7" aria-describedby="ch05-5-7-caption">
+    <source src="https://zenodo.org/records/23059630/files/561_2-1.mp4" type="video/mp4" />
+    
+    Your browser cannot play this video.
+    <a href="https://zenodo.org/records/23059630/files/561_2-1.mp4">Open the MP4 file</a>.
+  </video>
+  <p class="video-load-status" data-video-status="" role="status" hidden="">
+    The video could not be loaded from its host.
+    <a href="https://zenodo.org/records/23059630/files/561_2-1.mp4" target="_blank" rel="noopener">Open the original video</a>
+    <button type="button" data-video-retry="">Retry</button>
+  </p>
+  <figcaption id="ch05-5-7-caption">
+    <strong>Video 5.7</strong>
+    
+    
+    
+    
+  </figcaption>
+</figure>
+
+      </div><div class="video-carousel__slide" data-carousel-slide="" role="group" aria-roledescription="slide" aria-label="3 of 4: Video 5.8">
+        <nav class="video-carousel__fallback" aria-label="Video navigation">
+          <a href="#ch05-5-7" data-carousel-link="">← Previous</a>
+          <span>3 / 4</span>
+          <a href="#ch05-5-9" data-carousel-link="">Next →</a>
+        </nav>
+        
+<figure class="media-video" id="ch05-5-8" aria-labelledby="ch05-5-8-caption">
+  <video controls="" playsinline="" preload="none" width="1280" height="720" data-video="" poster="/assets/posters/739_2-1.jpg?v=1790806294" aria-label="Video 5.8" aria-describedby="ch05-5-8-caption">
+    <source src="https://zenodo.org/records/23059630/files/739_2-1.mp4" type="video/mp4" />
+    
+    Your browser cannot play this video.
+    <a href="https://zenodo.org/records/23059630/files/739_2-1.mp4">Open the MP4 file</a>.
+  </video>
+  <p class="video-load-status" data-video-status="" role="status" hidden="">
+    The video could not be loaded from its host.
+    <a href="https://zenodo.org/records/23059630/files/739_2-1.mp4" target="_blank" rel="noopener">Open the original video</a>
+    <button type="button" data-video-retry="">Retry</button>
+  </p>
+  <figcaption id="ch05-5-8-caption">
+    <strong>Video 5.8</strong>
+    
+    
+    
+    
+  </figcaption>
+</figure>
+
+      </div><div class="video-carousel__slide" data-carousel-slide="" role="group" aria-roledescription="slide" aria-label="4 of 4: Video 5.9">
+        <nav class="video-carousel__fallback" aria-label="Video navigation">
+          <a href="#ch05-5-8" data-carousel-link="">← Previous</a>
+          <span>4 / 4</span>
+          <span aria-disabled="true">Next →</span>
+        </nav>
+        
+<figure class="media-video" id="ch05-5-9" aria-labelledby="ch05-5-9-caption">
+  <video controls="" playsinline="" preload="none" width="1280" height="720" data-video="" poster="/assets/posters/831_3-1.jpg?v=1790806294" aria-label="Video 5.9" aria-describedby="ch05-5-9-caption">
+    <source src="https://zenodo.org/records/23059630/files/831_3-1.mp4" type="video/mp4" />
+    
+    Your browser cannot play this video.
+    <a href="https://zenodo.org/records/23059630/files/831_3-1.mp4">Open the MP4 file</a>.
+  </video>
+  <p class="video-load-status" data-video-status="" role="status" hidden="">
+    The video could not be loaded from its host.
+    <a href="https://zenodo.org/records/23059630/files/831_3-1.mp4" target="_blank" rel="noopener">Open the original video</a>
+    <button type="button" data-video-retry="">Retry</button>
+  </p>
+  <figcaption id="ch05-5-9-caption">
+    <strong>Video 5.9</strong>
+    
+    
+    
+    
+  </figcaption>
+</figure>
+
+      </div></div>
+  <p class="video-carousel__hint">Swipe or scroll sideways to browse. Use the video controls to play.</p>
+</div>
+
+<h4 id="gaspard-with-gammag_g--0825-gammag_s--65">Gaspard with \(\gamma^G_g = 0.825\) \(\gamma^G_s = 6.5\)</h4>
+
+<div class="video-carousel" id="carousel-ch05-5-10" data-video-carousel="" data-carousel-version="3" role="region" aria-label="Examples from the user study.">
+  <div class="video-carousel__controls" data-carousel-controls="" hidden="">
+    <button type="button" class="video-carousel__button" data-carousel-previous="" aria-label="Previous video" aria-controls="carousel-ch05-5-10-track"><span aria-hidden="true">←</span> Previous</button>
+    <span class="video-carousel__counter" data-carousel-counter="" role="status" aria-live="polite" aria-atomic="true">1 / 4</span>
+    <button type="button" class="video-carousel__button" data-carousel-next="" aria-label="Next video" aria-controls="carousel-ch05-5-10-track">Next <span aria-hidden="true">→</span></button>
+    <label class="video-carousel__picker">
+      <span>Go to video</span>
+      <select class="video-carousel__select" data-carousel-select="" aria-controls="carousel-ch05-5-10-track"><option value="0">1. Video 5.10</option><option value="1">2. Video 5.11</option><option value="2">3. Video 5.12</option><option value="3">4. Video 5.13</option></select>
+    </label>
+  </div>
+  <div class="video-carousel__slides" id="carousel-ch05-5-10-track" data-carousel-slides="" tabindex="0" aria-label="Video slides. Scroll horizontally to browse."><div class="video-carousel__slide" data-carousel-slide="" role="group" aria-roledescription="slide" aria-label="1 of 4: Video 5.10">
+        <nav class="video-carousel__fallback" aria-label="Video navigation">
+          <span aria-disabled="true">← Previous</span>
+          <span>1 / 4</span>
+          <a href="#ch05-5-11" data-carousel-link="">Next →</a>
+        </nav>
+        
+<figure class="media-video" id="ch05-5-10" aria-labelledby="ch05-5-10-caption">
+  <video controls="" playsinline="" preload="none" width="1280" height="720" data-video="" poster="/assets/posters/93_0-65.jpg?v=1790806294" aria-label="Video 5.10" aria-describedby="ch05-5-10-caption">
+    <source src="https://zenodo.org/records/23059630/files/93_0-65.mp4" type="video/mp4" />
+    
+    Your browser cannot play this video.
+    <a href="https://zenodo.org/records/23059630/files/93_0-65.mp4">Open the MP4 file</a>.
+  </video>
+  <p class="video-load-status" data-video-status="" role="status" hidden="">
+    The video could not be loaded from its host.
+    <a href="https://zenodo.org/records/23059630/files/93_0-65.mp4" target="_blank" rel="noopener">Open the original video</a>
+    <button type="button" data-video-retry="">Retry</button>
+  </p>
+  <figcaption id="ch05-5-10-caption">
+    <strong>Video 5.10</strong>
+    
+    
+    
+    
+  </figcaption>
+</figure>
+
+      </div><div class="video-carousel__slide" data-carousel-slide="" role="group" aria-roledescription="slide" aria-label="2 of 4: Video 5.11">
+        <nav class="video-carousel__fallback" aria-label="Video navigation">
+          <a href="#ch05-5-10" data-carousel-link="">← Previous</a>
+          <span>2 / 4</span>
+          <a href="#ch05-5-12" data-carousel-link="">Next →</a>
+        </nav>
+        
+<figure class="media-video" id="ch05-5-11" aria-labelledby="ch05-5-11-caption">
+  <video controls="" playsinline="" preload="none" width="1280" height="720" data-video="" poster="/assets/posters/561_2-65.jpg?v=1790806294" aria-label="Video 5.11" aria-describedby="ch05-5-11-caption">
+    <source src="https://zenodo.org/records/23059630/files/561_2-65.mp4" type="video/mp4" />
+    
+    Your browser cannot play this video.
+    <a href="https://zenodo.org/records/23059630/files/561_2-65.mp4">Open the MP4 file</a>.
+  </video>
+  <p class="video-load-status" data-video-status="" role="status" hidden="">
+    The video could not be loaded from its host.
+    <a href="https://zenodo.org/records/23059630/files/561_2-65.mp4" target="_blank" rel="noopener">Open the original video</a>
+    <button type="button" data-video-retry="">Retry</button>
+  </p>
+  <figcaption id="ch05-5-11-caption">
+    <strong>Video 5.11</strong>
+    
+    
+    
+    
+  </figcaption>
+</figure>
+
+      </div><div class="video-carousel__slide" data-carousel-slide="" role="group" aria-roledescription="slide" aria-label="3 of 4: Video 5.12">
+        <nav class="video-carousel__fallback" aria-label="Video navigation">
+          <a href="#ch05-5-11" data-carousel-link="">← Previous</a>
+          <span>3 / 4</span>
+          <a href="#ch05-5-13" data-carousel-link="">Next →</a>
+        </nav>
+        
+<figure class="media-video" id="ch05-5-12" aria-labelledby="ch05-5-12-caption">
+  <video controls="" playsinline="" preload="none" width="1280" height="720" data-video="" poster="/assets/posters/739_2-65.jpg?v=1790806294" aria-label="Video 5.12" aria-describedby="ch05-5-12-caption">
+    <source src="https://zenodo.org/records/23059630/files/739_2-65.mp4" type="video/mp4" />
+    
+    Your browser cannot play this video.
+    <a href="https://zenodo.org/records/23059630/files/739_2-65.mp4">Open the MP4 file</a>.
+  </video>
+  <p class="video-load-status" data-video-status="" role="status" hidden="">
+    The video could not be loaded from its host.
+    <a href="https://zenodo.org/records/23059630/files/739_2-65.mp4" target="_blank" rel="noopener">Open the original video</a>
+    <button type="button" data-video-retry="">Retry</button>
+  </p>
+  <figcaption id="ch05-5-12-caption">
+    <strong>Video 5.12</strong>
+    
+    
+    
+    
+  </figcaption>
+</figure>
+
+      </div><div class="video-carousel__slide" data-carousel-slide="" role="group" aria-roledescription="slide" aria-label="4 of 4: Video 5.13">
+        <nav class="video-carousel__fallback" aria-label="Video navigation">
+          <a href="#ch05-5-12" data-carousel-link="">← Previous</a>
+          <span>4 / 4</span>
+          <span aria-disabled="true">Next →</span>
+        </nav>
+        
+<figure class="media-video" id="ch05-5-13" aria-labelledby="ch05-5-13-caption">
+  <video controls="" playsinline="" preload="none" width="1280" height="720" data-video="" poster="/assets/posters/831_3-65.jpg?v=1790806294" aria-label="Video 5.13" aria-describedby="ch05-5-13-caption">
+    <source src="https://zenodo.org/records/23059630/files/831_3-65.mp4" type="video/mp4" />
+    
+    Your browser cannot play this video.
+    <a href="https://zenodo.org/records/23059630/files/831_3-65.mp4">Open the MP4 file</a>.
+  </video>
+  <p class="video-load-status" data-video-status="" role="status" hidden="">
+    The video could not be loaded from its host.
+    <a href="https://zenodo.org/records/23059630/files/831_3-65.mp4" target="_blank" rel="noopener">Open the original video</a>
+    <button type="button" data-video-retry="">Retry</button>
+  </p>
+  <figcaption id="ch05-5-13-caption">
+    <strong>Video 5.13</strong>
+    
+    
+    
+    
+  </figcaption>
+</figure>
+
+      </div></div>
+  <p class="video-carousel__hint">Swipe or scroll sideways to browse. Use the video controls to play.</p>
+</div>
+
+<h4 id="cascaded-ablation">Cascaded ablation</h4>
+
+<div class="video-carousel" id="carousel-ch05-5-14" data-video-carousel="" data-carousel-version="3" role="region" aria-label="Examples from the user study.">
+  <div class="video-carousel__controls" data-carousel-controls="" hidden="">
+    <button type="button" class="video-carousel__button" data-carousel-previous="" aria-label="Previous video" aria-controls="carousel-ch05-5-14-track"><span aria-hidden="true">←</span> Previous</button>
+    <span class="video-carousel__counter" data-carousel-counter="" role="status" aria-live="polite" aria-atomic="true">1 / 4</span>
+    <button type="button" class="video-carousel__button" data-carousel-next="" aria-label="Next video" aria-controls="carousel-ch05-5-14-track">Next <span aria-hidden="true">→</span></button>
+    <label class="video-carousel__picker">
+      <span>Go to video</span>
+      <select class="video-carousel__select" data-carousel-select="" aria-controls="carousel-ch05-5-14-track"><option value="0">1. Video 5.14</option><option value="1">2. Video 5.15</option><option value="2">3. Video 5.16</option><option value="3">4. Video 5.17</option></select>
+    </label>
+  </div>
+  <div class="video-carousel__slides" id="carousel-ch05-5-14-track" data-carousel-slides="" tabindex="0" aria-label="Video slides. Scroll horizontally to browse."><div class="video-carousel__slide" data-carousel-slide="" role="group" aria-roledescription="slide" aria-label="1 of 4: Video 5.14">
+        <nav class="video-carousel__fallback" aria-label="Video navigation">
+          <span aria-disabled="true">← Previous</span>
+          <span>1 / 4</span>
+          <a href="#ch05-5-15" data-carousel-link="">Next →</a>
+        </nav>
+        
+<figure class="media-video" id="ch05-5-14" aria-labelledby="ch05-5-14-caption">
+  <video controls="" playsinline="" preload="none" width="1280" height="720" data-video="" poster="/assets/posters/93_0-cascaded.jpg?v=1790806294" aria-label="Video 5.14" aria-describedby="ch05-5-14-caption">
+    <source src="https://zenodo.org/records/23059630/files/93_0-cascaded.mp4" type="video/mp4" />
+    
+    Your browser cannot play this video.
+    <a href="https://zenodo.org/records/23059630/files/93_0-cascaded.mp4">Open the MP4 file</a>.
+  </video>
+  <p class="video-load-status" data-video-status="" role="status" hidden="">
+    The video could not be loaded from its host.
+    <a href="https://zenodo.org/records/23059630/files/93_0-cascaded.mp4" target="_blank" rel="noopener">Open the original video</a>
+    <button type="button" data-video-retry="">Retry</button>
+  </p>
+  <figcaption id="ch05-5-14-caption">
+    <strong>Video 5.14</strong>
+    
+    
+    
+    
+  </figcaption>
+</figure>
+
+      </div><div class="video-carousel__slide" data-carousel-slide="" role="group" aria-roledescription="slide" aria-label="2 of 4: Video 5.15">
+        <nav class="video-carousel__fallback" aria-label="Video navigation">
+          <a href="#ch05-5-14" data-carousel-link="">← Previous</a>
+          <span>2 / 4</span>
+          <a href="#ch05-5-16" data-carousel-link="">Next →</a>
+        </nav>
+        
+<figure class="media-video" id="ch05-5-15" aria-labelledby="ch05-5-15-caption">
+  <video controls="" playsinline="" preload="none" width="1280" height="720" data-video="" poster="/assets/posters/561_2-cacaded.jpg?v=1790806294" aria-label="Video 5.15" aria-describedby="ch05-5-15-caption">
+    <source src="https://zenodo.org/records/23059630/files/561_2-cacaded.mp4" type="video/mp4" />
+    
+    Your browser cannot play this video.
+    <a href="https://zenodo.org/records/23059630/files/561_2-cacaded.mp4">Open the MP4 file</a>.
+  </video>
+  <p class="video-load-status" data-video-status="" role="status" hidden="">
+    The video could not be loaded from its host.
+    <a href="https://zenodo.org/records/23059630/files/561_2-cacaded.mp4" target="_blank" rel="noopener">Open the original video</a>
+    <button type="button" data-video-retry="">Retry</button>
+  </p>
+  <figcaption id="ch05-5-15-caption">
+    <strong>Video 5.15</strong>
+    
+    
+    
+    
+  </figcaption>
+</figure>
+
+      </div><div class="video-carousel__slide" data-carousel-slide="" role="group" aria-roledescription="slide" aria-label="3 of 4: Video 5.16">
+        <nav class="video-carousel__fallback" aria-label="Video navigation">
+          <a href="#ch05-5-15" data-carousel-link="">← Previous</a>
+          <span>3 / 4</span>
+          <a href="#ch05-5-17" data-carousel-link="">Next →</a>
+        </nav>
+        
+<figure class="media-video" id="ch05-5-16" aria-labelledby="ch05-5-16-caption">
+  <video controls="" playsinline="" preload="none" width="1280" height="720" data-video="" poster="/assets/posters/739_2-cascaded.jpg?v=1790806294" aria-label="Video 5.16" aria-describedby="ch05-5-16-caption">
+    <source src="https://zenodo.org/records/23059630/files/739_2-cascaded.mp4" type="video/mp4" />
+    
+    Your browser cannot play this video.
+    <a href="https://zenodo.org/records/23059630/files/739_2-cascaded.mp4">Open the MP4 file</a>.
+  </video>
+  <p class="video-load-status" data-video-status="" role="status" hidden="">
+    The video could not be loaded from its host.
+    <a href="https://zenodo.org/records/23059630/files/739_2-cascaded.mp4" target="_blank" rel="noopener">Open the original video</a>
+    <button type="button" data-video-retry="">Retry</button>
+  </p>
+  <figcaption id="ch05-5-16-caption">
+    <strong>Video 5.16</strong>
+    
+    
+    
+    
+  </figcaption>
+</figure>
+
+      </div><div class="video-carousel__slide" data-carousel-slide="" role="group" aria-roledescription="slide" aria-label="4 of 4: Video 5.17">
+        <nav class="video-carousel__fallback" aria-label="Video navigation">
+          <a href="#ch05-5-16" data-carousel-link="">← Previous</a>
+          <span>4 / 4</span>
+          <span aria-disabled="true">Next →</span>
+        </nav>
+        
+<figure class="media-video" id="ch05-5-17" aria-labelledby="ch05-5-17-caption">
+  <video controls="" playsinline="" preload="none" width="1280" height="720" data-video="" poster="/assets/posters/831_3-cascaded.jpg?v=1790806294" aria-label="Video 5.17" aria-describedby="ch05-5-17-caption">
+    <source src="https://zenodo.org/records/23059630/files/831_3-cascaded.mp4" type="video/mp4" />
+    
+    Your browser cannot play this video.
+    <a href="https://zenodo.org/records/23059630/files/831_3-cascaded.mp4">Open the MP4 file</a>.
+  </video>
+  <p class="video-load-status" data-video-status="" role="status" hidden="">
+    The video could not be loaded from its host.
+    <a href="https://zenodo.org/records/23059630/files/831_3-cascaded.mp4" target="_blank" rel="noopener">Open the original video</a>
+    <button type="button" data-video-retry="">Retry</button>
+  </p>
+  <figcaption id="ch05-5-17-caption">
+    <strong>Video 5.17</strong>
+    
+    
+    
+    
+  </figcaption>
+</figure>
+
+      </div></div>
+  <p class="video-carousel__hint">Swipe or scroll sideways to browse. Use the video controls to play.</p>
+</div>
+
+<h2 id="speech-adaptation-to-gestures">Speech adaptation to gestures</h2>
+
+<figure class="media-figure media-figure--wide" id="fig-ch05-5-10" aria-labelledby="fig-ch05-5-10-caption">
+  <div class="figure-image">
+    <img src="/assets/images/speech_adaptation.png" alt="Impact of gesture speed on speech generation. Speech is generated while conditioning the model on fixed gesture inputs with varying speeds. Increasing gesture speed results in a higher speech rate and fewer IPUs." loading="lazy" decoding="async" />
+  </div>
+
+  <figcaption id="fig-ch05-5-10-caption">
+    <strong>Figure 5.10</strong>
+
+    <span>Impact of gesture speed on speech generation. Speech is generated while conditioning the model on fixed gesture inputs with varying speeds. Increasing gesture speed results in a higher speech rate and fewer IPUs.</span>
+
+    
+  </figcaption>
+</figure>
+
+<div class="video-carousel" id="carousel-ch05-5-18" data-video-carousel="" data-carousel-version="3" role="region" aria-label="Examples from the user study.">
+  <div class="video-carousel__controls" data-carousel-controls="" hidden="">
+    <button type="button" class="video-carousel__button" data-carousel-previous="" aria-label="Previous video" aria-controls="carousel-ch05-5-18-track"><span aria-hidden="true">←</span> Previous</button>
+    <span class="video-carousel__counter" data-carousel-counter="" role="status" aria-live="polite" aria-atomic="true">1 / 2</span>
+    <button type="button" class="video-carousel__button" data-carousel-next="" aria-label="Next video" aria-controls="carousel-ch05-5-18-track">Next <span aria-hidden="true">→</span></button>
+    <label class="video-carousel__picker">
+      <span>Go to video</span>
+      <select class="video-carousel__select" data-carousel-select="" aria-controls="carousel-ch05-5-18-track"><option value="0">1. Video 5.18</option><option value="1">2. Video 5.19</option></select>
+    </label>
+  </div>
+  <div class="video-carousel__slides" id="carousel-ch05-5-18-track" data-carousel-slides="" tabindex="0" aria-label="Video slides. Scroll horizontally to browse."><div class="video-carousel__slide" data-carousel-slide="" role="group" aria-roledescription="slide" aria-label="1 of 2: Video 5.18">
+        <nav class="video-carousel__fallback" aria-label="Video navigation">
+          <span aria-disabled="true">← Previous</span>
+          <span>1 / 2</span>
+          <a href="#ch05-5-19" data-carousel-link="">Next →</a>
+        </nav>
+        
+<figure class="media-video" id="ch05-5-18" aria-labelledby="ch05-5-18-caption">
+  <video controls="" playsinline="" preload="none" width="1280" height="720" data-video="" poster="/assets/posters/slow0001-0445.jpg?v=1790806294" aria-label="Video 5.18" aria-describedby="ch05-5-18-caption">
+    <source src="https://zenodo.org/records/23059630/files/slow0001-0445.mp4" type="video/mp4" />
+    
+    Your browser cannot play this video.
+    <a href="https://zenodo.org/records/23059630/files/slow0001-0445.mp4">Open the MP4 file</a>.
+  </video>
+  <p class="video-load-status" data-video-status="" role="status" hidden="">
+    The video could not be loaded from its host.
+    <a href="https://zenodo.org/records/23059630/files/slow0001-0445.mp4" target="_blank" rel="noopener">Open the original video</a>
+    <button type="button" data-video-retry="">Retry</button>
+  </p>
+  <figcaption id="ch05-5-18-caption">
+    <strong>Video 5.18</strong>
+    <span>Speech generated conditioned on gestures slowed down by 33%</span>
+    
+    
+    
+  </figcaption>
+</figure>
+
+      </div><div class="video-carousel__slide" data-carousel-slide="" role="group" aria-roledescription="slide" aria-label="2 of 2: Video 5.19">
+        <nav class="video-carousel__fallback" aria-label="Video navigation">
+          <a href="#ch05-5-18" data-carousel-link="">← Previous</a>
+          <span>2 / 2</span>
+          <span aria-disabled="true">Next →</span>
+        </nav>
+        
+<figure class="media-video" id="ch05-5-19" aria-labelledby="ch05-5-19-caption">
+  <video controls="" playsinline="" preload="none" width="1280" height="720" data-video="" poster="/assets/posters/fast0001-0343.jpg?v=1790806294" aria-label="Video 5.19" aria-describedby="ch05-5-19-caption">
+    <source src="https://zenodo.org/records/23059630/files/fast0001-0343.mp4" type="video/mp4" />
+    
+    Your browser cannot play this video.
+    <a href="https://zenodo.org/records/23059630/files/fast0001-0343.mp4">Open the MP4 file</a>.
+  </video>
+  <p class="video-load-status" data-video-status="" role="status" hidden="">
+    The video could not be loaded from its host.
+    <a href="https://zenodo.org/records/23059630/files/fast0001-0343.mp4" target="_blank" rel="noopener">Open the original video</a>
+    <button type="button" data-video-retry="">Retry</button>
+  </p>
+  <figcaption id="ch05-5-19-caption">
+    <strong>Video 5.19</strong>
+    <span>Speech generated conditioned on gestures accelerated by 33%</span>
+    
+    
+    
+  </figcaption>
+</figure>
+
+      </div></div>
+  <p class="video-carousel__hint">Swipe or scroll sideways to browse. Use the video controls to play.</p>
+</div>
+</div>
+</article>
+
+<nav class="chapter-pagination" aria-label="Chapter pagination">
+  
+    
+  
+    
+  
+    
+      
+        
+        
+        <a class="chapter-pagination__previous" rel="prev" href="/thesis/chapter-04/"><span>← Previous chapter</span><strong>Unified speech-gesture generation via interleaved token prediction</strong></a>
+      
+      
+        
+        
+        <a class="chapter-pagination__next" rel="next" href="/thesis/chapter-06/"><span>Next chapter →</span><strong>Qualitative analysis of generated behaviors</strong></a>
+      
+    
+  
+    
+  
+  <a class="chapter-pagination__overview" href="/thesis/">Return to thesis overview</a>
+</nav>
+
+
+    </main>
+  </div>
+  <footer class="page__footer">
+  <div class="footer__inner">
+    <p>Téo Guichoux <span aria-hidden="true">·</span> Academic supplementary material</p>
+    <p class="footer__credit">Adapted from <a href="https://academicpages.github.io/">AcademicPages</a> / <a href="https://mmistakes.github.io/minimal-mistakes/">Minimal Mistakes</a>.</p>
+  </div>
+</footer>
+
+  <!-- Local interactions do not wait for MathJax or external video hosts. -->
+  <script src="/assets/js/carousel.js?v=1790806294"></script>
+  <script src="/assets/js/site.js?v=1790806294"></script>
+</body>
+</html>

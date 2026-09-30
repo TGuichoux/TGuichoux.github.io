@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lina-Speech: Gated Linear Attention and Initial-State Tuning for Multi-Sample Prompting Text-To-Speech Synthesis · Academic supplementary material</title>
+  <meta name="description" content="We introduce Lina-Speech, a codec-based TTS model based pnt gated-linear attention.">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="canonical" href="http://localhost:4000/papers/paper-02/">
+  <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg">
+  <link rel="stylesheet" href="/assets/css/main.css?v=1790806294">
+  
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="masthead">
+  <div class="masthead__inner-wrap">
+    <a class="site-title" href="/">Téo Guichoux</a>
+    <nav class="site-nav" aria-label="Main navigation">
+  <ul>
+    
+      
+      
+      
+      <li><a href="/">Home</a></li>
+    
+      
+      
+      
+      <li><a href="/thesis/">Thesis</a></li>
+    
+      
+      
+      
+      <li><a href="/papers/" aria-current="page">Papers</a></li>
+    
+  </ul>
+</nav>
+
+  </div>
+</header>
+
+  <div class="site-shell">
+    <aside class="sidebar" aria-label="Author and contextual navigation">
+  <div class="author-profile">
+    
+      <img class="author__avatar" src="/assets/images/IMG_2315.JPG" alt="Téo Guichoux" width="136" height="136">
+    
+    <div class="author__details">
+      <p class="author__name">Téo Guichoux</p>
+      <p class="author__role">PhD student</p>
+      <p class="author__bio">My work focuses text-to-speech and co-speech gesture generation, with a specific focus on the joint modeling of both modalities.</p>
+      <p class="author__affiliation">Sorbonne Univeristy, ISIR-IRCAM<br></p>
+      <div class="author__links">
+        <a href="mailto:teo.guichoux@sorbonne-universite.fr">Email</a>
+        <a href="https://orcid.org/0009-0008-3711-1405">ORCID</a>
+        <a href="https://scholar.google.com/citations?user=QPxDtkkAAAAJ&amp;hl=en">Google Scholar</a>
+        <a href="https://github.com/TGuichoux">GitHub</a>
+        <a href="https://www.linkedin.com/in/teo-guichoux/">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+  
+    <!-- <div class="sidebar-note">Thesis &amp; papers<br><span>Supplementary research material</span></div> -->
+  
+</aside>
+
+    <main id="main-content" tabindex="-1">
+      
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+  <ol>
+    <li><a href="/">Home</a></li>
+    
+      <li><a href="/papers/">Papers</a></li>
+      <li aria-current="page">Lina-Speech: Gated Linear Attention and Initial-State Tuning for Multi-Sample Prompting Text-To-Speech Synthesis</li>
+    
+  </ol>
+</nav>
+
+
+      <article>
+  <header class="page-header">
+    <p class="eyebrow">Paper · Supplementary material</p>
+    <h1>Lina-Speech: Gated Linear Attention and Initial-State Tuning for Multi-Sample Prompting Text-To-Speech Synthesis</h1>
+    <div class="paper-metadata">
+  <p class="paper-authors">Théodor Lemerle, Téo Guichoux, Nicolas Obin, Axel Roebel</p>
+  <p class="paper-venue">AAAI Workshop on audio centric AI <span aria-hidden="true">·</span> 2026</p>
+  
+
+
+<div class="resource-links" aria-label="Related resources"><a class="resource-link" href="https://arxiv.org/pdf/2410.23320">PDF <span aria-hidden="true">↗</span></a>
+    
+  
+    
+    
+    
+  
+    
+    
+    
+  
+    
+    
+    
+      
+      <a class="resource-link" href="https://github.com/theodorblackbird/lina-speech">Code <span aria-hidden="true">↗</span></a></div>
+
+</div>
+
+  </header>
+  <div class="page__content"><h2 id="abstract">Abstract</h2>
+
+<p>Neural codec language models, built on transformer architecture, have revolutionized text-to-speech (TTS) synthesis, excelling in voice cloning by treating it as a prefix continuation task. However, their limited context length hinders their effectiveness to short speech samples. As a result, the voice cloning ability is restricted to a limited coverage and diversity of the speaker’s prosody and style. Besides, adapting prosody, accent, or appropriate emotion from a short prefix remains a challenging task. Finally, the quadratic complexity of self-attention limits inference throughput. In this work, we introduce Lina-Speech, a TTS model with Gated Linear Attention (GLA) to replace standard self-attention as a principled backbone, improving inference throughput while matching state-of-the-art performance. Leveraging the stateful property of recurrent architecture, we introduce an Initial-State Tuning (IST) strategy that unlocks the possibility of multiple speech sample conditioning of arbitrary numbers and lengths and provides a comprehensive and efficient strategy for voice cloning and out-of-domain speaking style and emotion adaptation. We demonstrate the effectiveness of this approach for controlling fine-grained characteristics such as prosody and emotion. Code, checkpoints, and demo are freely available: https://github.com/theodorblackbird/lina-speech</p>
+</div>
+  
+
+<details class="citation">
+  <summary>Citation / BibTeX</summary>
+  <div class="citation-actions"><button class="copy-citation" type="button" data-copy-target="p02-bibtex" hidden>Copy BibTeX</button><span class="copy-status" role="status" aria-live="polite"></span></div>
+  <pre tabindex="0"><code id="p02-bibtex">@InProceedings{lemerle2026linaspeech,
+title = {Lina-Speech: Gated Linear Attention and Initial-State Tuning for Multi-Sample Prompting Text-To-Speech Synthesis},
+author = {Lemerle, Th\&#39;eodor and Guichoux, T\&#39;eo and Roebel, Axel and Obin, Nicolas},
+booktitle = {Proceedings of the AAAI 2026 Workshop on Audio-Centric AI: Towards Real-World Multimodal Reasoning and Application Use Cases (Audio-AAAI)},
+pages = {1--20},
+year = {2026},
+editor = {Komatsu, Tatsuya and Imoto, Keisuke and Gao, Xiaoxue and Ono, Nobutaka and Chen, Nancy F.},
+volume = {312},
+series = {Proceedings of Machine Learning Research},
+month = {26 Jan},
+publisher = {PMLR},
+pdf = {https://raw.githubusercontent.com/mlresearch/v312/main/assets/lemerle26a/lemerle26a.pdf},
+url = {https://proceedings.mlr.press/v312/lemerle26a.html}
+}
+</code></pre>
+</details>
+
+
+</article>
+<p class="return-link"><a href="/papers/">← Return to all papers</a></p>
+
+    </main>
+  </div>
+  <footer class="page__footer">
+  <div class="footer__inner">
+    <p>Téo Guichoux <span aria-hidden="true">·</span> Academic supplementary material</p>
+    <p class="footer__credit">Adapted from <a href="https://academicpages.github.io/">AcademicPages</a> / <a href="https://mmistakes.github.io/minimal-mistakes/">Minimal Mistakes</a>.</p>
+  </div>
+</footer>
+
+  <!-- Local interactions do not wait for MathJax or external video hosts. -->
+  <script src="/assets/js/carousel.js?v=1790806294"></script>
+  <script src="/assets/js/site.js?v=1790806294"></script>
+</body>
+</html>

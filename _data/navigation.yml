@@ -1,0 +1,7 @@
+main:
+  - title: Home
+    url: /
+  - title: Thesis
+    url: /thesis/
+  - title: Papers
+    url: /papers/

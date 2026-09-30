@@ -1,0 +1,28 @@
+{
+  "mode": "offline rendered DOM",
+  "baseurl": "",
+  "widths": [
+    375,
+    390,
+    640,
+    768,
+    1024,
+    1440
+  ],
+  "browser": "Chromium 144.0.7559.96",
+  "video_source": "synthetic H.264 fixture; no Access-Control-Allow-Origin header",
+  "external_limitations": "Live Zenodo downloads and MathJax rendering are not tested.",
+  "checks": [
+    {
+      "test": "video keyboard",
+      "status": "passed"
+    },
+    {
+      "test": "idle static posters",
+      "status": "passed"
+    }
+  ],
+  "failures": [],
+  "passed": 2,
+  "failed": 0
+}

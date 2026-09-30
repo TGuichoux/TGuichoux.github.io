@@ -1,0 +1,13 @@
+{
+  "tests": [
+    "first decoded frame extraction",
+    "valid JPEG 640x360 without upscaling",
+    "duplicate sources share one poster",
+    "repeat run reuses frame",
+    "missing source yields nonzero exit",
+    "failed source omitted from manifest"
+  ],
+  "passed": 6,
+  "failed": 0,
+  "media": "synthetic H264 clip; not the research videos"
+}

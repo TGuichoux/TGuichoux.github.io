@@ -1,0 +1,12 @@
+{% assign ordered_papers = site.papers | sort: 'order' %}
+<div class="publication-list">
+  {% for paper in ordered_papers %}
+    <article class="publication-item">
+      <p class="eyebrow">Paper {{ forloop.index | prepend: '0' | slice: -2, 2 }}</p>
+      <h3><a href="{{ paper.url | relative_url }}">{{ paper.title | escape }}</a></h3>
+      {% include paper_metadata.html paper=paper %}
+      <p class="publication-description">{{ paper.description | escape }}</p>
+      <a class="text-link" href="{{ paper.url | relative_url }}">Supplementary material <span aria-hidden="true">→</span></a>
+    </article>
+  {% endfor %}
+</div>

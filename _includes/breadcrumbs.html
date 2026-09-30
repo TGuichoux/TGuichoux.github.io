@@ -1,0 +1,16 @@
+{% unless page.url == '/' %}
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+  <ol>
+    <li><a href="{{ '/' | relative_url }}">Home</a></li>
+    {% if page.collection == 'chapters' %}
+      <li><a href="{{ '/thesis/' | relative_url }}">Thesis</a></li>
+      <li aria-current="page">Chapter {{ page.chapter_number }}</li>
+    {% elsif page.collection == 'papers' %}
+      <li><a href="{{ '/papers/' | relative_url }}">Papers</a></li>
+      <li aria-current="page">{{ page.title | escape }}</li>
+    {% else %}
+      <li aria-current="page">{{ page.title | escape }}</li>
+    {% endif %}
+  </ol>
+</nav>
+{% endunless %}

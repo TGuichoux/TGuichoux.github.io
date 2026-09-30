@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Low-Framerate Speech Tokenization via Two-Stage Latent Patch Modeling · Academic supplementary material</title>
+  <meta name="description" content="We introduce a two-stage audio--codec for low-framerate text-to-speech.">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="canonical" href="http://localhost:4000/papers/paper-03/">
+  <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg">
+  <link rel="stylesheet" href="/assets/css/main.css?v=1790806294">
+  
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="masthead">
+  <div class="masthead__inner-wrap">
+    <a class="site-title" href="/">Téo Guichoux</a>
+    <nav class="site-nav" aria-label="Main navigation">
+  <ul>
+    
+      
+      
+      
+      <li><a href="/">Home</a></li>
+    
+      
+      
+      
+      <li><a href="/thesis/">Thesis</a></li>
+    
+      
+      
+      
+      <li><a href="/papers/" aria-current="page">Papers</a></li>
+    
+  </ul>
+</nav>
+
+  </div>
+</header>
+
+  <div class="site-shell">
+    <aside class="sidebar" aria-label="Author and contextual navigation">
+  <div class="author-profile">
+    
+      <img class="author__avatar" src="/assets/images/IMG_2315.JPG" alt="Téo Guichoux" width="136" height="136">
+    
+    <div class="author__details">
+      <p class="author__name">Téo Guichoux</p>
+      <p class="author__role">PhD student</p>
+      <p class="author__bio">My work focuses text-to-speech and co-speech gesture generation, with a specific focus on the joint modeling of both modalities.</p>
+      <p class="author__affiliation">Sorbonne Univeristy, ISIR-IRCAM<br></p>
+      <div class="author__links">
+        <a href="mailto:teo.guichoux@sorbonne-universite.fr">Email</a>
+        <a href="https://orcid.org/0009-0008-3711-1405">ORCID</a>
+        <a href="https://scholar.google.com/citations?user=QPxDtkkAAAAJ&amp;hl=en">Google Scholar</a>
+        <a href="https://github.com/TGuichoux">GitHub</a>
+        <a href="https://www.linkedin.com/in/teo-guichoux/">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+  
+    <!-- <div class="sidebar-note">Thesis &amp; papers<br><span>Supplementary research material</span></div> -->
+  
+</aside>
+
+    <main id="main-content" tabindex="-1">
+      
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+  <ol>
+    <li><a href="/">Home</a></li>
+    
+      <li><a href="/papers/">Papers</a></li>
+      <li aria-current="page">Low-Framerate Speech Tokenization via Two-Stage Latent Patch Modeling</li>
+    
+  </ol>
+</nav>
+
+
+      <article>
+  <header class="page-header">
+    <p class="eyebrow">Paper · Supplementary material</p>
+    <h1>Low-Framerate Speech Tokenization via Two-Stage Latent Patch Modeling</h1>
+    <div class="paper-metadata">
+  <p class="paper-authors">Théodor Lemerle, Diego Torres, Téo Guichoux, Nicolas Obin, Axel Roebel</p>
+  <p class="paper-venue">Interspeech <span aria-hidden="true">·</span> 2026</p>
+  
+
+
+<div class="resource-links" aria-label="Related resources"><a class="resource-link" href="https://www.researchgate.net/profile/Nicolas-Obin/publication/414227348_Low-Framerate_Speech_Tokenization_via_Two-Stage_Latent_Patch_Modeling/links/6aa42d88fa52160a3abb0e73/Low-Framerate-Speech-Tokenization-via-Two-Stage-Latent-Patch-Modeling.pdf">PDF <span aria-hidden="true">↗</span></a>
+    
+  
+    
+    
+    
+      
+      <a class="resource-link" href="https://doi.org/10.21437/Interspeech.2026-2863">DOI <span aria-hidden="true">↗</span></a></div>
+
+</div>
+
+  </header>
+  <div class="page__content"><h2 id="abstract">Abstract</h2>
+
+<p>Recent advances in neural speech tokenizers rely on lowframerate, semantically rich latent representations that facilitate downstream generative modeling tasks such as text-to-speech. However, achieving high perceptual quality at low bitrate and framerate remains computationally demanding, as it typically requires joint compression, adversarial training, and semantic supervision, resulting in expensive training. In this work, we introduce Z-CODEC, a two-stage latent speech codec. In the first stage, we train a high-framerate variational autoencoder (VAE) with adversarial objectives to capture fine-grained acoustic details and absorb the complexity of adversarial training. In the second stage, we perform final compression within the latent space of the first stage using flow matching and incorporate semantic supervision, enabling highquality low-framerate tokenization. Our approach achieves state-of-the-art reconstruction quality for both low-bitrate discrete tokenizers and continuous settings, outperforming or matching strong baselines. Importantly, the staged design of Z-CODEC makes training tractable on a single RTX 4070 GPU, enabling high-quality, low-framerate speech tokenizer reproducible on consumer-grade hardware.</p>
+
+</div>
+  
+
+<details class="citation">
+  <summary>Citation / BibTeX</summary>
+  <div class="citation-actions"><button class="copy-citation" type="button" data-copy-target="p03-bibtex" hidden>Copy BibTeX</button><span class="copy-status" role="status" aria-live="polite"></span></div>
+  <pre tabindex="0"><code id="p03-bibtex">@inproceedings{lemerle2026lowframerate,
+title     = {{Low-Framerate Speech Tokenization via Two-Stage Latent Patch Modeling}},
+author    = {Théodor Lemerle and Diego Torres and Téo Guichoux and Nicolas Obin and Axel Roebel},
+year      = {2026},
+booktitle = {{Interspeech 2026}},
+pages     = {3971--3976},
+doi       = {10.21437/Interspeech.2026-2863},
+issn      = {2958-1796},
+}
+</code></pre>
+</details>
+
+
+</article>
+<p class="return-link"><a href="/papers/">← Return to all papers</a></p>
+
+    </main>
+  </div>
+  <footer class="page__footer">
+  <div class="footer__inner">
+    <p>Téo Guichoux <span aria-hidden="true">·</span> Academic supplementary material</p>
+    <p class="footer__credit">Adapted from <a href="https://academicpages.github.io/">AcademicPages</a> / <a href="https://mmistakes.github.io/minimal-mistakes/">Minimal Mistakes</a>.</p>
+  </div>
+</footer>
+
+  <!-- Local interactions do not wait for MathJax or external video hosts. -->
+  <script src="/assets/js/carousel.js?v=1790806294"></script>
+  <script src="/assets/js/site.js?v=1790806294"></script>
+</body>
+</html>

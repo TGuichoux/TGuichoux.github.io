@@ -1,0 +1,59 @@
+# Restart Jekyll after changing this file.
+title: "Academic supplementary material"
+description: "Supplementary figures, videos, and notes for a PhD thesis and associated papers."
+lang: en
+url: "https://tguichoux.github.io"            # Later: https://USERNAME.github.io (no trailing slash).
+baseurl: ""        # Local preview: "". Project site: "/REPOSITORY".
+noindex: true      # Preserves the original search-indexing setting; set false when ready to index.
+
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  hard_wrap: false
+  math_engine: mathjax
+  toc_levels: "2..3"
+
+collections:
+  chapters:
+    output: true
+    permalink: /thesis/:name/
+  papers:
+    output: true
+    permalink: /papers/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: chapters
+    values:
+      layout: chapter
+      math: true
+  - scope:
+      path: ""
+      type: papers
+    values:
+      layout: paper
+      math: false
+
+strict_front_matter: true
+liquid:
+  error_mode: strict
+
+exclude:
+  - README.md
+  - README-CONTENT.md
+  - chapter-template.md  # Kept unchanged as a local authoring template; never publish it.
+  - docs
+  - examples
+  - scripts
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - NOTICE.md
+  - vendor
+  - .bundle
+  - .github
+  - media-masters
+  - "*.mov"
+  - "*.MOV"

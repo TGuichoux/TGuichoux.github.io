@@ -1,0 +1,10 @@
+{%- comment -%}
+  One source for the visible home heading and the home browser-tab title.
+  Escape here, once; callers must not escape this include's output again.
+{%- endcomment -%}
+{%- assign home_title = site.data.frontpage.title | default: '' | strip -%}
+{%- if home_title == '' -%}
+  {%- assign home_title = site.title | default: 'Home' | strip -%}
+{%- endif -%}
+{%- if home_title == '' -%}{%- assign home_title = 'Home' -%}{%- endif -%}
+{{- home_title | escape -}}

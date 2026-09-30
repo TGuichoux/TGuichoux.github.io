@@ -1,0 +1,10 @@
+{% assign ordered_chapters = site.chapters | sort: 'chapter_number' %}
+<ol class="chapter-list">
+  {% for chapter in ordered_chapters %}
+    <li>
+      <span class="chapter-list__number" aria-hidden="true">{{ chapter.chapter_number | prepend: '0' | slice: -2, 2 }}</span>
+      <div><h3><a href="{{ chapter.url | relative_url }}"><span class="visually-hidden">Chapter {{ chapter.chapter_number }}: </span>{{ chapter.title | escape }}</a></h3><p>{{ chapter.description | escape }}</p></div>
+      <span class="chapter-list__arrow" aria-hidden="true">→</span>
+    </li>
+  {% endfor %}
+</ol>

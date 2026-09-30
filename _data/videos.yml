@@ -1,0 +1,521 @@
+# A blank src omits the video. A blank poster uses no image; no dummy media is rendered.
+# IDs are globally unique; visible numbering may restart on each paper.
+# Local paths begin with /; external MP4 URLs begin with https://.
+
+ch02-2_1:
+  number: "Video 2.1"
+  title: ""
+  caption: ""
+  src: "https://zenodo.org/records/23059630/files/letme_figure_out.mp4"
+  poster: "/assets/posters/letme_figure_out.jpg"
+  download: "https://zenodo.org/records/23059630/files/letme_figure_out.mp4?download=1"
+  archive: "https://zenodo.org/records/23059630"
+  track: ""
+  transcript: ""
+
+
+########################################### Chapter 4 ###########################################
+#################################################################################################
+
+ch04-4_1:
+  number: Video 4.1
+  title: ''
+  caption: ''
+  src: "https://zenodo.org/records/23059630/files/gelina-gelina-female.mp4"
+  poster: "/assets/posters/gelina-gelina-female.jpg"
+  download: ""
+  archive: ""
+  track: ""
+  transcript: ""
+
+ch04-4_2:
+  number: Video 4.2
+  title: ''
+  caption: ''
+  src: "https://zenodo.org/records/23059630/files/gelina-kings-male.mp4"
+  poster: "/assets/posters/gelina-kings-male.jpg"
+  download: ""
+  archive: ""
+  track: ""
+  transcript: ""
+
+ch04-4_3:
+  number: Video 4.3
+  title: ''
+  caption: ''
+  src: "https://zenodo.org/records/23059630/files/gelina-duck-female.mp4"
+  poster: "/assets/posters/gelina-duck_female.jpg"
+  download: ""
+  archive: ""
+  track: ""
+  transcript: ""
+
+ch04-4_4:
+  number: Video 4.4
+  title: ''
+  caption: ''
+  src: "https://zenodo.org/records/23059630/files/gelina-clone_kieks_0_3_3.mp4"
+  poster: "/assets/posters/gelina-clone_kieks_0_3_3.jpg"
+  download: ""
+  archive: ""
+  track: ""
+  transcript: ""
+
+ch04-4_5:
+  number: Video 4.5
+  title: ''
+  caption: ''
+  src: "https://zenodo.org/records/23059630/files/gelina-clone_scott_0_2_2.mp4"
+  poster: "/assets/posters/gelina-clone_scott_0_2_2.jpg"
+  download: ""
+  archive: ""
+  track: ""
+  transcript: ""
+
+ch04-4_6:
+  number: Video 4.6
+  title: ''
+  caption: ''
+  src: "https://zenodo.org/records/23059630/files/gelina-clone_scott_0_4_4.mp4"
+  poster: "/assets/posters/gelina-clone_scott_0_4_4.jpg"
+  download: ""
+  archive: ""
+  track: ""
+  transcript: ""
+
+ch04-4_7:
+  number: Video 4.7
+  title: ''
+  caption: ''
+  src: "https://zenodo.org/records/23059630/files/gelina-comparison_scott_0_5_5.mp4"
+  poster: "/assets/posters/gelina-comparison_scott_0_5_5.jpg"
+  download: ""
+  archive: ""
+  track: ""
+  transcript: ""
+
+ch04-4_8:
+  number: Video 4.8
+  title: ''
+  caption: ''
+  src: "https://zenodo.org/records/23059630/files/gelina-comparison_kieks_0_1_1.mp4"
+  poster: "/assets/posters/gelina-comparison_kieks_0_1_1.jpg"
+  download: ""
+  archive: ""
+  track: ""
+  transcript: ""
+
+ch04-4_9:
+  number: Video 4.9
+  title: ''
+  caption: ''
+  src: "https://zenodo.org/records/23059630/files/gelina-comparison_wayne_0_2_2.mp4"
+  poster: "/assets/posters/gelina-comparison_wayne_0_2_2.jpg"
+  download: ""
+  archive: ""
+  track: ""
+  transcript: ""
+
+ch04-4_10:
+  number: Video 4.10
+  title: ''
+  caption: ''
+  src: "https://zenodo.org/records/23059630/files/gelina-comparison_wayne_0_3_3.mp4"
+  poster: "/assets/posters/gelina-comparison_wayne_0_3_3.jpg"
+  download: ""
+  archive: ""
+  track: ""
+  transcript: ""
+
+ch04-4_11:
+  number: Video 4.9
+  title: ''
+  caption: ''
+  src: "https://zenodo.org/records/23059630/files/gelina-failure-wayne.mp4"
+  poster: "/assets/posters/gelina-failure-wayne.jpg"
+  download: ""
+  archive: ""
+  track: ""
+  transcript: ""
+
+ch04-4_12:
+  number: Video 4.10
+  title: ''
+  caption: ''
+  src: "https://zenodo.org/records/23059630/files/gelina-failure-2.mp4"
+  poster: "/assets/posters/gelina-failure-2.jpg"
+  download: ""
+  archive: ""
+  track: ""
+  transcript: ""
+
+
+########################################### Chapter 5 ###########################################
+#################################################################################################
+
+ch05-5_1:
+  number: Video 5.1
+  title: ''
+  caption: ''
+  src: 'https://zenodo.org/records/23059630/files/signals.mp4'
+  poster: "/assets/posters/signals.jpg"
+  download: ''
+  archive: ''
+  track: ''
+  transcript: ''
+
+ch05-5_2:
+  number: Video 5.2
+  title: ''
+  caption: ''
+  src: 'https://zenodo.org/records/23059630/files/93_0-gt.mp4'
+  poster: "/assets/posters/93_0-gt.jpg"
+  download: ''
+  archive: ''
+  track: ''
+  transcript: ''
+
+ch05-5_3:
+  number: Video 5.3
+  title: ''
+  caption: ''
+  src: 'https://zenodo.org/records/23059630/files/561_2-gt.mp4'
+  poster: "/assets/posters/561_2-gt.jpg"
+  download: ''
+  archive: ''
+  track: ''
+  transcript: ''
+
+ch05-5_4:
+  number: Video 5.4
+  title: ''
+  caption: ''
+  src: 'https://zenodo.org/records/23059630/files/739_2-gt.mp4'
+  poster: "/assets/posters/739_2-gt.jpg"
+  download: ''
+  archive: ''
+  track: ''
+  transcript: ''
+
+ch05-5_5:
+  number: Video 5.5
+  title: ''
+  caption: ''
+  src: 'https://zenodo.org/records/23059630/files/831_3-gt.mp4'
+  poster: "/assets/posters/831_3-gt.jpg"
+  download: ''
+  archive: ''
+  track: ''
+  transcript: ''
+
+ch05-5_6:
+  number: Video 5.6
+  title: ''
+  caption: ''
+  src: 'https://zenodo.org/records/23059630/files/93_0-1.mp4'
+  poster: "/assets/posters/93_0-1.jpg"
+  download: ''
+  archive: ''
+  track: ''
+  transcript: ''
+
+ch05-5_7:
+  number: Video 5.7
+  title: ''
+  caption: ''
+  src: 'https://zenodo.org/records/23059630/files/561_2-1.mp4'
+  poster: "/assets/posters/561_2-1.jpg"
+  download: ''
+  archive: ''
+  track: ''
+  transcript: ''
+
+ch05-5_8:
+  number: Video 5.8
+  title: ''
+  caption: ''
+  src: 'https://zenodo.org/records/23059630/files/739_2-1.mp4'
+  poster: "/assets/posters/739_2-1.jpg"
+  download: ''
+  archive: ''
+  track: ''
+  transcript: ''
+
+ch05-5_9:
+  number: Video 5.9
+  title: ''
+  caption: ''
+  src: 'https://zenodo.org/records/23059630/files/831_3-1.mp4'
+  poster: "/assets/posters/831_3-1.jpg"
+  download: ''
+  archive: ''
+  track: ''
+  transcript: ''
+
+ch05-5_10:
+  number: Video 5.10
+  title: ''
+  caption: ''
+  src: 'https://zenodo.org/records/23059630/files/93_0-65.mp4'
+  poster: "/assets/posters/93_0-65.jpg"
+  download: ''
+  archive: ''
+  track: ''
+  transcript: ''
+
+ch05-5_11:
+  number: Video 5.11
+  title: ''
+  caption: ''
+  src: 'https://zenodo.org/records/23059630/files/561_2-65.mp4'
+  poster: "/assets/posters/561_2-65.jpg"
+  download: ''
+  archive: ''
+  track: ''
+  transcript: ''
+
+ch05-5_12:
+  number: Video 5.12
+  title: ''
+  caption: ''
+  src: 'https://zenodo.org/records/23059630/files/739_2-65.mp4'
+  poster: "/assets/posters/739_2-65.jpg"
+  download: ''
+  archive: ''
+  track: ''
+  transcript: ''
+
+ch05-5_13:
+  number: Video 5.13
+  title: ''
+  caption: ''
+  src: 'https://zenodo.org/records/23059630/files/831_3-65.mp4'
+  poster: "/assets/posters/831_3-65.jpg"
+  download: ''
+  archive: ''
+  track: ''
+  transcript: ''
+
+ch05-5_14:
+  number: Video 5.14
+  title: ''
+  caption: ''
+  src: 'https://zenodo.org/records/23059630/files/93_0-cascaded.mp4'
+  poster: "/assets/posters/93_0-cascaded.jpg"
+  download: ''
+  archive: ''
+  track: ''
+  transcript: ''
+
+ch05-5_15:
+  number: Video 5.15
+  title: ''
+  caption: ''
+  src: 'https://zenodo.org/records/23059630/files/561_2-cacaded.mp4'
+  poster: "/assets/posters/561_2-cacaded.jpg"
+  download: ''
+  archive: ''
+  track: ''
+  transcript: ''
+
+ch05-5_16:
+  number: Video 5.16
+  title: ''
+  caption: ''
+  src: 'https://zenodo.org/records/23059630/files/739_2-cascaded.mp4'
+  poster: "/assets/posters/739_2-cascaded.jpg"
+  download: ''
+  archive: ''
+  track: ''
+  transcript: ''
+
+ch05-5_17:
+  number: Video 5.17
+  title: ''
+  caption: ''
+  src: 'https://zenodo.org/records/23059630/files/831_3-cascaded.mp4'
+  poster: "/assets/posters/831_3-cascaded.jpg"
+  download: ''
+  archive: ''
+  track: ''
+  transcript: ''
+
+ch05-5_18:
+  number: Video 5.18
+  title: ''
+  caption: 'Speech generated conditioned on gestures slowed down by 33%'
+  src: 'https://zenodo.org/records/23059630/files/slow0001-0445.mp4'
+  poster: "/assets/posters/slow0001-0445.jpg"
+  download: ''
+  archive: ''
+  track: ''
+  transcript: ''
+
+ch05-5_19:
+  number: Video 5.19
+  title: ''
+  caption: 'Speech generated conditioned on gestures accelerated by 33%'
+  src: 'https://zenodo.org/records/23059630/files/fast0001-0343.mp4'
+  poster: "/assets/posters/fast0001-0343.jpg"
+  download: ''
+  archive: ''
+  track: ''
+  transcript: ''
+
+
+########################################### Chapter 6 ###########################################
+#################################################################################################
+
+ch06-6_1:
+  number: Video 6.1
+  title: 'Segment A-421'
+  caption: ''
+  src: 'https://zenodo.org/records/23059630/files/A-421.mp4'
+  poster: "/assets/posters/A-421.jpg"
+  download: ''
+  archive: ''
+  track: ''
+  transcript: ''
+
+ch06-6_2:
+  number: Video 6.2
+  title: 'Segment A-564'
+  caption: ''
+  src: 'https://zenodo.org/records/23059630/files/A-564.mp4'
+  poster: "/assets/posters/A-564.jpg"
+  download: ''
+  archive: ''
+  track: ''
+  transcript: ''
+
+ch06-6_3:
+  number: Video 6.3
+  title: 'Segment B-421'
+  caption: ''
+  src: 'https://zenodo.org/records/23059630/files/B-421.mp4'
+  poster: "/assets/posters/B-421.jpg"
+  download: ''
+  archive: ''
+  track: ''
+  transcript: ''
+
+ch06-6_4:
+  number: Video 6.4
+  title: 'Segment B-92'
+  caption: ''
+  src: 'https://zenodo.org/records/23059630/files/B-92.mp4'
+  poster: "/assets/posters/B-92.jpg"
+  download: ''
+  archive: ''
+  track: ''
+  transcript: ''
+
+ch06-6_5:
+  number: Video 6.5
+  title: 'Segment C-93'
+  caption: ''
+  src: 'https://zenodo.org/records/23059630/files/C-93.mp4'
+  poster: "/assets/posters/C-93.jpg"
+  download: ''
+  archive: ''
+  track: ''
+  transcript: ''
+
+ch06-6_6:
+  number: Video 6.6
+  title: 'Segment D-655'
+  caption: ''
+  src: 'https://zenodo.org/records/23059630/files/D-655.mp4'
+  poster: "/assets/posters/D-655.jpg"
+  download: ''
+  archive: ''
+  track: ''
+  transcript: ''
+
+ch06-6_7:
+  number: Video 6.7
+  title: 'Segment D-694'
+  caption: ''
+  src: 'https://zenodo.org/records/23059630/files/D-694.mp4'
+  poster: "/assets/posters/D-694.jpg"
+  download: ''
+  archive: ''
+  track: ''
+  transcript: ''
+
+ch06-6_8:
+  number: Video 6.8
+  title: 'Segment E-421'
+  caption: ''
+  src: 'https://zenodo.org/records/23059630/files/E-421.mp4'
+  poster: "/assets/posters/E-421.jpg"
+  download: ''
+  archive: ''
+  track: ''
+  transcript: ''
+
+ch06-6_9:
+  number: Video 6.9
+  title: 'Segment F-695'
+  caption: ''
+  src: 'https://zenodo.org/records/23059630/files/F-695.mp4'
+  poster: "/assets/posters/F-695.jpg"
+  download: ''
+  archive: ''
+  track: ''
+  transcript: ''
+
+ch06-6_10:
+  number: Video 6.10
+  title: 'Segment G-93'
+  caption: ''
+  src: 'https://zenodo.org/records/23059630/files/G-93.mp4'
+  poster: "/assets/posters/G-93.jpg"
+  download: ''
+  archive: ''
+  track: ''
+  transcript: ''
+
+ch06-6_11:
+  number: Video 6.11
+  title: 'Segment E-421'
+  caption: ''
+  src: 'https://zenodo.org/records/23059630/files/E-421.mp4'
+  poster: "/assets/posters/E-421.jpg"
+  download: ''
+  archive: ''
+  track: ''
+  transcript: ''
+
+ch06-6_12:
+  number: Video 6.12
+  title: 'Segment D-655'
+  caption: ''
+  src: 'https://zenodo.org/records/23059630/files/D-655.mp4'
+  poster: "/assets/posters/D-655.jpg"
+  download: ''
+  archive: ''
+  track: ''
+  transcript: ''
+
+ch06-6_13:
+  number: Video 6.13
+  title: 'Segment G-93'
+  caption: ''
+  src: 'https://zenodo.org/records/23059630/files/G-93.mp4'
+  poster: "/assets/posters/G-93.jpg"
+  download: ''
+  archive: ''
+  track: ''
+  transcript: ''
+
+ch06-6_14:
+  number: Video 6.14
+  title: 'Segment A-421'
+  caption: ''
+  src: 'https://zenodo.org/records/23059630/files/A-421.mp4'
+  poster: "/assets/posters/A-421.jpg"
+  download: ''
+  archive: ''
+  track: ''
+  transcript: ''

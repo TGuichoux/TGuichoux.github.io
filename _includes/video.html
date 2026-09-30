@@ -1,0 +1,60 @@
+{%- assign video = site.data.videos[include.key] -%}
+{%- assign media_id = include.key | slugify -%}
+{%- assign video_src = video.src | default: '' | strip -%}
+{%- if video and video_src != '' -%}
+  {%- assign video_poster = video.poster | default: '' | strip -%}
+  {%- assign generated_poster = site.data.video_posters[include.key] -%}
+  {%- if video_poster == '' and generated_poster.src == video_src -%}
+    {%- assign video_poster = generated_poster.poster | default: '' | strip -%}
+  {%- endif -%}
+  {%- assign video_title = video.title | default: '' | strip -%}
+  {%- assign video_label = video_title | default: video.number -%}
+  {%- assign caption_html = video.caption | default: '' | markdownify | strip -%}
+  {%- assign caption_html = caption_html | remove: '<p>' | remove: '</p>' -%}
+  {%- if video_poster != '' -%}
+    {%- capture poster_url -%}{%- include url.html value=video_poster -%}{%- endcapture -%}
+    {%- assign poster_start = video_poster | slice: 0, 1 -%}
+    {%- assign poster_prefix = video_poster | slice: 0, 2 -%}
+    {%- if poster_start == '/' and poster_prefix != '//' -%}
+      {%- comment -%}Refresh a replaced local JPEG after every Jekyll build.{%- endcomment -%}
+      {%- assign poster_version = site.time | date: '%s' -%}
+      {%- if poster_url contains '?' -%}
+        {%- assign poster_url = poster_url | append: '&amp;v=' | append: poster_version -%}
+      {%- else -%}
+        {%- assign poster_url = poster_url | append: '?v=' | append: poster_version -%}
+      {%- endif -%}
+    {%- endif -%}
+  {%- endif %}
+<figure class="media-video" id="{{ media_id }}" aria-labelledby="{{ media_id }}-caption">
+  <video controls playsinline preload="none" width="1280" height="720" data-video
+    {% if video_poster != '' %}poster="{{ poster_url }}"{% else %}data-first-frame{% endif %}
+    aria-label="{{ video_label | escape }}" aria-describedby="{{ media_id }}-caption">
+    <source src="{% include url.html value=video_src %}" type="video/mp4">
+    {% if video.track and video.track != '' %}
+      <track kind="captions" src="{% include url.html value=video.track %}"
+        srclang="{{ video.track_language | default: 'en' | escape }}"
+        label="{{ video.track_label | default: 'English' | escape }}">
+    {% endif %}
+    Your browser cannot play this video.
+    <a href="{% include url.html value=video_src %}">Open the MP4 file</a>.
+  </video>
+  <p class="video-load-status" data-video-status role="status" hidden>
+    The video could not be loaded from its host.
+    <a href="{% include url.html value=video_src %}" target="_blank" rel="noopener">Open the original video</a>
+    <button type="button" data-video-retry>Retry</button>
+  </p>
+  <figcaption id="{{ media_id }}-caption">
+    <strong>{{ video.number | escape }}{% if video_title != '' %}  {{ video_title | escape }}{% endif %}</strong>
+    {% if caption_html != '' %}<span>{{ caption_html }}</span>{% endif %}
+    {% if video.download and video.download != '' %}
+      <a class="media-link" href="{% include url.html value=video.download %}">Download / open source <span aria-hidden="true">↗</span></a>
+    {% endif %}
+    {% if video.archive and video.archive != '' %}
+      <a class="media-link" href="{% include url.html value=video.archive %}">Archive record <span aria-hidden="true">↗</span></a>
+    {% endif %}
+    {% if video.transcript and video.transcript != '' %}
+      <a class="media-link" href="{% include url.html value=video.transcript %}">Transcript</a>
+    {% endif %}
+  </figcaption>
+</figure>
+{%- endif %}

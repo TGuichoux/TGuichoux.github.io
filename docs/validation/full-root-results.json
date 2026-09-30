@@ -1,0 +1,700 @@
+{
+  "mode": "offline rendered DOM",
+  "baseurl": "",
+  "widths": [
+    375,
+    390,
+    640,
+    768,
+    1024,
+    1440
+  ],
+  "browser": "Chromium 144.0.7559.96",
+  "video_source": "synthetic H.264 fixture; no Access-Control-Allow-Origin header",
+  "external_limitations": "Live Zenodo downloads and MathJax rendering are not tested.",
+  "checks": [
+    {
+      "test": "page and full carousel traversal",
+      "page": "404.html",
+      "width": 375,
+      "carousels": 0,
+      "slides": 0,
+      "status": "passed"
+    },
+    {
+      "test": "page and full carousel traversal",
+      "page": "index.html",
+      "width": 375,
+      "carousels": 0,
+      "slides": 0,
+      "status": "passed"
+    },
+    {
+      "test": "page and full carousel traversal",
+      "page": "papers/index.html",
+      "width": 375,
+      "carousels": 0,
+      "slides": 0,
+      "status": "passed"
+    },
+    {
+      "test": "page and full carousel traversal",
+      "page": "papers/paper-01/index.html",
+      "width": 375,
+      "carousels": 4,
+      "slides": 12,
+      "status": "passed"
+    },
+    {
+      "test": "page and full carousel traversal",
+      "page": "papers/paper-02/index.html",
+      "width": 375,
+      "carousels": 0,
+      "slides": 0,
+      "status": "passed"
+    },
+    {
+      "test": "page and full carousel traversal",
+      "page": "papers/paper-03/index.html",
+      "width": 375,
+      "carousels": 0,
+      "slides": 0,
+      "status": "passed"
+    },
+    {
+      "test": "page and full carousel traversal",
+      "page": "papers/paper-04/index.html",
+      "width": 375,
+      "carousels": 0,
+      "slides": 0,
+      "status": "passed"
+    },
+    {
+      "test": "page and full carousel traversal",
+      "page": "papers/paper-05/index.html",
+      "width": 375,
+      "carousels": 0,
+      "slides": 0,
+      "status": "passed"
+    },
+    {
+      "test": "page and full carousel traversal",
+      "page": "thesis/chapter-02/index.html",
+      "width": 375,
+      "carousels": 0,
+      "slides": 0,
+      "status": "passed"
+    },
+    {
+      "test": "page and full carousel traversal",
+      "page": "thesis/chapter-04/index.html",
+      "width": 375,
+      "carousels": 4,
+      "slides": 12,
+      "status": "passed"
+    },
+    {
+      "test": "page and full carousel traversal",
+      "page": "thesis/chapter-05/index.html",
+      "width": 375,
+      "carousels": 4,
+      "slides": 16,
+      "status": "passed"
+    },
+    {
+      "test": "page and full carousel traversal",
+      "page": "thesis/chapter-06/index.html",
+      "width": 375,
+      "carousels": 1,
+      "slides": 10,
+      "status": "passed"
+    },
+    {
+      "test": "page and full carousel traversal",
+      "page": "thesis/index.html",
+      "width": 375,
+      "carousels": 0,
+      "slides": 0,
+      "status": "passed"
+    },
+    {
+      "test": "page and full carousel traversal",
+      "page": "404.html",
+      "width": 390,
+      "carousels": 0,
+      "slides": 0,
+      "status": "passed"
+    },
+    {
+      "test": "page and full carousel traversal",
+      "page": "index.html",
+      "width": 390,
+      "carousels": 0,
+      "slides": 0,
+      "status": "passed"
+    },
+    {
+      "test": "page and full carousel traversal",
+      "page": "papers/index.html",
+      "width": 390,
+      "carousels": 0,
+      "slides": 0,
+      "status": "passed"
+    },
+    {
+      "test": "page and full carousel traversal",
+      "page": "papers/paper-01/index.html",
+      "width": 390,
+      "carousels": 4,
+      "slides": 12,
+      "status": "passed"
+    },
+    {
+      "test": "page and full carousel traversal",
+      "page": "papers/paper-02/index.html",
+      "width": 390,
+      "carousels": 0,
+      "slides": 0,
+      "status": "passed"
+    },
+    {
+      "test": "page and full carousel traversal",
+      "page": "papers/paper-03/index.html",
+      "width": 390,
+      "carousels": 0,
+      "slides": 0,
+      "status": "passed"
+    },
+    {
+      "test": "page and full carousel traversal",
+      "page": "papers/paper-04/index.html",
+      "width": 390,
+      "carousels": 0,
+      "slides": 0,
+      "status": "passed"
+    },
+    {
+      "test": "page and full carousel traversal",
+      "page": "papers/paper-05/index.html",
+      "width": 390,
+      "carousels": 0,
+      "slides": 0,
+      "status": "passed"
+    },
+    {
+      "test": "page and full carousel traversal",
+      "page": "thesis/chapter-02/index.html",
+      "width": 390,
+      "carousels": 0,
+      "slides": 0,
+      "status": "passed"
+    },
+    {
+      "test": "page and full carousel traversal",
+      "page": "thesis/chapter-04/index.html",
+      "width": 390,
+      "carousels": 4,
+      "slides": 12,
+      "status": "passed"
+    },
+    {
+      "test": "page and full carousel traversal",
+      "page": "thesis/chapter-05/index.html",
+      "width": 390,
+      "carousels": 4,
+      "slides": 16,
+      "status": "passed"
+    },
+    {
+      "test": "page and full carousel traversal",
+      "page": "thesis/chapter-06/index.html",
+      "width": 390,
+      "carousels": 1,
+      "slides": 10,
+      "status": "passed"
+    },
+    {
+      "test": "page and full carousel traversal",
+      "page": "thesis/index.html",
+      "width": 390,
+      "carousels": 0,
+      "slides": 0,
+      "status": "passed"
+    },
+    {
+      "test": "page and full carousel traversal",
+      "page": "404.html",
+      "width": 640,
+      "carousels": 0,
+      "slides": 0,
+      "status": "passed"
+    },
+    {
+      "test": "page and full carousel traversal",
+      "page": "index.html",
+      "width": 640,
+      "carousels": 0,
+      "slides": 0,
+      "status": "passed"
+    },
+    {
+      "test": "page and full carousel traversal",
+      "page": "papers/index.html",
+      "width": 640,
+      "carousels": 0,
+      "slides": 0,
+      "status": "passed"
+    },
+    {
+      "test": "page and full carousel traversal",
+      "page": "papers/paper-01/index.html",
+      "width": 640,
+      "carousels": 4,
+      "slides": 12,
+      "status": "passed"
+    },
+    {
+      "test": "page and full carousel traversal",
+      "page": "papers/paper-02/index.html",
+      "width": 640,
+      "carousels": 0,
+      "slides": 0,
+      "status": "passed"
+    },
+    {
+      "test": "page and full carousel traversal",
+      "page": "papers/paper-03/index.html",
+      "width": 640,
+      "carousels": 0,
+      "slides": 0,
+      "status": "passed"
+    },
+    {
+      "test": "page and full carousel traversal",
+      "page": "papers/paper-04/index.html",
+      "width": 640,
+      "carousels": 0,
+      "slides": 0,
+      "status": "passed"
+    },
+    {
+      "test": "page and full carousel traversal",
+      "page": "papers/paper-05/index.html",
+      "width": 640,
+      "carousels": 0,
+      "slides": 0,
+      "status": "passed"
+    },
+    {
+      "test": "page and full carousel traversal",
+      "page": "thesis/chapter-02/index.html",
+      "width": 640,
+      "carousels": 0,
+      "slides": 0,
+      "status": "passed"
+    },
+    {
+      "test": "page and full carousel traversal",
+      "page": "thesis/chapter-04/index.html",
+      "width": 640,
+      "carousels": 4,
+      "slides": 12,
+      "status": "passed"
+    },
+    {
+      "test": "page and full carousel traversal",
+      "page": "thesis/chapter-05/index.html",
+      "width": 640,
+      "carousels": 4,
+      "slides": 16,
+      "status": "passed"
+    },
+    {
+      "test": "page and full carousel traversal",
+      "page": "thesis/chapter-06/index.html",
+      "width": 640,
+      "carousels": 1,
+      "slides": 10,
+      "status": "passed"
+    },
+    {
+      "test": "page and full carousel traversal",
+      "page": "thesis/index.html",
+      "width": 640,
+      "carousels": 0,
+      "slides": 0,
+      "status": "passed"
+    },
+    {
+      "test": "page and full carousel traversal",
+      "page": "404.html",
+      "width": 768,
+      "carousels": 0,
+      "slides": 0,
+      "status": "passed"
+    },
+    {
+      "test": "page and full carousel traversal",
+      "page": "index.html",
+      "width": 768,
+      "carousels": 0,
+      "slides": 0,
+      "status": "passed"
+    },
+    {
+      "test": "page and full carousel traversal",
+      "page": "papers/index.html",
+      "width": 768,
+      "carousels": 0,
+      "slides": 0,
+      "status": "passed"
+    },
+    {
+      "test": "page and full carousel traversal",
+      "page": "papers/paper-01/index.html",
+      "width": 768,
+      "carousels": 4,
+      "slides": 12,
+      "status": "passed"
+    },
+    {
+      "test": "page and full carousel traversal",
+      "page": "papers/paper-02/index.html",
+      "width": 768,
+      "carousels": 0,
+      "slides": 0,
+      "status": "passed"
+    },
+    {
+      "test": "page and full carousel traversal",
+      "page": "papers/paper-03/index.html",
+      "width": 768,
+      "carousels": 0,
+      "slides": 0,
+      "status": "passed"
+    },
+    {
+      "test": "page and full carousel traversal",
+      "page": "papers/paper-04/index.html",
+      "width": 768,
+      "carousels": 0,
+      "slides": 0,
+      "status": "passed"
+    },
+    {
+      "test": "page and full carousel traversal",
+      "page": "papers/paper-05/index.html",
+      "width": 768,
+      "carousels": 0,
+      "slides": 0,
+      "status": "passed"
+    },
+    {
+      "test": "page and full carousel traversal",
+      "page": "thesis/chapter-02/index.html",
+      "width": 768,
+      "carousels": 0,
+      "slides": 0,
+      "status": "passed"
+    },
+    {
+      "test": "page and full carousel traversal",
+      "page": "thesis/chapter-04/index.html",
+      "width": 768,
+      "carousels": 4,
+      "slides": 12,
+      "status": "passed"
+    },
+    {
+      "test": "page and full carousel traversal",
+      "page": "thesis/chapter-05/index.html",
+      "width": 768,
+      "carousels": 4,
+      "slides": 16,
+      "status": "passed"
+    },
+    {
+      "test": "page and full carousel traversal",
+      "page": "thesis/chapter-06/index.html",
+      "width": 768,
+      "carousels": 1,
+      "slides": 10,
+      "status": "passed"
+    },
+    {
+      "test": "page and full carousel traversal",
+      "page": "thesis/index.html",
+      "width": 768,
+      "carousels": 0,
+      "slides": 0,
+      "status": "passed"
+    },
+    {
+      "test": "page and full carousel traversal",
+      "page": "404.html",
+      "width": 1024,
+      "carousels": 0,
+      "slides": 0,
+      "status": "passed"
+    },
+    {
+      "test": "page and full carousel traversal",
+      "page": "index.html",
+      "width": 1024,
+      "carousels": 0,
+      "slides": 0,
+      "status": "passed"
+    },
+    {
+      "test": "page and full carousel traversal",
+      "page": "papers/index.html",
+      "width": 1024,
+      "carousels": 0,
+      "slides": 0,
+      "status": "passed"
+    },
+    {
+      "test": "page and full carousel traversal",
+      "page": "papers/paper-01/index.html",
+      "width": 1024,
+      "carousels": 4,
+      "slides": 12,
+      "status": "passed"
+    },
+    {
+      "test": "page and full carousel traversal",
+      "page": "papers/paper-02/index.html",
+      "width": 1024,
+      "carousels": 0,
+      "slides": 0,
+      "status": "passed"
+    },
+    {
+      "test": "page and full carousel traversal",
+      "page": "papers/paper-03/index.html",
+      "width": 1024,
+      "carousels": 0,
+      "slides": 0,
+      "status": "passed"
+    },
+    {
+      "test": "page and full carousel traversal",
+      "page": "papers/paper-04/index.html",
+      "width": 1024,
+      "carousels": 0,
+      "slides": 0,
+      "status": "passed"
+    },
+    {
+      "test": "page and full carousel traversal",
+      "page": "papers/paper-05/index.html",
+      "width": 1024,
+      "carousels": 0,
+      "slides": 0,
+      "status": "passed"
+    },
+    {
+      "test": "page and full carousel traversal",
+      "page": "thesis/chapter-02/index.html",
+      "width": 1024,
+      "carousels": 0,
+      "slides": 0,
+      "status": "passed"
+    },
+    {
+      "test": "page and full carousel traversal",
+      "page": "thesis/chapter-04/index.html",
+      "width": 1024,
+      "carousels": 4,
+      "slides": 12,
+      "status": "passed"
+    },
+    {
+      "test": "page and full carousel traversal",
+      "page": "thesis/chapter-05/index.html",
+      "width": 1024,
+      "carousels": 4,
+      "slides": 16,
+      "status": "passed"
+    },
+    {
+      "test": "page and full carousel traversal",
+      "page": "thesis/chapter-06/index.html",
+      "width": 1024,
+      "carousels": 1,
+      "slides": 10,
+      "status": "passed"
+    },
+    {
+      "test": "page and full carousel traversal",
+      "page": "thesis/index.html",
+      "width": 1024,
+      "carousels": 0,
+      "slides": 0,
+      "status": "passed"
+    },
+    {
+      "test": "page and full carousel traversal",
+      "page": "404.html",
+      "width": 1440,
+      "carousels": 0,
+      "slides": 0,
+      "status": "passed"
+    },
+    {
+      "test": "page and full carousel traversal",
+      "page": "index.html",
+      "width": 1440,
+      "carousels": 0,
+      "slides": 0,
+      "status": "passed"
+    },
+    {
+      "test": "page and full carousel traversal",
+      "page": "papers/index.html",
+      "width": 1440,
+      "carousels": 0,
+      "slides": 0,
+      "status": "passed"
+    },
+    {
+      "test": "page and full carousel traversal",
+      "page": "papers/paper-01/index.html",
+      "width": 1440,
+      "carousels": 4,
+      "slides": 12,
+      "status": "passed"
+    },
+    {
+      "test": "page and full carousel traversal",
+      "page": "papers/paper-02/index.html",
+      "width": 1440,
+      "carousels": 0,
+      "slides": 0,
+      "status": "passed"
+    },
+    {
+      "test": "page and full carousel traversal",
+      "page": "papers/paper-03/index.html",
+      "width": 1440,
+      "carousels": 0,
+      "slides": 0,
+      "status": "passed"
+    },
+    {
+      "test": "page and full carousel traversal",
+      "page": "papers/paper-04/index.html",
+      "width": 1440,
+      "carousels": 0,
+      "slides": 0,
+      "status": "passed"
+    },
+    {
+      "test": "page and full carousel traversal",
+      "page": "papers/paper-05/index.html",
+      "width": 1440,
+      "carousels": 0,
+      "slides": 0,
+      "status": "passed"
+    },
+    {
+      "test": "page and full carousel traversal",
+      "page": "thesis/chapter-02/index.html",
+      "width": 1440,
+      "carousels": 0,
+      "slides": 0,
+      "status": "passed"
+    },
+    {
+      "test": "page and full carousel traversal",
+      "page": "thesis/chapter-04/index.html",
+      "width": 1440,
+      "carousels": 4,
+      "slides": 12,
+      "status": "passed"
+    },
+    {
+      "test": "page and full carousel traversal",
+      "page": "thesis/chapter-05/index.html",
+      "width": 1440,
+      "carousels": 4,
+      "slides": 16,
+      "status": "passed"
+    },
+    {
+      "test": "page and full carousel traversal",
+      "page": "thesis/chapter-06/index.html",
+      "width": 1440,
+      "carousels": 1,
+      "slides": 10,
+      "status": "passed"
+    },
+    {
+      "test": "page and full carousel traversal",
+      "page": "thesis/index.html",
+      "width": 1440,
+      "carousels": 0,
+      "slides": 0,
+      "status": "passed"
+    },
+    {
+      "test": "first-frame and playback pause",
+      "status": "passed"
+    },
+    {
+      "test": "trackpad and resize",
+      "status": "passed"
+    },
+    {
+      "test": "touch swipe",
+      "status": "passed"
+    },
+    {
+      "test": "no JavaScript",
+      "status": "passed"
+    },
+    {
+      "test": "failed media host",
+      "status": "passed"
+    },
+    {
+      "test": "unavailable site.js",
+      "status": "passed"
+    },
+    {
+      "test": "pending MathJax",
+      "status": "passed"
+    },
+    {
+      "test": "missing observers",
+      "status": "passed"
+    },
+    {
+      "test": "deep link",
+      "status": "passed"
+    },
+    {
+      "test": "initial deep link",
+      "status": "passed"
+    },
+    {
+      "test": "mouse drag",
+      "status": "passed"
+    },
+    {
+      "test": "video keyboard",
+      "status": "passed"
+    },
+    {
+      "test": "independent groups",
+      "status": "passed"
+    },
+    {
+      "test": "print",
+      "status": "passed"
+    }
+  ],
+  "failures": [],
+  "passed": 92,
+  "failed": 0
+}

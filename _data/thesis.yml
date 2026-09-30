@@ -1,0 +1,32 @@
+title: "Generative modeling for embodied communicative behaviors: speech and gesture generation"
+subtitle: "PhD thesis · Supplementary material"
+
+institution: "ISIR - IRCAM, Sorbonne University"
+degree: "PhD in Computer Science"
+year: "2026"
+defense_date: "November 24th 2026"
+
+supervisors:
+  - "Catherine Pelachaud"
+  - "Nicolas Obin"
+  - "Laure Soulier"
+
+abstract: |
+  Human communication is inherently multimodal, with speech and co-speech gestures closely coordinated in time and meaning. This thesis investigates unified generative models that produce both modalities jointly, rather than relying on separate speech and gesture pipelines.
+
+  We first introduce **Gelina**, a discrete autoregressive model that represents speech and gestures as interleaved token sequences. We then propose **Gaspard**, a continuous autoregressive diffusion model that operates on temporally aligned latent representations and uses modality-decoupled classifier-free guidance to improve gesture dynamics and expressivity.
+
+  Beyond conventional evaluations, the thesis also studies the communicative properties of generated behaviors, including gesture categories, speech–gesture synchrony, and higher-level organization. The results show that unified models can generate diverse, coordinated speech and gestures with meaningful temporal and semantic relationships.
+
+materials_title: "About the supplementary materials"
+
+materials_intro: |
+  This website provides supplementary materials associated with the thesis, including videos, figures, and additional material complementing the manuscript.
+
+  We only list chapters with associated materials. Figure and video identifiers are referenced directly from the manuscript.
+
+pdf: ""
+code: ""
+doi: ""
+
+bibtex: |

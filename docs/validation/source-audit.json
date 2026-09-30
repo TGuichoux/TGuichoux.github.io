@@ -1,0 +1,29 @@
+{
+  "changed_existing_files": [
+    "README.md",
+    "README-CONTENT.md",
+    "_includes/video-group.html",
+    "_includes/video.html",
+    "_layouts/default.html",
+    "assets/js/site.js",
+    "assets/css/main.css"
+  ],
+  "unchanged_existing_files": 78,
+  "added_files": [
+    "scripts/generate_posters.rb",
+    "scripts/test_carousel.py",
+    "docs/CAROUSEL-VALIDATION.md",
+    "docs/validation/http-results.json",
+    "docs/validation/full-root-results.json",
+    "docs/validation/visual-results.json",
+    "docs/validation/static-poster-results.json",
+    "docs/validation/poster-tests.json",
+    "docs/validation/subpath-results.json",
+    "assets/js/carousel.js"
+  ],
+  "chapter_template_sha256": "580fb1877a77aef31acb8c5677059e3d894befb19db7df6d884cfb8620fc471c",
+  "font_and_layout_variables_unchanged": true,
+  "all_chapter_and_paper_markdown_unchanged": true,
+  "all_existing_data_yaml_unchanged": true,
+  "all_original_assets_unchanged": true
+}

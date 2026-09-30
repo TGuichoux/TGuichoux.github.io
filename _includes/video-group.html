@@ -1,0 +1,63 @@
+{% comment %}
+  Native scroll-snap carousel. Existing keys/columns/label arguments are preserved.
+  With no JavaScript the track still scrolls and each slide has real anchor links.
+  Single-video groups remain ordinary videos. Never hide the other slides.
+{% endcomment %}
+{%- assign input_keys = include.keys -%}
+{%- if include.keys contains ',' -%}
+  {%- assign input_keys = include.keys | split: ',' -%}
+{%- elsif include.keys.first == nil -%}
+  {%- assign input_keys = include.keys | split: ',' -%}
+{%- endif -%}
+{%- capture valid_keys_string -%}
+  {%- for input_key in input_keys -%}
+    {%- assign clean_key = input_key | strip -%}
+    {%- assign grouped_video = site.data.videos[clean_key] -%}
+    {%- assign grouped_src = grouped_video.src | default: '' | strip -%}
+    {%- if grouped_video and grouped_src != '' -%}{{ clean_key }}|{%- endif -%}
+  {%- endfor -%}
+{%- endcapture -%}
+{%- assign group_keys = valid_keys_string | split: '|' -%}
+{%- assign group_size = group_keys.size -%}
+{%- if group_size > 1 -%}
+{%- assign carousel_id = group_keys.first | slugify | prepend: 'carousel-' -%}
+<div class="video-carousel" id="{{ carousel_id }}" data-video-carousel data-carousel-version="3"
+  role="region" aria-label="{{ include.label | default: 'Supplementary videos' | escape }}">
+  <div class="video-carousel__controls" data-carousel-controls hidden>
+    <button type="button" class="video-carousel__button" data-carousel-previous
+      aria-label="Previous video" aria-controls="{{ carousel_id }}-track"><span aria-hidden="true">←</span> Previous</button>
+    <span class="video-carousel__counter" data-carousel-counter role="status" aria-live="polite" aria-atomic="true">1 / {{ group_size }}</span>
+    <button type="button" class="video-carousel__button" data-carousel-next
+      aria-label="Next video" aria-controls="{{ carousel_id }}-track">Next <span aria-hidden="true">→</span></button>
+    <label class="video-carousel__picker">
+      <span>Go to video</span>
+      <select class="video-carousel__select" data-carousel-select aria-controls="{{ carousel_id }}-track">
+        {%- for group_key in group_keys -%}
+          {%- assign group_item = site.data.videos[group_key] -%}
+          <option value="{{ forloop.index0 }}">{{ forloop.index }}. {{ group_item.number | escape }}{% if group_item.title and group_item.title != '' %} — {{ group_item.title | escape }}{% endif %}</option>
+        {%- endfor -%}
+      </select>
+    </label>
+  </div>
+  <div class="video-carousel__slides" id="{{ carousel_id }}-track" data-carousel-slides
+    tabindex="0" aria-label="Video slides. Scroll horizontally to browse.">
+    {%- for group_key in group_keys -%}
+      {%- assign group_item = site.data.videos[group_key] -%}
+      {%- assign previous_index = forloop.index0 | minus: 1 -%}
+      {%- assign next_index = forloop.index0 | plus: 1 -%}
+      <div class="video-carousel__slide" data-carousel-slide role="group" aria-roledescription="slide"
+        aria-label="{{ forloop.index }} of {{ group_size }}: {{ group_item.number | escape }}">
+        <nav class="video-carousel__fallback" aria-label="Video navigation">
+          {% unless forloop.first %}<a href="#{{ group_keys[previous_index] | slugify }}" data-carousel-link>← Previous</a>{% else %}<span aria-disabled="true">← Previous</span>{% endunless %}
+          <span>{{ forloop.index }} / {{ group_size }}</span>
+          {% unless forloop.last %}<a href="#{{ group_keys[next_index] | slugify }}" data-carousel-link>Next →</a>{% else %}<span aria-disabled="true">Next →</span>{% endunless %}
+        </nav>
+        {% include video.html key=group_key %}
+      </div>
+    {%- endfor -%}
+  </div>
+  <p class="video-carousel__hint">Swipe or scroll sideways to browse. Use the video controls to play.</p>
+</div>
+{%- elsif group_size == 1 -%}
+  {% include video.html key=group_keys.first %}
+{%- endif -%}

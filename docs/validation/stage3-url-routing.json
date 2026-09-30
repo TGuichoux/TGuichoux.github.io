@@ -1,0 +1,124 @@
+{
+  "scope": "Actual production JS in a Node VM DOM fixture; URL/event-routing unit tests only",
+  "checks": [
+    {
+      "test": "fragment at /",
+      "status": "passed"
+    },
+    {
+      "test": "encoded fragment at /",
+      "status": "passed"
+    },
+    {
+      "test": "absolute same-page URL at /",
+      "status": "passed"
+    },
+    {
+      "test": "root-relative same-page URL at /",
+      "status": "passed"
+    },
+    {
+      "test": "page-relative same-page URL at /",
+      "status": "passed"
+    },
+    {
+      "test": "fragment at /repository-name",
+      "status": "passed"
+    },
+    {
+      "test": "encoded fragment at /repository-name",
+      "status": "passed"
+    },
+    {
+      "test": "absolute same-page URL at /repository-name",
+      "status": "passed"
+    },
+    {
+      "test": "root-relative same-page URL at /repository-name",
+      "status": "passed"
+    },
+    {
+      "test": "page-relative same-page URL at /repository-name",
+      "status": "passed"
+    },
+    {
+      "test": "leave browser default intact: external origin",
+      "status": "passed"
+    },
+    {
+      "test": "leave browser default intact: different page",
+      "status": "passed"
+    },
+    {
+      "test": "leave browser default intact: different query",
+      "status": "passed"
+    },
+    {
+      "test": "leave browser default intact: new tab",
+      "status": "passed"
+    },
+    {
+      "test": "leave browser default intact: named frame",
+      "status": "passed"
+    },
+    {
+      "test": "leave browser default intact: download",
+      "status": "passed"
+    },
+    {
+      "test": "leave browser default intact: Control click",
+      "status": "passed"
+    },
+    {
+      "test": "leave browser default intact: Command click",
+      "status": "passed"
+    },
+    {
+      "test": "leave browser default intact: Shift click",
+      "status": "passed"
+    },
+    {
+      "test": "leave browser default intact: Alt click",
+      "status": "passed"
+    },
+    {
+      "test": "leave browser default intact: middle click",
+      "status": "passed"
+    },
+    {
+      "test": "leave browser default intact: right click",
+      "status": "passed"
+    },
+    {
+      "test": "leave browser default intact: unknown anchor",
+      "status": "passed"
+    },
+    {
+      "test": "leave browser default intact: malformed encoding",
+      "status": "passed"
+    },
+    {
+      "test": "leave browser default intact: empty fragment",
+      "status": "passed"
+    },
+    {
+      "test": "leave browser default intact: unsafe scheme left unintercepted",
+      "status": "passed"
+    },
+    {
+      "test": "explicit _self remains an ordinary deep link",
+      "status": "passed"
+    },
+    {
+      "test": "previously cancelled click is not processed",
+      "status": "passed"
+    },
+    {
+      "test": "hash/history/restore listeners are registered once",
+      "status": "passed"
+    }
+  ],
+  "failures": [],
+  "passed": 29,
+  "failed": 0
+}

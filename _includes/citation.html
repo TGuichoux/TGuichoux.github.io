@@ -1,0 +1,8 @@
+{% if include.text and include.text != '' %}
+{% assign citation_id = include.id | default: 'citation' | slugify | append: '-bibtex' %}
+<details class="citation">
+  <summary>Citation / BibTeX</summary>
+  <div class="citation-actions"><button class="copy-citation" type="button" data-copy-target="{{ citation_id }}" hidden>Copy BibTeX</button><span class="copy-status" role="status" aria-live="polite"></span></div>
+  <pre tabindex="0"><code id="{{ citation_id }}">{{ include.text | escape }}</code></pre>
+</details>
+{% endif %}

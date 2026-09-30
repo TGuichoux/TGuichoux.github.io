@@ -1,0 +1,14 @@
+[
+  {
+    "build": "after",
+    "baseurl": "",
+    "local_http_resources": 41,
+    "failures": []
+  },
+  {
+    "build": "after-subpath",
+    "baseurl": "/thesis-supplement",
+    "local_http_resources": 41,
+    "failures": []
+  }
+]

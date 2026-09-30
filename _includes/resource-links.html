@@ -1,0 +1,19 @@
+{% assign resource_keys = 'pdf,doi,arxiv,code,download' | split: ',' %}
+{% capture resource_links %}
+  {% for key in resource_keys %}
+    {% assign address = include.item[key] | default: '' | strip %}
+    {% case key %}
+      {% when 'pdf' %}{% assign resource_label = 'PDF' %}
+      {% when 'doi' %}{% assign resource_label = 'DOI' %}
+      {% when 'arxiv' %}{% assign resource_label = 'arXiv' %}
+      {% when 'code' %}{% assign resource_label = 'Code' %}
+      {% when 'download' %}{% assign resource_label = 'Download material' %}
+    {% endcase %}
+    {% if address != '' %}
+      {% if key == 'doi' %}{% unless address contains '://' %}{% assign address = address | prepend: 'https://doi.org/' %}{% endunless %}{% endif %}
+      <a class="resource-link" href="{% include url.html value=address %}">{{ resource_label }} <span aria-hidden="true">↗</span></a>
+    {% endif %}
+  {% endfor %}
+{% endcapture %}
+{% assign resource_links = resource_links | strip %}
+{% if resource_links != '' %}<div class="resource-links" aria-label="Related resources">{{ resource_links }}</div>{% endif %}

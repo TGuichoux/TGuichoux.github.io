@@ -1,0 +1,11 @@
+name: "Téo Guichoux"
+role: "PhD student"
+institution: "Sorbonne Univeristy, ISIR-IRCAM"
+bio: "My work focuses text-to-speech and co-speech gesture generation, with a specific focus on the joint modeling of both modalities."
+avatar: "/assets/images/IMG_2315.JPG"
+# Leave unused links empty. Never put a placeholder into a URL field.
+email: "teo.guichoux@sorbonne-universite.fr"
+orcid: "https://orcid.org/0009-0008-3711-1405"
+scholar: "https://scholar.google.com/citations?user=QPxDtkkAAAAJ&hl=en"
+github: "https://github.com/TGuichoux"
+linkedin: "https://www.linkedin.com/in/teo-guichoux/"

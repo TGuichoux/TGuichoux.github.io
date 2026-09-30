@@ -1,0 +1,3713 @@
+{
+  "baseurl": "/thesis-supplement",
+  "browser_mode": "offline rendered DOM",
+  "http_mode": "independent local static HTTP server",
+  "widths": [
+    390,
+    1440
+  ],
+  "checks": [
+    {
+      "test": "source JPEG decoding and unchanged built bytes",
+      "status": "passed",
+      "details": {
+        "decoded_jpegs": 40,
+        "unchanged_built_jpegs": 40
+      }
+    },
+    {
+      "test": "markup poster papers/paper-01/index.html #1",
+      "status": "passed",
+      "details": {
+        "page": "papers/paper-01/index.html",
+        "src": "https://zenodo.org/records/23059630/files/gelina-gelina-female.mp4",
+        "poster": "/thesis-supplement/assets/posters/gelina-gelina-female.jpg?v=1790793889"
+      }
+    },
+    {
+      "test": "markup poster papers/paper-01/index.html #2",
+      "status": "passed",
+      "details": {
+        "page": "papers/paper-01/index.html",
+        "src": "https://zenodo.org/records/23059630/files/gelina-kings-male.mp4",
+        "poster": "/thesis-supplement/assets/posters/gelina-kings-male.jpg?v=1790793889"
+      }
+    },
+    {
+      "test": "markup poster papers/paper-01/index.html #3",
+      "status": "passed",
+      "details": {
+        "page": "papers/paper-01/index.html",
+        "src": "https://zenodo.org/records/23059630/files/gelina-duck-female.mp4",
+        "poster": "/thesis-supplement/assets/posters/gelina-duck_female.jpg?v=1790793889"
+      }
+    },
+    {
+      "test": "markup poster papers/paper-01/index.html #4",
+      "status": "passed",
+      "details": {
+        "page": "papers/paper-01/index.html",
+        "src": "https://zenodo.org/records/23059630/files/gelina-clone_kieks_0_3_3.mp4",
+        "poster": "/thesis-supplement/assets/posters/gelina-clone_kieks_0_3_3.jpg?v=1790793889"
+      }
+    },
+    {
+      "test": "markup poster papers/paper-01/index.html #5",
+      "status": "passed",
+      "details": {
+        "page": "papers/paper-01/index.html",
+        "src": "https://zenodo.org/records/23059630/files/gelina-clone_scott_0_2_2.mp4",
+        "poster": "/thesis-supplement/assets/posters/gelina-clone_scott_0_2_2.jpg?v=1790793889"
+      }
+    },
+    {
+      "test": "markup poster papers/paper-01/index.html #6",
+      "status": "passed",
+      "details": {
+        "page": "papers/paper-01/index.html",
+        "src": "https://zenodo.org/records/23059630/files/gelina-clone_scott_0_4_4.mp4",
+        "poster": "/thesis-supplement/assets/posters/gelina-clone_scott_0_4_4.jpg?v=1790793889"
+      }
+    },
+    {
+      "test": "markup poster papers/paper-01/index.html #7",
+      "status": "passed",
+      "details": {
+        "page": "papers/paper-01/index.html",
+        "src": "https://zenodo.org/records/23059630/files/gelina-comparison_scott_0_5_5.mp4",
+        "poster": "/thesis-supplement/assets/posters/gelina-comparison_scott_0_5_5.jpg?v=1790793889"
+      }
+    },
+    {
+      "test": "markup poster papers/paper-01/index.html #8",
+      "status": "passed",
+      "details": {
+        "page": "papers/paper-01/index.html",
+        "src": "https://zenodo.org/records/23059630/files/gelina-comparison_kieks_0_1_1.mp4",
+        "poster": "/thesis-supplement/assets/posters/gelina-comparison_kieks_0_1_1.jpg?v=1790793889"
+      }
+    },
+    {
+      "test": "markup poster papers/paper-01/index.html #9",
+      "status": "passed",
+      "details": {
+        "page": "papers/paper-01/index.html",
+        "src": "https://zenodo.org/records/23059630/files/gelina-comparison_wayne_0_2_2.mp4",
+        "poster": "/thesis-supplement/assets/posters/gelina-comparison_wayne_0_2_2.jpg?v=1790793889"
+      }
+    },
+    {
+      "test": "markup poster papers/paper-01/index.html #10",
+      "status": "passed",
+      "details": {
+        "page": "papers/paper-01/index.html",
+        "src": "https://zenodo.org/records/23059630/files/gelina-comparison_wayne_0_3_3.mp4",
+        "poster": "/thesis-supplement/assets/posters/gelina-comparison_wayne_0_3_3.jpg?v=1790793889"
+      }
+    },
+    {
+      "test": "markup poster papers/paper-01/index.html #11",
+      "status": "passed",
+      "details": {
+        "page": "papers/paper-01/index.html",
+        "src": "https://zenodo.org/records/23059630/files/gelina-failure-wayne.mp4",
+        "poster": "/thesis-supplement/assets/posters/gelina-failure-wayne.jpg?v=1790793889"
+      }
+    },
+    {
+      "test": "markup poster papers/paper-01/index.html #12",
+      "status": "passed",
+      "details": {
+        "page": "papers/paper-01/index.html",
+        "src": "https://zenodo.org/records/23059630/files/gelina-failure-2.mp4",
+        "poster": "/thesis-supplement/assets/posters/gelina-failure-2.jpg?v=1790793889"
+      }
+    },
+    {
+      "test": "markup poster thesis/chapter-02/index.html #13",
+      "status": "passed",
+      "details": {
+        "page": "thesis/chapter-02/index.html",
+        "src": "https://zenodo.org/records/23059630/files/letme_figure_out.mp4",
+        "poster": "/thesis-supplement/assets/posters/letme_figure_out.jpg?v=1790793889"
+      }
+    },
+    {
+      "test": "markup poster thesis/chapter-04/index.html #14",
+      "status": "passed",
+      "details": {
+        "page": "thesis/chapter-04/index.html",
+        "src": "https://zenodo.org/records/23059630/files/gelina-gelina-female.mp4",
+        "poster": "/thesis-supplement/assets/posters/gelina-gelina-female.jpg?v=1790793889"
+      }
+    },
+    {
+      "test": "markup poster thesis/chapter-04/index.html #15",
+      "status": "passed",
+      "details": {
+        "page": "thesis/chapter-04/index.html",
+        "src": "https://zenodo.org/records/23059630/files/gelina-kings-male.mp4",
+        "poster": "/thesis-supplement/assets/posters/gelina-kings-male.jpg?v=1790793889"
+      }
+    },
+    {
+      "test": "markup poster thesis/chapter-04/index.html #16",
+      "status": "passed",
+      "details": {
+        "page": "thesis/chapter-04/index.html",
+        "src": "https://zenodo.org/records/23059630/files/gelina-duck-female.mp4",
+        "poster": "/thesis-supplement/assets/posters/gelina-duck_female.jpg?v=1790793889"
+      }
+    },
+    {
+      "test": "markup poster thesis/chapter-04/index.html #17",
+      "status": "passed",
+      "details": {
+        "page": "thesis/chapter-04/index.html",
+        "src": "https://zenodo.org/records/23059630/files/gelina-clone_kieks_0_3_3.mp4",
+        "poster": "/thesis-supplement/assets/posters/gelina-clone_kieks_0_3_3.jpg?v=1790793889"
+      }
+    },
+    {
+      "test": "markup poster thesis/chapter-04/index.html #18",
+      "status": "passed",
+      "details": {
+        "page": "thesis/chapter-04/index.html",
+        "src": "https://zenodo.org/records/23059630/files/gelina-clone_scott_0_2_2.mp4",
+        "poster": "/thesis-supplement/assets/posters/gelina-clone_scott_0_2_2.jpg?v=1790793889"
+      }
+    },
+    {
+      "test": "markup poster thesis/chapter-04/index.html #19",
+      "status": "passed",
+      "details": {
+        "page": "thesis/chapter-04/index.html",
+        "src": "https://zenodo.org/records/23059630/files/gelina-clone_scott_0_4_4.mp4",
+        "poster": "/thesis-supplement/assets/posters/gelina-clone_scott_0_4_4.jpg?v=1790793889"
+      }
+    },
+    {
+      "test": "markup poster thesis/chapter-04/index.html #20",
+      "status": "passed",
+      "details": {
+        "page": "thesis/chapter-04/index.html",
+        "src": "https://zenodo.org/records/23059630/files/gelina-comparison_scott_0_5_5.mp4",
+        "poster": "/thesis-supplement/assets/posters/gelina-comparison_scott_0_5_5.jpg?v=1790793889"
+      }
+    },
+    {
+      "test": "markup poster thesis/chapter-04/index.html #21",
+      "status": "passed",
+      "details": {
+        "page": "thesis/chapter-04/index.html",
+        "src": "https://zenodo.org/records/23059630/files/gelina-comparison_kieks_0_1_1.mp4",
+        "poster": "/thesis-supplement/assets/posters/gelina-comparison_kieks_0_1_1.jpg?v=1790793889"
+      }
+    },
+    {
+      "test": "markup poster thesis/chapter-04/index.html #22",
+      "status": "passed",
+      "details": {
+        "page": "thesis/chapter-04/index.html",
+        "src": "https://zenodo.org/records/23059630/files/gelina-comparison_wayne_0_2_2.mp4",
+        "poster": "/thesis-supplement/assets/posters/gelina-comparison_wayne_0_2_2.jpg?v=1790793889"
+      }
+    },
+    {
+      "test": "markup poster thesis/chapter-04/index.html #23",
+      "status": "passed",
+      "details": {
+        "page": "thesis/chapter-04/index.html",
+        "src": "https://zenodo.org/records/23059630/files/gelina-comparison_wayne_0_3_3.mp4",
+        "poster": "/thesis-supplement/assets/posters/gelina-comparison_wayne_0_3_3.jpg?v=1790793889"
+      }
+    },
+    {
+      "test": "markup poster thesis/chapter-04/index.html #24",
+      "status": "passed",
+      "details": {
+        "page": "thesis/chapter-04/index.html",
+        "src": "https://zenodo.org/records/23059630/files/gelina-failure-wayne.mp4",
+        "poster": "/thesis-supplement/assets/posters/gelina-failure-wayne.jpg?v=1790793889"
+      }
+    },
+    {
+      "test": "markup poster thesis/chapter-04/index.html #25",
+      "status": "passed",
+      "details": {
+        "page": "thesis/chapter-04/index.html",
+        "src": "https://zenodo.org/records/23059630/files/gelina-failure-2.mp4",
+        "poster": "/thesis-supplement/assets/posters/gelina-failure-2.jpg?v=1790793889"
+      }
+    },
+    {
+      "test": "markup poster thesis/chapter-05/index.html #26",
+      "status": "passed",
+      "details": {
+        "page": "thesis/chapter-05/index.html",
+        "src": "https://zenodo.org/records/23059630/files/signals.mp4",
+        "poster": "/thesis-supplement/assets/posters/signals.jpg?v=1790793889"
+      }
+    },
+    {
+      "test": "markup poster thesis/chapter-05/index.html #27",
+      "status": "passed",
+      "details": {
+        "page": "thesis/chapter-05/index.html",
+        "src": "https://zenodo.org/records/23059630/files/93_0-gt.mp4",
+        "poster": "/thesis-supplement/assets/posters/93_0-gt.jpg?v=1790793889"
+      }
+    },
+    {
+      "test": "markup poster thesis/chapter-05/index.html #28",
+      "status": "passed",
+      "details": {
+        "page": "thesis/chapter-05/index.html",
+        "src": "https://zenodo.org/records/23059630/files/561_2-gt.mp4",
+        "poster": "/thesis-supplement/assets/posters/561_2-gt.jpg?v=1790793889"
+      }
+    },
+    {
+      "test": "markup poster thesis/chapter-05/index.html #29",
+      "status": "passed",
+      "details": {
+        "page": "thesis/chapter-05/index.html",
+        "src": "https://zenodo.org/records/23059630/files/739_2-gt.mp4",
+        "poster": "/thesis-supplement/assets/posters/739_2-gt.jpg?v=1790793889"
+      }
+    },
+    {
+      "test": "markup poster thesis/chapter-05/index.html #30",
+      "status": "passed",
+      "details": {
+        "page": "thesis/chapter-05/index.html",
+        "src": "https://zenodo.org/records/23059630/files/831_3-gt.mp4",
+        "poster": "/thesis-supplement/assets/posters/831_3-gt.jpg?v=1790793889"
+      }
+    },
+    {
+      "test": "markup poster thesis/chapter-05/index.html #31",
+      "status": "passed",
+      "details": {
+        "page": "thesis/chapter-05/index.html",
+        "src": "https://zenodo.org/records/23059630/files/93_0-1.mp4",
+        "poster": "/thesis-supplement/assets/posters/93_0-1.jpg?v=1790793889"
+      }
+    },
+    {
+      "test": "markup poster thesis/chapter-05/index.html #32",
+      "status": "passed",
+      "details": {
+        "page": "thesis/chapter-05/index.html",
+        "src": "https://zenodo.org/records/23059630/files/561_2-1.mp4",
+        "poster": "/thesis-supplement/assets/posters/561_2-1.jpg?v=1790793889"
+      }
+    },
+    {
+      "test": "markup poster thesis/chapter-05/index.html #33",
+      "status": "passed",
+      "details": {
+        "page": "thesis/chapter-05/index.html",
+        "src": "https://zenodo.org/records/23059630/files/739_2-1.mp4",
+        "poster": "/thesis-supplement/assets/posters/739_2-1.jpg?v=1790793889"
+      }
+    },
+    {
+      "test": "markup poster thesis/chapter-05/index.html #34",
+      "status": "passed",
+      "details": {
+        "page": "thesis/chapter-05/index.html",
+        "src": "https://zenodo.org/records/23059630/files/831_3-1.mp4",
+        "poster": "/thesis-supplement/assets/posters/831_3-1.jpg?v=1790793889"
+      }
+    },
+    {
+      "test": "markup poster thesis/chapter-05/index.html #35",
+      "status": "passed",
+      "details": {
+        "page": "thesis/chapter-05/index.html",
+        "src": "https://zenodo.org/records/23059630/files/93_0-65.mp4",
+        "poster": "/thesis-supplement/assets/posters/93_0-65.jpg?v=1790793889"
+      }
+    },
+    {
+      "test": "markup poster thesis/chapter-05/index.html #36",
+      "status": "passed",
+      "details": {
+        "page": "thesis/chapter-05/index.html",
+        "src": "https://zenodo.org/records/23059630/files/561_2-65.mp4",
+        "poster": "/thesis-supplement/assets/posters/561_2-65.jpg?v=1790793889"
+      }
+    },
+    {
+      "test": "markup poster thesis/chapter-05/index.html #37",
+      "status": "passed",
+      "details": {
+        "page": "thesis/chapter-05/index.html",
+        "src": "https://zenodo.org/records/23059630/files/739_2-65.mp4",
+        "poster": "/thesis-supplement/assets/posters/739_2-65.jpg?v=1790793889"
+      }
+    },
+    {
+      "test": "markup poster thesis/chapter-05/index.html #38",
+      "status": "passed",
+      "details": {
+        "page": "thesis/chapter-05/index.html",
+        "src": "https://zenodo.org/records/23059630/files/831_3-65.mp4",
+        "poster": "/thesis-supplement/assets/posters/831_3-65.jpg?v=1790793889"
+      }
+    },
+    {
+      "test": "markup poster thesis/chapter-05/index.html #39",
+      "status": "passed",
+      "details": {
+        "page": "thesis/chapter-05/index.html",
+        "src": "https://zenodo.org/records/23059630/files/93_0-cascaded.mp4",
+        "poster": "/thesis-supplement/assets/posters/93_0-cascaded.jpg?v=1790793889"
+      }
+    },
+    {
+      "test": "markup poster thesis/chapter-05/index.html #40",
+      "status": "passed",
+      "details": {
+        "page": "thesis/chapter-05/index.html",
+        "src": "https://zenodo.org/records/23059630/files/561_2-cacaded.mp4",
+        "poster": "/thesis-supplement/assets/posters/561_2-cacaded.jpg?v=1790793889"
+      }
+    },
+    {
+      "test": "markup poster thesis/chapter-05/index.html #41",
+      "status": "passed",
+      "details": {
+        "page": "thesis/chapter-05/index.html",
+        "src": "https://zenodo.org/records/23059630/files/739_2-cascaded.mp4",
+        "poster": "/thesis-supplement/assets/posters/739_2-cascaded.jpg?v=1790793889"
+      }
+    },
+    {
+      "test": "markup poster thesis/chapter-05/index.html #42",
+      "status": "passed",
+      "details": {
+        "page": "thesis/chapter-05/index.html",
+        "src": "https://zenodo.org/records/23059630/files/831_3-cascaded.mp4",
+        "poster": "/thesis-supplement/assets/posters/831_3-cascaded.jpg?v=1790793889"
+      }
+    },
+    {
+      "test": "markup poster thesis/chapter-06/index.html #43",
+      "status": "passed",
+      "details": {
+        "page": "thesis/chapter-06/index.html",
+        "src": "https://zenodo.org/records/23059630/files/A-421.mp4",
+        "poster": "/thesis-supplement/assets/posters/A-421.jpg?v=1790793889"
+      }
+    },
+    {
+      "test": "markup poster thesis/chapter-06/index.html #44",
+      "status": "passed",
+      "details": {
+        "page": "thesis/chapter-06/index.html",
+        "src": "https://zenodo.org/records/23059630/files/A-564.mp4",
+        "poster": "/thesis-supplement/assets/posters/A-564.jpg?v=1790793889"
+      }
+    },
+    {
+      "test": "markup poster thesis/chapter-06/index.html #45",
+      "status": "passed",
+      "details": {
+        "page": "thesis/chapter-06/index.html",
+        "src": "https://zenodo.org/records/23059630/files/B-421.mp4",
+        "poster": "/thesis-supplement/assets/posters/B-421.jpg?v=1790793889"
+      }
+    },
+    {
+      "test": "markup poster thesis/chapter-06/index.html #46",
+      "status": "passed",
+      "details": {
+        "page": "thesis/chapter-06/index.html",
+        "src": "https://zenodo.org/records/23059630/files/B-92.mp4",
+        "poster": "/thesis-supplement/assets/posters/B-92.jpg?v=1790793889"
+      }
+    },
+    {
+      "test": "markup poster thesis/chapter-06/index.html #47",
+      "status": "passed",
+      "details": {
+        "page": "thesis/chapter-06/index.html",
+        "src": "https://zenodo.org/records/23059630/files/C-93.mp4",
+        "poster": "/thesis-supplement/assets/posters/C-93.jpg?v=1790793889"
+      }
+    },
+    {
+      "test": "markup poster thesis/chapter-06/index.html #48",
+      "status": "passed",
+      "details": {
+        "page": "thesis/chapter-06/index.html",
+        "src": "https://zenodo.org/records/23059630/files/D-655.mp4",
+        "poster": "/thesis-supplement/assets/posters/D-655.jpg?v=1790793889"
+      }
+    },
+    {
+      "test": "markup poster thesis/chapter-06/index.html #49",
+      "status": "passed",
+      "details": {
+        "page": "thesis/chapter-06/index.html",
+        "src": "https://zenodo.org/records/23059630/files/D-694.mp4",
+        "poster": "/thesis-supplement/assets/posters/D-694.jpg?v=1790793889"
+      }
+    },
+    {
+      "test": "markup poster thesis/chapter-06/index.html #50",
+      "status": "passed",
+      "details": {
+        "page": "thesis/chapter-06/index.html",
+        "src": "https://zenodo.org/records/23059630/files/E-421.mp4",
+        "poster": "/thesis-supplement/assets/posters/E-421.jpg?v=1790793889"
+      }
+    },
+    {
+      "test": "markup poster thesis/chapter-06/index.html #51",
+      "status": "passed",
+      "details": {
+        "page": "thesis/chapter-06/index.html",
+        "src": "https://zenodo.org/records/23059630/files/F-695.mp4",
+        "poster": "/thesis-supplement/assets/posters/F-695.jpg?v=1790793889"
+      }
+    },
+    {
+      "test": "markup poster thesis/chapter-06/index.html #52",
+      "status": "passed",
+      "details": {
+        "page": "thesis/chapter-06/index.html",
+        "src": "https://zenodo.org/records/23059630/files/G-93.mp4",
+        "poster": "/thesis-supplement/assets/posters/G-93.jpg?v=1790793889"
+      }
+    },
+    {
+      "test": "markup poster thesis/chapter-06/index.html #53",
+      "status": "passed",
+      "details": {
+        "page": "thesis/chapter-06/index.html",
+        "src": "https://zenodo.org/records/23059630/files/E-421.mp4",
+        "poster": "/thesis-supplement/assets/posters/E-421.jpg?v=1790793889"
+      }
+    },
+    {
+      "test": "markup poster thesis/chapter-06/index.html #54",
+      "status": "passed",
+      "details": {
+        "page": "thesis/chapter-06/index.html",
+        "src": "https://zenodo.org/records/23059630/files/D-655.mp4",
+        "poster": "/thesis-supplement/assets/posters/D-655.jpg?v=1790793889"
+      }
+    },
+    {
+      "test": "markup poster thesis/chapter-06/index.html #55",
+      "status": "passed",
+      "details": {
+        "page": "thesis/chapter-06/index.html",
+        "src": "https://zenodo.org/records/23059630/files/G-93.mp4",
+        "poster": "/thesis-supplement/assets/posters/G-93.jpg?v=1790793889"
+      }
+    },
+    {
+      "test": "HTTP pages and all referenced local resources",
+      "status": "passed",
+      "details": {
+        "requests": 81,
+        "all_200": true
+      }
+    },
+    {
+      "test": "browser 404.html 390px JS=True",
+      "status": "passed",
+      "details": {
+        "page": "404.html",
+        "width": 390,
+        "javascript": true,
+        "poster_pixels_checked": 0,
+        "mp4_requests": 0
+      }
+    },
+    {
+      "test": "browser index.html 390px JS=True",
+      "status": "passed",
+      "details": {
+        "page": "index.html",
+        "width": 390,
+        "javascript": true,
+        "poster_pixels_checked": 0,
+        "mp4_requests": 0
+      }
+    },
+    {
+      "test": "browser papers/index.html 390px JS=True",
+      "status": "passed",
+      "details": {
+        "page": "papers/index.html",
+        "width": 390,
+        "javascript": true,
+        "poster_pixels_checked": 0,
+        "mp4_requests": 0
+      }
+    },
+    {
+      "test": "browser papers/paper-01/index.html 390px JS=True",
+      "status": "passed",
+      "details": {
+        "page": "papers/paper-01/index.html",
+        "width": 390,
+        "javascript": true,
+        "poster_pixels_checked": 12,
+        "mp4_requests": 0
+      }
+    },
+    {
+      "test": "browser papers/paper-02/index.html 390px JS=True",
+      "status": "passed",
+      "details": {
+        "page": "papers/paper-02/index.html",
+        "width": 390,
+        "javascript": true,
+        "poster_pixels_checked": 0,
+        "mp4_requests": 0
+      }
+    },
+    {
+      "test": "browser papers/paper-03/index.html 390px JS=True",
+      "status": "passed",
+      "details": {
+        "page": "papers/paper-03/index.html",
+        "width": 390,
+        "javascript": true,
+        "poster_pixels_checked": 0,
+        "mp4_requests": 0
+      }
+    },
+    {
+      "test": "browser papers/paper-04/index.html 390px JS=True",
+      "status": "passed",
+      "details": {
+        "page": "papers/paper-04/index.html",
+        "width": 390,
+        "javascript": true,
+        "poster_pixels_checked": 0,
+        "mp4_requests": 0
+      }
+    },
+    {
+      "test": "browser papers/paper-05/index.html 390px JS=True",
+      "status": "passed",
+      "details": {
+        "page": "papers/paper-05/index.html",
+        "width": 390,
+        "javascript": true,
+        "poster_pixels_checked": 0,
+        "mp4_requests": 0
+      }
+    },
+    {
+      "test": "browser thesis/chapter-02/index.html 390px JS=True",
+      "status": "passed",
+      "details": {
+        "page": "thesis/chapter-02/index.html",
+        "width": 390,
+        "javascript": true,
+        "poster_pixels_checked": 1,
+        "mp4_requests": 0
+      }
+    },
+    {
+      "test": "browser thesis/chapter-04/index.html 390px JS=True",
+      "status": "passed",
+      "details": {
+        "page": "thesis/chapter-04/index.html",
+        "width": 390,
+        "javascript": true,
+        "poster_pixels_checked": 12,
+        "mp4_requests": 0
+      }
+    },
+    {
+      "test": "browser thesis/chapter-05/index.html 390px JS=True",
+      "status": "passed",
+      "details": {
+        "page": "thesis/chapter-05/index.html",
+        "width": 390,
+        "javascript": true,
+        "poster_pixels_checked": 17,
+        "mp4_requests": 0
+      }
+    },
+    {
+      "test": "browser thesis/chapter-06/index.html 390px JS=True",
+      "status": "passed",
+      "details": {
+        "page": "thesis/chapter-06/index.html",
+        "width": 390,
+        "javascript": true,
+        "poster_pixels_checked": 13,
+        "mp4_requests": 0
+      }
+    },
+    {
+      "test": "browser thesis/index.html 390px JS=True",
+      "status": "passed",
+      "details": {
+        "page": "thesis/index.html",
+        "width": 390,
+        "javascript": true,
+        "poster_pixels_checked": 0,
+        "mp4_requests": 0
+      }
+    },
+    {
+      "test": "browser 404.html 1440px JS=True",
+      "status": "passed",
+      "details": {
+        "page": "404.html",
+        "width": 1440,
+        "javascript": true,
+        "poster_pixels_checked": 0,
+        "mp4_requests": 0
+      }
+    },
+    {
+      "test": "browser index.html 1440px JS=True",
+      "status": "passed",
+      "details": {
+        "page": "index.html",
+        "width": 1440,
+        "javascript": true,
+        "poster_pixels_checked": 0,
+        "mp4_requests": 0
+      }
+    },
+    {
+      "test": "browser papers/index.html 1440px JS=True",
+      "status": "passed",
+      "details": {
+        "page": "papers/index.html",
+        "width": 1440,
+        "javascript": true,
+        "poster_pixels_checked": 0,
+        "mp4_requests": 0
+      }
+    },
+    {
+      "test": "browser papers/paper-01/index.html 1440px JS=True",
+      "status": "passed",
+      "details": {
+        "page": "papers/paper-01/index.html",
+        "width": 1440,
+        "javascript": true,
+        "poster_pixels_checked": 12,
+        "mp4_requests": 0
+      }
+    },
+    {
+      "test": "browser papers/paper-02/index.html 1440px JS=True",
+      "status": "passed",
+      "details": {
+        "page": "papers/paper-02/index.html",
+        "width": 1440,
+        "javascript": true,
+        "poster_pixels_checked": 0,
+        "mp4_requests": 0
+      }
+    },
+    {
+      "test": "browser papers/paper-03/index.html 1440px JS=True",
+      "status": "passed",
+      "details": {
+        "page": "papers/paper-03/index.html",
+        "width": 1440,
+        "javascript": true,
+        "poster_pixels_checked": 0,
+        "mp4_requests": 0
+      }
+    },
+    {
+      "test": "browser papers/paper-04/index.html 1440px JS=True",
+      "status": "passed",
+      "details": {
+        "page": "papers/paper-04/index.html",
+        "width": 1440,
+        "javascript": true,
+        "poster_pixels_checked": 0,
+        "mp4_requests": 0
+      }
+    },
+    {
+      "test": "browser papers/paper-05/index.html 1440px JS=True",
+      "status": "passed",
+      "details": {
+        "page": "papers/paper-05/index.html",
+        "width": 1440,
+        "javascript": true,
+        "poster_pixels_checked": 0,
+        "mp4_requests": 0
+      }
+    },
+    {
+      "test": "browser thesis/chapter-02/index.html 1440px JS=True",
+      "status": "passed",
+      "details": {
+        "page": "thesis/chapter-02/index.html",
+        "width": 1440,
+        "javascript": true,
+        "poster_pixels_checked": 1,
+        "mp4_requests": 0
+      }
+    },
+    {
+      "test": "browser thesis/chapter-04/index.html 1440px JS=True",
+      "status": "passed",
+      "details": {
+        "page": "thesis/chapter-04/index.html",
+        "width": 1440,
+        "javascript": true,
+        "poster_pixels_checked": 12,
+        "mp4_requests": 0
+      }
+    },
+    {
+      "test": "browser thesis/chapter-05/index.html 1440px JS=True",
+      "status": "passed",
+      "details": {
+        "page": "thesis/chapter-05/index.html",
+        "width": 1440,
+        "javascript": true,
+        "poster_pixels_checked": 17,
+        "mp4_requests": 0
+      }
+    },
+    {
+      "test": "browser thesis/chapter-06/index.html 1440px JS=True",
+      "status": "passed",
+      "details": {
+        "page": "thesis/chapter-06/index.html",
+        "width": 1440,
+        "javascript": true,
+        "poster_pixels_checked": 13,
+        "mp4_requests": 0
+      }
+    },
+    {
+      "test": "browser thesis/index.html 1440px JS=True",
+      "status": "passed",
+      "details": {
+        "page": "thesis/index.html",
+        "width": 1440,
+        "javascript": true,
+        "poster_pixels_checked": 0,
+        "mp4_requests": 0
+      }
+    },
+    {
+      "test": "browser 404.html 390px JS=False",
+      "status": "passed",
+      "details": {
+        "page": "404.html",
+        "width": 390,
+        "javascript": false,
+        "poster_pixels_checked": 0,
+        "mp4_requests": 0
+      }
+    },
+    {
+      "test": "browser index.html 390px JS=False",
+      "status": "passed",
+      "details": {
+        "page": "index.html",
+        "width": 390,
+        "javascript": false,
+        "poster_pixels_checked": 0,
+        "mp4_requests": 0
+      }
+    },
+    {
+      "test": "browser papers/index.html 390px JS=False",
+      "status": "passed",
+      "details": {
+        "page": "papers/index.html",
+        "width": 390,
+        "javascript": false,
+        "poster_pixels_checked": 0,
+        "mp4_requests": 0
+      }
+    },
+    {
+      "test": "browser papers/paper-01/index.html 390px JS=False",
+      "status": "passed",
+      "details": {
+        "page": "papers/paper-01/index.html",
+        "width": 390,
+        "javascript": false,
+        "poster_pixels_checked": 12,
+        "mp4_requests": 0
+      }
+    },
+    {
+      "test": "browser papers/paper-02/index.html 390px JS=False",
+      "status": "passed",
+      "details": {
+        "page": "papers/paper-02/index.html",
+        "width": 390,
+        "javascript": false,
+        "poster_pixels_checked": 0,
+        "mp4_requests": 0
+      }
+    },
+    {
+      "test": "browser papers/paper-03/index.html 390px JS=False",
+      "status": "passed",
+      "details": {
+        "page": "papers/paper-03/index.html",
+        "width": 390,
+        "javascript": false,
+        "poster_pixels_checked": 0,
+        "mp4_requests": 0
+      }
+    },
+    {
+      "test": "browser papers/paper-04/index.html 390px JS=False",
+      "status": "passed",
+      "details": {
+        "page": "papers/paper-04/index.html",
+        "width": 390,
+        "javascript": false,
+        "poster_pixels_checked": 0,
+        "mp4_requests": 0
+      }
+    },
+    {
+      "test": "browser papers/paper-05/index.html 390px JS=False",
+      "status": "passed",
+      "details": {
+        "page": "papers/paper-05/index.html",
+        "width": 390,
+        "javascript": false,
+        "poster_pixels_checked": 0,
+        "mp4_requests": 0
+      }
+    },
+    {
+      "test": "browser thesis/chapter-02/index.html 390px JS=False",
+      "status": "passed",
+      "details": {
+        "page": "thesis/chapter-02/index.html",
+        "width": 390,
+        "javascript": false,
+        "poster_pixels_checked": 1,
+        "mp4_requests": 0
+      }
+    },
+    {
+      "test": "browser thesis/chapter-04/index.html 390px JS=False",
+      "status": "passed",
+      "details": {
+        "page": "thesis/chapter-04/index.html",
+        "width": 390,
+        "javascript": false,
+        "poster_pixels_checked": 12,
+        "mp4_requests": 0
+      }
+    },
+    {
+      "test": "browser thesis/chapter-05/index.html 390px JS=False",
+      "status": "passed",
+      "details": {
+        "page": "thesis/chapter-05/index.html",
+        "width": 390,
+        "javascript": false,
+        "poster_pixels_checked": 17,
+        "mp4_requests": 0
+      }
+    },
+    {
+      "test": "browser thesis/chapter-06/index.html 390px JS=False",
+      "status": "passed",
+      "details": {
+        "page": "thesis/chapter-06/index.html",
+        "width": 390,
+        "javascript": false,
+        "poster_pixels_checked": 13,
+        "mp4_requests": 0
+      }
+    },
+    {
+      "test": "browser thesis/index.html 390px JS=False",
+      "status": "passed",
+      "details": {
+        "page": "thesis/index.html",
+        "width": 390,
+        "javascript": false,
+        "poster_pixels_checked": 0,
+        "mp4_requests": 0
+      }
+    },
+    {
+      "test": "browser 404.html 1440px JS=False",
+      "status": "passed",
+      "details": {
+        "page": "404.html",
+        "width": 1440,
+        "javascript": false,
+        "poster_pixels_checked": 0,
+        "mp4_requests": 0
+      }
+    },
+    {
+      "test": "browser index.html 1440px JS=False",
+      "status": "passed",
+      "details": {
+        "page": "index.html",
+        "width": 1440,
+        "javascript": false,
+        "poster_pixels_checked": 0,
+        "mp4_requests": 0
+      }
+    },
+    {
+      "test": "browser papers/index.html 1440px JS=False",
+      "status": "passed",
+      "details": {
+        "page": "papers/index.html",
+        "width": 1440,
+        "javascript": false,
+        "poster_pixels_checked": 0,
+        "mp4_requests": 0
+      }
+    },
+    {
+      "test": "browser papers/paper-01/index.html 1440px JS=False",
+      "status": "passed",
+      "details": {
+        "page": "papers/paper-01/index.html",
+        "width": 1440,
+        "javascript": false,
+        "poster_pixels_checked": 12,
+        "mp4_requests": 0
+      }
+    },
+    {
+      "test": "browser papers/paper-02/index.html 1440px JS=False",
+      "status": "passed",
+      "details": {
+        "page": "papers/paper-02/index.html",
+        "width": 1440,
+        "javascript": false,
+        "poster_pixels_checked": 0,
+        "mp4_requests": 0
+      }
+    },
+    {
+      "test": "browser papers/paper-03/index.html 1440px JS=False",
+      "status": "passed",
+      "details": {
+        "page": "papers/paper-03/index.html",
+        "width": 1440,
+        "javascript": false,
+        "poster_pixels_checked": 0,
+        "mp4_requests": 0
+      }
+    },
+    {
+      "test": "browser papers/paper-04/index.html 1440px JS=False",
+      "status": "passed",
+      "details": {
+        "page": "papers/paper-04/index.html",
+        "width": 1440,
+        "javascript": false,
+        "poster_pixels_checked": 0,
+        "mp4_requests": 0
+      }
+    },
+    {
+      "test": "browser papers/paper-05/index.html 1440px JS=False",
+      "status": "passed",
+      "details": {
+        "page": "papers/paper-05/index.html",
+        "width": 1440,
+        "javascript": false,
+        "poster_pixels_checked": 0,
+        "mp4_requests": 0
+      }
+    },
+    {
+      "test": "browser thesis/chapter-02/index.html 1440px JS=False",
+      "status": "passed",
+      "details": {
+        "page": "thesis/chapter-02/index.html",
+        "width": 1440,
+        "javascript": false,
+        "poster_pixels_checked": 1,
+        "mp4_requests": 0
+      }
+    },
+    {
+      "test": "browser thesis/chapter-04/index.html 1440px JS=False",
+      "status": "passed",
+      "details": {
+        "page": "thesis/chapter-04/index.html",
+        "width": 1440,
+        "javascript": false,
+        "poster_pixels_checked": 12,
+        "mp4_requests": 0
+      }
+    },
+    {
+      "test": "browser thesis/chapter-05/index.html 1440px JS=False",
+      "status": "passed",
+      "details": {
+        "page": "thesis/chapter-05/index.html",
+        "width": 1440,
+        "javascript": false,
+        "poster_pixels_checked": 17,
+        "mp4_requests": 0
+      }
+    },
+    {
+      "test": "browser thesis/chapter-06/index.html 1440px JS=False",
+      "status": "passed",
+      "details": {
+        "page": "thesis/chapter-06/index.html",
+        "width": 1440,
+        "javascript": false,
+        "poster_pixels_checked": 13,
+        "mp4_requests": 0
+      }
+    },
+    {
+      "test": "browser thesis/index.html 1440px JS=False",
+      "status": "passed",
+      "details": {
+        "page": "thesis/index.html",
+        "width": 1440,
+        "javascript": false,
+        "poster_pixels_checked": 0,
+        "mp4_requests": 0
+      }
+    }
+  ],
+  "failures": [],
+  "posters": [
+    {
+      "page": "papers/paper-01/index.html",
+      "index": 0,
+      "width": 390,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/gelina-gelina-female.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 3.4666
+    },
+    {
+      "page": "papers/paper-01/index.html",
+      "index": 1,
+      "width": 390,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/gelina-kings-male.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 1.6451
+    },
+    {
+      "page": "papers/paper-01/index.html",
+      "index": 2,
+      "width": 390,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/gelina-duck_female.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 1.4984
+    },
+    {
+      "page": "papers/paper-01/index.html",
+      "index": 3,
+      "width": 390,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/gelina-clone_kieks_0_3_3.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 2.6352
+    },
+    {
+      "page": "papers/paper-01/index.html",
+      "index": 4,
+      "width": 390,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/gelina-clone_scott_0_2_2.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 3.237
+    },
+    {
+      "page": "papers/paper-01/index.html",
+      "index": 5,
+      "width": 390,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/gelina-clone_scott_0_4_4.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 3.2347
+    },
+    {
+      "page": "papers/paper-01/index.html",
+      "index": 6,
+      "width": 390,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/gelina-comparison_scott_0_5_5.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 4.6965
+    },
+    {
+      "page": "papers/paper-01/index.html",
+      "index": 7,
+      "width": 390,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/gelina-comparison_kieks_0_1_1.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 4.7101
+    },
+    {
+      "page": "papers/paper-01/index.html",
+      "index": 8,
+      "width": 390,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/gelina-comparison_wayne_0_2_2.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 4.8543
+    },
+    {
+      "page": "papers/paper-01/index.html",
+      "index": 9,
+      "width": 390,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/gelina-comparison_wayne_0_3_3.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 4.7466
+    },
+    {
+      "page": "papers/paper-01/index.html",
+      "index": 10,
+      "width": 390,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/gelina-failure-wayne.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 1.8401
+    },
+    {
+      "page": "papers/paper-01/index.html",
+      "index": 11,
+      "width": 390,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/gelina-failure-2.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 1.9526
+    },
+    {
+      "page": "thesis/chapter-02/index.html",
+      "index": 0,
+      "width": 390,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/letme_figure_out.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 3.3555
+    },
+    {
+      "page": "thesis/chapter-04/index.html",
+      "index": 0,
+      "width": 390,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/gelina-gelina-female.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 2.5592
+    },
+    {
+      "page": "thesis/chapter-04/index.html",
+      "index": 1,
+      "width": 390,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/gelina-kings-male.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 1.6409
+    },
+    {
+      "page": "thesis/chapter-04/index.html",
+      "index": 2,
+      "width": 390,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/gelina-duck_female.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 1.4927
+    },
+    {
+      "page": "thesis/chapter-04/index.html",
+      "index": 3,
+      "width": 390,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/gelina-clone_kieks_0_3_3.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 1.9114
+    },
+    {
+      "page": "thesis/chapter-04/index.html",
+      "index": 4,
+      "width": 390,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/gelina-clone_scott_0_2_2.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 2.1702
+    },
+    {
+      "page": "thesis/chapter-04/index.html",
+      "index": 5,
+      "width": 390,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/gelina-clone_scott_0_4_4.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 2.1534
+    },
+    {
+      "page": "thesis/chapter-04/index.html",
+      "index": 6,
+      "width": 390,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/gelina-comparison_scott_0_5_5.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 4.0952
+    },
+    {
+      "page": "thesis/chapter-04/index.html",
+      "index": 7,
+      "width": 390,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/gelina-comparison_kieks_0_1_1.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 4.0837
+    },
+    {
+      "page": "thesis/chapter-04/index.html",
+      "index": 8,
+      "width": 390,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/gelina-comparison_wayne_0_2_2.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 4.1936
+    },
+    {
+      "page": "thesis/chapter-04/index.html",
+      "index": 9,
+      "width": 390,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/gelina-comparison_wayne_0_3_3.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 4.13
+    },
+    {
+      "page": "thesis/chapter-04/index.html",
+      "index": 10,
+      "width": 390,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/gelina-failure-wayne.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 1.8635
+    },
+    {
+      "page": "thesis/chapter-04/index.html",
+      "index": 11,
+      "width": 390,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/gelina-failure-2.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 1.7961
+    },
+    {
+      "page": "thesis/chapter-05/index.html",
+      "index": 0,
+      "width": 390,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/signals.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 1.4322
+    },
+    {
+      "page": "thesis/chapter-05/index.html",
+      "index": 1,
+      "width": 390,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/93_0-gt.jpg?v=1790793889",
+      "decoded_width": 1440,
+      "decoded_height": 1080,
+      "mean_pixel_error": 2.6569
+    },
+    {
+      "page": "thesis/chapter-05/index.html",
+      "index": 2,
+      "width": 390,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/561_2-gt.jpg?v=1790793889",
+      "decoded_width": 1440,
+      "decoded_height": 1080,
+      "mean_pixel_error": 2.6496
+    },
+    {
+      "page": "thesis/chapter-05/index.html",
+      "index": 3,
+      "width": 390,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/739_2-gt.jpg?v=1790793889",
+      "decoded_width": 1440,
+      "decoded_height": 1080,
+      "mean_pixel_error": 2.6459
+    },
+    {
+      "page": "thesis/chapter-05/index.html",
+      "index": 4,
+      "width": 390,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/831_3-gt.jpg?v=1790793889",
+      "decoded_width": 1440,
+      "decoded_height": 1080,
+      "mean_pixel_error": 2.7168
+    },
+    {
+      "page": "thesis/chapter-05/index.html",
+      "index": 5,
+      "width": 390,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/93_0-1.jpg?v=1790793889",
+      "decoded_width": 1440,
+      "decoded_height": 1080,
+      "mean_pixel_error": 2.6511
+    },
+    {
+      "page": "thesis/chapter-05/index.html",
+      "index": 6,
+      "width": 390,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/561_2-1.jpg?v=1790793889",
+      "decoded_width": 1440,
+      "decoded_height": 1080,
+      "mean_pixel_error": 2.664
+    },
+    {
+      "page": "thesis/chapter-05/index.html",
+      "index": 7,
+      "width": 390,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/739_2-1.jpg?v=1790793889",
+      "decoded_width": 1440,
+      "decoded_height": 1080,
+      "mean_pixel_error": 2.6558
+    },
+    {
+      "page": "thesis/chapter-05/index.html",
+      "index": 8,
+      "width": 390,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/831_3-1.jpg?v=1790793889",
+      "decoded_width": 1440,
+      "decoded_height": 1080,
+      "mean_pixel_error": 2.6664
+    },
+    {
+      "page": "thesis/chapter-05/index.html",
+      "index": 9,
+      "width": 390,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/93_0-65.jpg?v=1790793889",
+      "decoded_width": 1440,
+      "decoded_height": 1080,
+      "mean_pixel_error": 2.7094
+    },
+    {
+      "page": "thesis/chapter-05/index.html",
+      "index": 10,
+      "width": 390,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/561_2-65.jpg?v=1790793889",
+      "decoded_width": 1440,
+      "decoded_height": 1080,
+      "mean_pixel_error": 2.709
+    },
+    {
+      "page": "thesis/chapter-05/index.html",
+      "index": 11,
+      "width": 390,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/739_2-65.jpg?v=1790793889",
+      "decoded_width": 1440,
+      "decoded_height": 1080,
+      "mean_pixel_error": 2.698
+    },
+    {
+      "page": "thesis/chapter-05/index.html",
+      "index": 12,
+      "width": 390,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/831_3-65.jpg?v=1790793889",
+      "decoded_width": 1440,
+      "decoded_height": 1080,
+      "mean_pixel_error": 2.7106
+    },
+    {
+      "page": "thesis/chapter-05/index.html",
+      "index": 13,
+      "width": 390,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/93_0-cascaded.jpg?v=1790793889",
+      "decoded_width": 1440,
+      "decoded_height": 1080,
+      "mean_pixel_error": 2.6679
+    },
+    {
+      "page": "thesis/chapter-05/index.html",
+      "index": 14,
+      "width": 390,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/561_2-cacaded.jpg?v=1790793889",
+      "decoded_width": 1440,
+      "decoded_height": 1080,
+      "mean_pixel_error": 2.6707
+    },
+    {
+      "page": "thesis/chapter-05/index.html",
+      "index": 15,
+      "width": 390,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/739_2-cascaded.jpg?v=1790793889",
+      "decoded_width": 1440,
+      "decoded_height": 1080,
+      "mean_pixel_error": 2.6606
+    },
+    {
+      "page": "thesis/chapter-05/index.html",
+      "index": 16,
+      "width": 390,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/831_3-cascaded.jpg?v=1790793889",
+      "decoded_width": 1440,
+      "decoded_height": 1080,
+      "mean_pixel_error": 2.6725
+    },
+    {
+      "page": "thesis/chapter-06/index.html",
+      "index": 0,
+      "width": 390,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/A-421.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 2.973
+    },
+    {
+      "page": "thesis/chapter-06/index.html",
+      "index": 1,
+      "width": 390,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/A-564.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 1.4291
+    },
+    {
+      "page": "thesis/chapter-06/index.html",
+      "index": 2,
+      "width": 390,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/B-421.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 1.4279
+    },
+    {
+      "page": "thesis/chapter-06/index.html",
+      "index": 3,
+      "width": 390,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/B-92.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 1.4301
+    },
+    {
+      "page": "thesis/chapter-06/index.html",
+      "index": 4,
+      "width": 390,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/C-93.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 1.4278
+    },
+    {
+      "page": "thesis/chapter-06/index.html",
+      "index": 5,
+      "width": 390,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/D-655.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 1.4243
+    },
+    {
+      "page": "thesis/chapter-06/index.html",
+      "index": 6,
+      "width": 390,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/D-694.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 1.4323
+    },
+    {
+      "page": "thesis/chapter-06/index.html",
+      "index": 7,
+      "width": 390,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/E-421.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 1.4934
+    },
+    {
+      "page": "thesis/chapter-06/index.html",
+      "index": 8,
+      "width": 390,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/F-695.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 1.436
+    },
+    {
+      "page": "thesis/chapter-06/index.html",
+      "index": 9,
+      "width": 390,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/G-93.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 1.4388
+    },
+    {
+      "page": "thesis/chapter-06/index.html",
+      "index": 10,
+      "width": 390,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/E-421.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 1.4905
+    },
+    {
+      "page": "thesis/chapter-06/index.html",
+      "index": 11,
+      "width": 390,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/D-655.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 1.552
+    },
+    {
+      "page": "thesis/chapter-06/index.html",
+      "index": 12,
+      "width": 390,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/G-93.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 1.4354
+    },
+    {
+      "page": "papers/paper-01/index.html",
+      "index": 0,
+      "width": 1440,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/gelina-gelina-female.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 0.3653
+    },
+    {
+      "page": "papers/paper-01/index.html",
+      "index": 1,
+      "width": 1440,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/gelina-kings-male.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 0.1811
+    },
+    {
+      "page": "papers/paper-01/index.html",
+      "index": 2,
+      "width": 1440,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/gelina-duck_female.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 0.1192
+    },
+    {
+      "page": "papers/paper-01/index.html",
+      "index": 3,
+      "width": 1440,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/gelina-clone_kieks_0_3_3.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 0.2516
+    },
+    {
+      "page": "papers/paper-01/index.html",
+      "index": 4,
+      "width": 1440,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/gelina-clone_scott_0_2_2.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 0.3253
+    },
+    {
+      "page": "papers/paper-01/index.html",
+      "index": 5,
+      "width": 1440,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/gelina-clone_scott_0_4_4.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 0.3216
+    },
+    {
+      "page": "papers/paper-01/index.html",
+      "index": 6,
+      "width": 1440,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/gelina-comparison_scott_0_5_5.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 0.4058
+    },
+    {
+      "page": "papers/paper-01/index.html",
+      "index": 7,
+      "width": 1440,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/gelina-comparison_kieks_0_1_1.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 0.3902
+    },
+    {
+      "page": "papers/paper-01/index.html",
+      "index": 8,
+      "width": 1440,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/gelina-comparison_wayne_0_2_2.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 0.4036
+    },
+    {
+      "page": "papers/paper-01/index.html",
+      "index": 9,
+      "width": 1440,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/gelina-comparison_wayne_0_3_3.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 0.402
+    },
+    {
+      "page": "papers/paper-01/index.html",
+      "index": 10,
+      "width": 1440,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/gelina-failure-wayne.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 0.0705
+    },
+    {
+      "page": "papers/paper-01/index.html",
+      "index": 11,
+      "width": 1440,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/gelina-failure-2.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 0.1131
+    },
+    {
+      "page": "thesis/chapter-02/index.html",
+      "index": 0,
+      "width": 1440,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/letme_figure_out.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 0.2456
+    },
+    {
+      "page": "thesis/chapter-04/index.html",
+      "index": 0,
+      "width": 1440,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/gelina-gelina-female.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 0.1035
+    },
+    {
+      "page": "thesis/chapter-04/index.html",
+      "index": 1,
+      "width": 1440,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/gelina-kings-male.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 0.089
+    },
+    {
+      "page": "thesis/chapter-04/index.html",
+      "index": 2,
+      "width": 1440,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/gelina-duck_female.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 0.0601
+    },
+    {
+      "page": "thesis/chapter-04/index.html",
+      "index": 3,
+      "width": 1440,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/gelina-clone_kieks_0_3_3.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 0.1618
+    },
+    {
+      "page": "thesis/chapter-04/index.html",
+      "index": 4,
+      "width": 1440,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/gelina-clone_scott_0_2_2.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 0.2192
+    },
+    {
+      "page": "thesis/chapter-04/index.html",
+      "index": 5,
+      "width": 1440,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/gelina-clone_scott_0_4_4.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 0.2142
+    },
+    {
+      "page": "thesis/chapter-04/index.html",
+      "index": 6,
+      "width": 1440,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/gelina-comparison_scott_0_5_5.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 1.6702
+    },
+    {
+      "page": "thesis/chapter-04/index.html",
+      "index": 7,
+      "width": 1440,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/gelina-comparison_kieks_0_1_1.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 1.6902
+    },
+    {
+      "page": "thesis/chapter-04/index.html",
+      "index": 8,
+      "width": 1440,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/gelina-comparison_wayne_0_2_2.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 1.7405
+    },
+    {
+      "page": "thesis/chapter-04/index.html",
+      "index": 9,
+      "width": 1440,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/gelina-comparison_wayne_0_3_3.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 1.7422
+    },
+    {
+      "page": "thesis/chapter-04/index.html",
+      "index": 10,
+      "width": 1440,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/gelina-failure-wayne.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 0.2456
+    },
+    {
+      "page": "thesis/chapter-04/index.html",
+      "index": 11,
+      "width": 1440,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/gelina-failure-2.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 0.4214
+    },
+    {
+      "page": "thesis/chapter-05/index.html",
+      "index": 0,
+      "width": 1440,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/signals.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 0.0555
+    },
+    {
+      "page": "thesis/chapter-05/index.html",
+      "index": 1,
+      "width": 1440,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/93_0-gt.jpg?v=1790793889",
+      "decoded_width": 1440,
+      "decoded_height": 1080,
+      "mean_pixel_error": 0.5666
+    },
+    {
+      "page": "thesis/chapter-05/index.html",
+      "index": 2,
+      "width": 1440,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/561_2-gt.jpg?v=1790793889",
+      "decoded_width": 1440,
+      "decoded_height": 1080,
+      "mean_pixel_error": 0.5656
+    },
+    {
+      "page": "thesis/chapter-05/index.html",
+      "index": 3,
+      "width": 1440,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/739_2-gt.jpg?v=1790793889",
+      "decoded_width": 1440,
+      "decoded_height": 1080,
+      "mean_pixel_error": 0.5722
+    },
+    {
+      "page": "thesis/chapter-05/index.html",
+      "index": 4,
+      "width": 1440,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/831_3-gt.jpg?v=1790793889",
+      "decoded_width": 1440,
+      "decoded_height": 1080,
+      "mean_pixel_error": 0.5851
+    },
+    {
+      "page": "thesis/chapter-05/index.html",
+      "index": 5,
+      "width": 1440,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/93_0-1.jpg?v=1790793889",
+      "decoded_width": 1440,
+      "decoded_height": 1080,
+      "mean_pixel_error": 0.7941
+    },
+    {
+      "page": "thesis/chapter-05/index.html",
+      "index": 6,
+      "width": 1440,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/561_2-1.jpg?v=1790793889",
+      "decoded_width": 1440,
+      "decoded_height": 1080,
+      "mean_pixel_error": 0.7949
+    },
+    {
+      "page": "thesis/chapter-05/index.html",
+      "index": 7,
+      "width": 1440,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/739_2-1.jpg?v=1790793889",
+      "decoded_width": 1440,
+      "decoded_height": 1080,
+      "mean_pixel_error": 0.7979
+    },
+    {
+      "page": "thesis/chapter-05/index.html",
+      "index": 8,
+      "width": 1440,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/831_3-1.jpg?v=1790793889",
+      "decoded_width": 1440,
+      "decoded_height": 1080,
+      "mean_pixel_error": 1.0032
+    },
+    {
+      "page": "thesis/chapter-05/index.html",
+      "index": 9,
+      "width": 1440,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/93_0-65.jpg?v=1790793889",
+      "decoded_width": 1440,
+      "decoded_height": 1080,
+      "mean_pixel_error": 0.7906
+    },
+    {
+      "page": "thesis/chapter-05/index.html",
+      "index": 10,
+      "width": 1440,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/561_2-65.jpg?v=1790793889",
+      "decoded_width": 1440,
+      "decoded_height": 1080,
+      "mean_pixel_error": 0.7981
+    },
+    {
+      "page": "thesis/chapter-05/index.html",
+      "index": 11,
+      "width": 1440,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/739_2-65.jpg?v=1790793889",
+      "decoded_width": 1440,
+      "decoded_height": 1080,
+      "mean_pixel_error": 0.7866
+    },
+    {
+      "page": "thesis/chapter-05/index.html",
+      "index": 12,
+      "width": 1440,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/831_3-65.jpg?v=1790793889",
+      "decoded_width": 1440,
+      "decoded_height": 1080,
+      "mean_pixel_error": 1.0363
+    },
+    {
+      "page": "thesis/chapter-05/index.html",
+      "index": 13,
+      "width": 1440,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/93_0-cascaded.jpg?v=1790793889",
+      "decoded_width": 1440,
+      "decoded_height": 1080,
+      "mean_pixel_error": 1.008
+    },
+    {
+      "page": "thesis/chapter-05/index.html",
+      "index": 14,
+      "width": 1440,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/561_2-cacaded.jpg?v=1790793889",
+      "decoded_width": 1440,
+      "decoded_height": 1080,
+      "mean_pixel_error": 1.0066
+    },
+    {
+      "page": "thesis/chapter-05/index.html",
+      "index": 15,
+      "width": 1440,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/739_2-cascaded.jpg?v=1790793889",
+      "decoded_width": 1440,
+      "decoded_height": 1080,
+      "mean_pixel_error": 0.9995
+    },
+    {
+      "page": "thesis/chapter-05/index.html",
+      "index": 16,
+      "width": 1440,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/831_3-cascaded.jpg?v=1790793889",
+      "decoded_width": 1440,
+      "decoded_height": 1080,
+      "mean_pixel_error": 1.2347
+    },
+    {
+      "page": "thesis/chapter-06/index.html",
+      "index": 0,
+      "width": 1440,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/A-421.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 0.2582
+    },
+    {
+      "page": "thesis/chapter-06/index.html",
+      "index": 1,
+      "width": 1440,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/A-564.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 0.0919
+    },
+    {
+      "page": "thesis/chapter-06/index.html",
+      "index": 2,
+      "width": 1440,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/B-421.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 0.03
+    },
+    {
+      "page": "thesis/chapter-06/index.html",
+      "index": 3,
+      "width": 1440,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/B-92.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 0.0294
+    },
+    {
+      "page": "thesis/chapter-06/index.html",
+      "index": 4,
+      "width": 1440,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/C-93.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 0.028
+    },
+    {
+      "page": "thesis/chapter-06/index.html",
+      "index": 5,
+      "width": 1440,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/D-655.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 0.0297
+    },
+    {
+      "page": "thesis/chapter-06/index.html",
+      "index": 6,
+      "width": 1440,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/D-694.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 0.0309
+    },
+    {
+      "page": "thesis/chapter-06/index.html",
+      "index": 7,
+      "width": 1440,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/E-421.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 0.041
+    },
+    {
+      "page": "thesis/chapter-06/index.html",
+      "index": 8,
+      "width": 1440,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/F-695.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 0.0304
+    },
+    {
+      "page": "thesis/chapter-06/index.html",
+      "index": 9,
+      "width": 1440,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/G-93.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 0.0303
+    },
+    {
+      "page": "thesis/chapter-06/index.html",
+      "index": 10,
+      "width": 1440,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/E-421.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 0.041
+    },
+    {
+      "page": "thesis/chapter-06/index.html",
+      "index": 11,
+      "width": 1440,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/D-655.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 0.0448
+    },
+    {
+      "page": "thesis/chapter-06/index.html",
+      "index": 12,
+      "width": 1440,
+      "javascript": true,
+      "poster": "https://site.test/thesis-supplement/assets/posters/G-93.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 0.0304
+    },
+    {
+      "page": "papers/paper-01/index.html",
+      "index": 0,
+      "width": 390,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/gelina-gelina-female.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 2.4949
+    },
+    {
+      "page": "papers/paper-01/index.html",
+      "index": 1,
+      "width": 390,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/gelina-kings-male.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 3.4482
+    },
+    {
+      "page": "papers/paper-01/index.html",
+      "index": 2,
+      "width": 390,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/gelina-duck_female.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 1.4927
+    },
+    {
+      "page": "papers/paper-01/index.html",
+      "index": 3,
+      "width": 390,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/gelina-clone_kieks_0_3_3.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 1.9059
+    },
+    {
+      "page": "papers/paper-01/index.html",
+      "index": 4,
+      "width": 390,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/gelina-clone_scott_0_2_2.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 2.1678
+    },
+    {
+      "page": "papers/paper-01/index.html",
+      "index": 5,
+      "width": 390,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/gelina-clone_scott_0_4_4.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 2.1513
+    },
+    {
+      "page": "papers/paper-01/index.html",
+      "index": 6,
+      "width": 390,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/gelina-comparison_scott_0_5_5.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 2.5599
+    },
+    {
+      "page": "papers/paper-01/index.html",
+      "index": 7,
+      "width": 390,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/gelina-comparison_kieks_0_1_1.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 2.518
+    },
+    {
+      "page": "papers/paper-01/index.html",
+      "index": 8,
+      "width": 390,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/gelina-comparison_wayne_0_2_2.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 2.562
+    },
+    {
+      "page": "papers/paper-01/index.html",
+      "index": 9,
+      "width": 390,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/gelina-comparison_wayne_0_3_3.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 2.5382
+    },
+    {
+      "page": "papers/paper-01/index.html",
+      "index": 10,
+      "width": 390,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/gelina-failure-wayne.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 1.9391
+    },
+    {
+      "page": "papers/paper-01/index.html",
+      "index": 11,
+      "width": 390,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/gelina-failure-2.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 2.0722
+    },
+    {
+      "page": "thesis/chapter-02/index.html",
+      "index": 0,
+      "width": 390,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/letme_figure_out.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 2.5357
+    },
+    {
+      "page": "thesis/chapter-04/index.html",
+      "index": 0,
+      "width": 390,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/gelina-gelina-female.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 2.0753
+    },
+    {
+      "page": "thesis/chapter-04/index.html",
+      "index": 1,
+      "width": 390,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/gelina-kings-male.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 3.216
+    },
+    {
+      "page": "thesis/chapter-04/index.html",
+      "index": 2,
+      "width": 390,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/gelina-duck_female.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 1.6979
+    },
+    {
+      "page": "thesis/chapter-04/index.html",
+      "index": 3,
+      "width": 390,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/gelina-clone_kieks_0_3_3.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 2.6346
+    },
+    {
+      "page": "thesis/chapter-04/index.html",
+      "index": 4,
+      "width": 390,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/gelina-clone_scott_0_2_2.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 3.2356
+    },
+    {
+      "page": "thesis/chapter-04/index.html",
+      "index": 5,
+      "width": 390,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/gelina-clone_scott_0_4_4.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 3.2336
+    },
+    {
+      "page": "thesis/chapter-04/index.html",
+      "index": 6,
+      "width": 390,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/gelina-comparison_scott_0_5_5.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 4.7001
+    },
+    {
+      "page": "thesis/chapter-04/index.html",
+      "index": 7,
+      "width": 390,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/gelina-comparison_kieks_0_1_1.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 4.7133
+    },
+    {
+      "page": "thesis/chapter-04/index.html",
+      "index": 8,
+      "width": 390,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/gelina-comparison_wayne_0_2_2.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 4.8577
+    },
+    {
+      "page": "thesis/chapter-04/index.html",
+      "index": 9,
+      "width": 390,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/gelina-comparison_wayne_0_3_3.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 4.7494
+    },
+    {
+      "page": "thesis/chapter-04/index.html",
+      "index": 10,
+      "width": 390,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/gelina-failure-wayne.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 1.8627
+    },
+    {
+      "page": "thesis/chapter-04/index.html",
+      "index": 11,
+      "width": 390,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/gelina-failure-2.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 1.79
+    },
+    {
+      "page": "thesis/chapter-05/index.html",
+      "index": 0,
+      "width": 390,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/signals.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 3.1207
+    },
+    {
+      "page": "thesis/chapter-05/index.html",
+      "index": 1,
+      "width": 390,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/93_0-gt.jpg?v=1790793889",
+      "decoded_width": 1440,
+      "decoded_height": 1080,
+      "mean_pixel_error": 2.7105
+    },
+    {
+      "page": "thesis/chapter-05/index.html",
+      "index": 2,
+      "width": 390,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/561_2-gt.jpg?v=1790793889",
+      "decoded_width": 1440,
+      "decoded_height": 1080,
+      "mean_pixel_error": 2.6964
+    },
+    {
+      "page": "thesis/chapter-05/index.html",
+      "index": 3,
+      "width": 390,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/739_2-gt.jpg?v=1790793889",
+      "decoded_width": 1440,
+      "decoded_height": 1080,
+      "mean_pixel_error": 2.6976
+    },
+    {
+      "page": "thesis/chapter-05/index.html",
+      "index": 4,
+      "width": 390,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/831_3-gt.jpg?v=1790793889",
+      "decoded_width": 1440,
+      "decoded_height": 1080,
+      "mean_pixel_error": 3.1589
+    },
+    {
+      "page": "thesis/chapter-05/index.html",
+      "index": 5,
+      "width": 390,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/93_0-1.jpg?v=1790793889",
+      "decoded_width": 1440,
+      "decoded_height": 1080,
+      "mean_pixel_error": 2.5606
+    },
+    {
+      "page": "thesis/chapter-05/index.html",
+      "index": 6,
+      "width": 390,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/561_2-1.jpg?v=1790793889",
+      "decoded_width": 1440,
+      "decoded_height": 1080,
+      "mean_pixel_error": 2.57
+    },
+    {
+      "page": "thesis/chapter-05/index.html",
+      "index": 7,
+      "width": 390,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/739_2-1.jpg?v=1790793889",
+      "decoded_width": 1440,
+      "decoded_height": 1080,
+      "mean_pixel_error": 2.568
+    },
+    {
+      "page": "thesis/chapter-05/index.html",
+      "index": 8,
+      "width": 390,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/831_3-1.jpg?v=1790793889",
+      "decoded_width": 1440,
+      "decoded_height": 1080,
+      "mean_pixel_error": 2.5746
+    },
+    {
+      "page": "thesis/chapter-05/index.html",
+      "index": 9,
+      "width": 390,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/93_0-65.jpg?v=1790793889",
+      "decoded_width": 1440,
+      "decoded_height": 1080,
+      "mean_pixel_error": 2.6562
+    },
+    {
+      "page": "thesis/chapter-05/index.html",
+      "index": 10,
+      "width": 390,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/561_2-65.jpg?v=1790793889",
+      "decoded_width": 1440,
+      "decoded_height": 1080,
+      "mean_pixel_error": 2.6587
+    },
+    {
+      "page": "thesis/chapter-05/index.html",
+      "index": 11,
+      "width": 390,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/739_2-65.jpg?v=1790793889",
+      "decoded_width": 1440,
+      "decoded_height": 1080,
+      "mean_pixel_error": 2.6555
+    },
+    {
+      "page": "thesis/chapter-05/index.html",
+      "index": 12,
+      "width": 390,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/831_3-65.jpg?v=1790793889",
+      "decoded_width": 1440,
+      "decoded_height": 1080,
+      "mean_pixel_error": 2.6781
+    },
+    {
+      "page": "thesis/chapter-05/index.html",
+      "index": 13,
+      "width": 390,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/93_0-cascaded.jpg?v=1790793889",
+      "decoded_width": 1440,
+      "decoded_height": 1080,
+      "mean_pixel_error": 2.6628
+    },
+    {
+      "page": "thesis/chapter-05/index.html",
+      "index": 14,
+      "width": 390,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/561_2-cacaded.jpg?v=1790793889",
+      "decoded_width": 1440,
+      "decoded_height": 1080,
+      "mean_pixel_error": 2.6659
+    },
+    {
+      "page": "thesis/chapter-05/index.html",
+      "index": 15,
+      "width": 390,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/739_2-cascaded.jpg?v=1790793889",
+      "decoded_width": 1440,
+      "decoded_height": 1080,
+      "mean_pixel_error": 2.6556
+    },
+    {
+      "page": "thesis/chapter-05/index.html",
+      "index": 16,
+      "width": 390,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/831_3-cascaded.jpg?v=1790793889",
+      "decoded_width": 1440,
+      "decoded_height": 1080,
+      "mean_pixel_error": 2.667
+    },
+    {
+      "page": "thesis/chapter-06/index.html",
+      "index": 0,
+      "width": 390,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/A-421.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 3.0243
+    },
+    {
+      "page": "thesis/chapter-06/index.html",
+      "index": 1,
+      "width": 390,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/A-564.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 2.187
+    },
+    {
+      "page": "thesis/chapter-06/index.html",
+      "index": 2,
+      "width": 390,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/B-421.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 1.5561
+    },
+    {
+      "page": "thesis/chapter-06/index.html",
+      "index": 3,
+      "width": 390,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/B-92.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 1.5626
+    },
+    {
+      "page": "thesis/chapter-06/index.html",
+      "index": 4,
+      "width": 390,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/C-93.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 1.5634
+    },
+    {
+      "page": "thesis/chapter-06/index.html",
+      "index": 5,
+      "width": 390,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/D-655.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 1.5526
+    },
+    {
+      "page": "thesis/chapter-06/index.html",
+      "index": 6,
+      "width": 390,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/D-694.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 1.5568
+    },
+    {
+      "page": "thesis/chapter-06/index.html",
+      "index": 7,
+      "width": 390,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/E-421.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 1.5613
+    },
+    {
+      "page": "thesis/chapter-06/index.html",
+      "index": 8,
+      "width": 390,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/F-695.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 1.5587
+    },
+    {
+      "page": "thesis/chapter-06/index.html",
+      "index": 9,
+      "width": 390,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/G-93.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 1.5566
+    },
+    {
+      "page": "thesis/chapter-06/index.html",
+      "index": 10,
+      "width": 390,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/E-421.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 1.5582
+    },
+    {
+      "page": "thesis/chapter-06/index.html",
+      "index": 11,
+      "width": 390,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/D-655.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 1.4214
+    },
+    {
+      "page": "thesis/chapter-06/index.html",
+      "index": 12,
+      "width": 390,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/G-93.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 1.5528
+    },
+    {
+      "page": "papers/paper-01/index.html",
+      "index": 0,
+      "width": 1440,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/gelina-gelina-female.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 0.2904
+    },
+    {
+      "page": "papers/paper-01/index.html",
+      "index": 1,
+      "width": 1440,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/gelina-kings-male.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 0.3749
+    },
+    {
+      "page": "papers/paper-01/index.html",
+      "index": 2,
+      "width": 1440,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/gelina-duck_female.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 0.1192
+    },
+    {
+      "page": "papers/paper-01/index.html",
+      "index": 3,
+      "width": 1440,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/gelina-clone_kieks_0_3_3.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 0.1618
+    },
+    {
+      "page": "papers/paper-01/index.html",
+      "index": 4,
+      "width": 1440,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/gelina-clone_scott_0_2_2.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 0.2192
+    },
+    {
+      "page": "papers/paper-01/index.html",
+      "index": 5,
+      "width": 1440,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/gelina-clone_scott_0_4_4.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 0.2142
+    },
+    {
+      "page": "papers/paper-01/index.html",
+      "index": 6,
+      "width": 1440,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/gelina-comparison_scott_0_5_5.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 1.6702
+    },
+    {
+      "page": "papers/paper-01/index.html",
+      "index": 7,
+      "width": 1440,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/gelina-comparison_kieks_0_1_1.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 1.6902
+    },
+    {
+      "page": "papers/paper-01/index.html",
+      "index": 8,
+      "width": 1440,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/gelina-comparison_wayne_0_2_2.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 1.7405
+    },
+    {
+      "page": "papers/paper-01/index.html",
+      "index": 9,
+      "width": 1440,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/gelina-comparison_wayne_0_3_3.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 1.7422
+    },
+    {
+      "page": "papers/paper-01/index.html",
+      "index": 10,
+      "width": 1440,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/gelina-failure-wayne.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 0.0707
+    },
+    {
+      "page": "papers/paper-01/index.html",
+      "index": 11,
+      "width": 1440,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/gelina-failure-2.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 0.1134
+    },
+    {
+      "page": "thesis/chapter-02/index.html",
+      "index": 0,
+      "width": 1440,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/letme_figure_out.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 0.2553
+    },
+    {
+      "page": "thesis/chapter-04/index.html",
+      "index": 0,
+      "width": 1440,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/gelina-gelina-female.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 0.1677
+    },
+    {
+      "page": "thesis/chapter-04/index.html",
+      "index": 1,
+      "width": 1440,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/gelina-kings-male.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 0.3294
+    },
+    {
+      "page": "thesis/chapter-04/index.html",
+      "index": 2,
+      "width": 1440,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/gelina-duck_female.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 0.0882
+    },
+    {
+      "page": "thesis/chapter-04/index.html",
+      "index": 3,
+      "width": 1440,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/gelina-clone_kieks_0_3_3.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 0.1614
+    },
+    {
+      "page": "thesis/chapter-04/index.html",
+      "index": 4,
+      "width": 1440,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/gelina-clone_scott_0_2_2.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 0.2186
+    },
+    {
+      "page": "thesis/chapter-04/index.html",
+      "index": 5,
+      "width": 1440,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/gelina-clone_scott_0_4_4.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 0.2137
+    },
+    {
+      "page": "thesis/chapter-04/index.html",
+      "index": 6,
+      "width": 1440,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/gelina-comparison_scott_0_5_5.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 0.6628
+    },
+    {
+      "page": "thesis/chapter-04/index.html",
+      "index": 7,
+      "width": 1440,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/gelina-comparison_kieks_0_1_1.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 0.661
+    },
+    {
+      "page": "thesis/chapter-04/index.html",
+      "index": 8,
+      "width": 1440,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/gelina-comparison_wayne_0_2_2.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 0.6747
+    },
+    {
+      "page": "thesis/chapter-04/index.html",
+      "index": 9,
+      "width": 1440,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/gelina-comparison_wayne_0_3_3.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 0.6799
+    },
+    {
+      "page": "thesis/chapter-04/index.html",
+      "index": 10,
+      "width": 1440,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/gelina-failure-wayne.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 0.0705
+    },
+    {
+      "page": "thesis/chapter-04/index.html",
+      "index": 11,
+      "width": 1440,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/gelina-failure-2.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 0.1131
+    },
+    {
+      "page": "thesis/chapter-05/index.html",
+      "index": 0,
+      "width": 1440,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/signals.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 0.2311
+    },
+    {
+      "page": "thesis/chapter-05/index.html",
+      "index": 1,
+      "width": 1440,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/93_0-gt.jpg?v=1790793889",
+      "decoded_width": 1440,
+      "decoded_height": 1080,
+      "mean_pixel_error": 0.6406
+    },
+    {
+      "page": "thesis/chapter-05/index.html",
+      "index": 2,
+      "width": 1440,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/561_2-gt.jpg?v=1790793889",
+      "decoded_width": 1440,
+      "decoded_height": 1080,
+      "mean_pixel_error": 0.5656
+    },
+    {
+      "page": "thesis/chapter-05/index.html",
+      "index": 3,
+      "width": 1440,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/739_2-gt.jpg?v=1790793889",
+      "decoded_width": 1440,
+      "decoded_height": 1080,
+      "mean_pixel_error": 0.5722
+    },
+    {
+      "page": "thesis/chapter-05/index.html",
+      "index": 4,
+      "width": 1440,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/831_3-gt.jpg?v=1790793889",
+      "decoded_width": 1440,
+      "decoded_height": 1080,
+      "mean_pixel_error": 0.5851
+    },
+    {
+      "page": "thesis/chapter-05/index.html",
+      "index": 5,
+      "width": 1440,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/93_0-1.jpg?v=1790793889",
+      "decoded_width": 1440,
+      "decoded_height": 1080,
+      "mean_pixel_error": 0.5753
+    },
+    {
+      "page": "thesis/chapter-05/index.html",
+      "index": 6,
+      "width": 1440,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/561_2-1.jpg?v=1790793889",
+      "decoded_width": 1440,
+      "decoded_height": 1080,
+      "mean_pixel_error": 0.5782
+    },
+    {
+      "page": "thesis/chapter-05/index.html",
+      "index": 7,
+      "width": 1440,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/739_2-1.jpg?v=1790793889",
+      "decoded_width": 1440,
+      "decoded_height": 1080,
+      "mean_pixel_error": 0.5777
+    },
+    {
+      "page": "thesis/chapter-05/index.html",
+      "index": 8,
+      "width": 1440,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/831_3-1.jpg?v=1790793889",
+      "decoded_width": 1440,
+      "decoded_height": 1080,
+      "mean_pixel_error": 0.5882
+    },
+    {
+      "page": "thesis/chapter-05/index.html",
+      "index": 9,
+      "width": 1440,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/93_0-65.jpg?v=1790793889",
+      "decoded_width": 1440,
+      "decoded_height": 1080,
+      "mean_pixel_error": 0.5748
+    },
+    {
+      "page": "thesis/chapter-05/index.html",
+      "index": 10,
+      "width": 1440,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/561_2-65.jpg?v=1790793889",
+      "decoded_width": 1440,
+      "decoded_height": 1080,
+      "mean_pixel_error": 0.5763
+    },
+    {
+      "page": "thesis/chapter-05/index.html",
+      "index": 11,
+      "width": 1440,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/739_2-65.jpg?v=1790793889",
+      "decoded_width": 1440,
+      "decoded_height": 1080,
+      "mean_pixel_error": 0.5711
+    },
+    {
+      "page": "thesis/chapter-05/index.html",
+      "index": 12,
+      "width": 1440,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/831_3-65.jpg?v=1790793889",
+      "decoded_width": 1440,
+      "decoded_height": 1080,
+      "mean_pixel_error": 0.5989
+    },
+    {
+      "page": "thesis/chapter-05/index.html",
+      "index": 13,
+      "width": 1440,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/93_0-cascaded.jpg?v=1790793889",
+      "decoded_width": 1440,
+      "decoded_height": 1080,
+      "mean_pixel_error": 0.5771
+    },
+    {
+      "page": "thesis/chapter-05/index.html",
+      "index": 14,
+      "width": 1440,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/561_2-cacaded.jpg?v=1790793889",
+      "decoded_width": 1440,
+      "decoded_height": 1080,
+      "mean_pixel_error": 0.5716
+    },
+    {
+      "page": "thesis/chapter-05/index.html",
+      "index": 15,
+      "width": 1440,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/739_2-cascaded.jpg?v=1790793889",
+      "decoded_width": 1440,
+      "decoded_height": 1080,
+      "mean_pixel_error": 0.5697
+    },
+    {
+      "page": "thesis/chapter-05/index.html",
+      "index": 16,
+      "width": 1440,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/831_3-cascaded.jpg?v=1790793889",
+      "decoded_width": 1440,
+      "decoded_height": 1080,
+      "mean_pixel_error": 0.5949
+    },
+    {
+      "page": "thesis/chapter-06/index.html",
+      "index": 0,
+      "width": 1440,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/A-421.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 0.3122
+    },
+    {
+      "page": "thesis/chapter-06/index.html",
+      "index": 1,
+      "width": 1440,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/A-564.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 0.1922
+    },
+    {
+      "page": "thesis/chapter-06/index.html",
+      "index": 2,
+      "width": 1440,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/B-421.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 0.0841
+    },
+    {
+      "page": "thesis/chapter-06/index.html",
+      "index": 3,
+      "width": 1440,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/B-92.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 0.0817
+    },
+    {
+      "page": "thesis/chapter-06/index.html",
+      "index": 4,
+      "width": 1440,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/C-93.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 0.0765
+    },
+    {
+      "page": "thesis/chapter-06/index.html",
+      "index": 5,
+      "width": 1440,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/D-655.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 0.0852
+    },
+    {
+      "page": "thesis/chapter-06/index.html",
+      "index": 6,
+      "width": 1440,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/D-694.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 0.0876
+    },
+    {
+      "page": "thesis/chapter-06/index.html",
+      "index": 7,
+      "width": 1440,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/E-421.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 0.1523
+    },
+    {
+      "page": "thesis/chapter-06/index.html",
+      "index": 8,
+      "width": 1440,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/F-695.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 0.0899
+    },
+    {
+      "page": "thesis/chapter-06/index.html",
+      "index": 9,
+      "width": 1440,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/G-93.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 0.0895
+    },
+    {
+      "page": "thesis/chapter-06/index.html",
+      "index": 10,
+      "width": 1440,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/E-421.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 0.1523
+    },
+    {
+      "page": "thesis/chapter-06/index.html",
+      "index": 11,
+      "width": 1440,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/D-655.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 0.0297
+    },
+    {
+      "page": "thesis/chapter-06/index.html",
+      "index": 12,
+      "width": 1440,
+      "javascript": false,
+      "poster": "https://site.test/thesis-supplement/assets/posters/G-93.jpg?v=1790793889",
+      "decoded_width": 1920,
+      "decoded_height": 1080,
+      "mean_pixel_error": 0.0303
+    }
+  ],
+  "http": [
+    {
+      "url": "/thesis-supplement/",
+      "status": 200,
+      "type": "text/html"
+    },
+    {
+      "url": "/thesis-supplement/404.html",
+      "status": 200,
+      "type": "text/html"
+    },
+    {
+      "url": "/thesis-supplement/assets/css/main.css?v=1790793889",
+      "status": 200,
+      "type": "text/css"
+    },
+    {
+      "url": "/thesis-supplement/assets/images/IMG_2954.jpeg",
+      "status": 200,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "/thesis-supplement/assets/images/favicon.svg",
+      "status": 200,
+      "type": "image/svg+xml"
+    },
+    {
+      "url": "/thesis-supplement/assets/images/gaspard_mos.png",
+      "status": 200,
+      "type": "image/png"
+    },
+    {
+      "url": "/thesis-supplement/assets/images/gelina_ar.png",
+      "status": 200,
+      "type": "image/png"
+    },
+    {
+      "url": "/thesis-supplement/assets/images/gelina_mos.png",
+      "status": 200,
+      "type": "image/png"
+    },
+    {
+      "url": "/thesis-supplement/assets/images/latent_properties.png",
+      "status": 200,
+      "type": "image/png"
+    },
+    {
+      "url": "/thesis-supplement/assets/images/left_side.png",
+      "status": 200,
+      "type": "image/png"
+    },
+    {
+      "url": "/thesis-supplement/assets/images/mel.png",
+      "status": 200,
+      "type": "image/png"
+    },
+    {
+      "url": "/thesis-supplement/assets/images/much_later.png",
+      "status": 200,
+      "type": "image/png"
+    },
+    {
+      "url": "/thesis-supplement/assets/images/signal_properties.png",
+      "status": 200,
+      "type": "image/png"
+    },
+    {
+      "url": "/thesis-supplement/assets/images/the_world.png",
+      "status": 200,
+      "type": "image/png"
+    },
+    {
+      "url": "/thesis-supplement/assets/images/tone_gesture_units.png",
+      "status": 200,
+      "type": "image/png"
+    },
+    {
+      "url": "/thesis-supplement/assets/js/carousel.js?v=1790793889",
+      "status": 200,
+      "type": "text/javascript"
+    },
+    {
+      "url": "/thesis-supplement/assets/js/math.js",
+      "status": 200,
+      "type": "text/javascript"
+    },
+    {
+      "url": "/thesis-supplement/assets/js/site.js?v=1790793889",
+      "status": 200,
+      "type": "text/javascript"
+    },
+    {
+      "url": "/thesis-supplement/assets/posters/561_2-1.jpg?v=1790793889",
+      "status": 200,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "/thesis-supplement/assets/posters/561_2-65.jpg?v=1790793889",
+      "status": 200,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "/thesis-supplement/assets/posters/561_2-cacaded.jpg?v=1790793889",
+      "status": 200,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "/thesis-supplement/assets/posters/561_2-gt.jpg?v=1790793889",
+      "status": 200,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "/thesis-supplement/assets/posters/739_2-1.jpg?v=1790793889",
+      "status": 200,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "/thesis-supplement/assets/posters/739_2-65.jpg?v=1790793889",
+      "status": 200,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "/thesis-supplement/assets/posters/739_2-cascaded.jpg?v=1790793889",
+      "status": 200,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "/thesis-supplement/assets/posters/739_2-gt.jpg?v=1790793889",
+      "status": 200,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "/thesis-supplement/assets/posters/831_3-1.jpg?v=1790793889",
+      "status": 200,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "/thesis-supplement/assets/posters/831_3-65.jpg?v=1790793889",
+      "status": 200,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "/thesis-supplement/assets/posters/831_3-cascaded.jpg?v=1790793889",
+      "status": 200,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "/thesis-supplement/assets/posters/831_3-gt.jpg?v=1790793889",
+      "status": 200,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "/thesis-supplement/assets/posters/93_0-1.jpg?v=1790793889",
+      "status": 200,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "/thesis-supplement/assets/posters/93_0-65.jpg?v=1790793889",
+      "status": 200,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "/thesis-supplement/assets/posters/93_0-cascaded.jpg?v=1790793889",
+      "status": 200,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "/thesis-supplement/assets/posters/93_0-gt.jpg?v=1790793889",
+      "status": 200,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "/thesis-supplement/assets/posters/A-421.jpg?v=1790793889",
+      "status": 200,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "/thesis-supplement/assets/posters/A-564.jpg?v=1790793889",
+      "status": 200,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "/thesis-supplement/assets/posters/B-421.jpg?v=1790793889",
+      "status": 200,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "/thesis-supplement/assets/posters/B-92.jpg?v=1790793889",
+      "status": 200,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "/thesis-supplement/assets/posters/C-93.jpg?v=1790793889",
+      "status": 200,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "/thesis-supplement/assets/posters/D-655.jpg?v=1790793889",
+      "status": 200,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "/thesis-supplement/assets/posters/D-694.jpg?v=1790793889",
+      "status": 200,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "/thesis-supplement/assets/posters/E-421.jpg?v=1790793889",
+      "status": 200,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "/thesis-supplement/assets/posters/F-695.jpg?v=1790793889",
+      "status": 200,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "/thesis-supplement/assets/posters/G-93.jpg?v=1790793889",
+      "status": 200,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "/thesis-supplement/assets/posters/gelina-clone_kieks_0_3_3.jpg?v=1790793889",
+      "status": 200,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "/thesis-supplement/assets/posters/gelina-clone_scott_0_2_2.jpg?v=1790793889",
+      "status": 200,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "/thesis-supplement/assets/posters/gelina-clone_scott_0_4_4.jpg?v=1790793889",
+      "status": 200,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "/thesis-supplement/assets/posters/gelina-comparison_kieks_0_1_1.jpg?v=1790793889",
+      "status": 200,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "/thesis-supplement/assets/posters/gelina-comparison_scott_0_5_5.jpg?v=1790793889",
+      "status": 200,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "/thesis-supplement/assets/posters/gelina-comparison_wayne_0_2_2.jpg?v=1790793889",
+      "status": 200,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "/thesis-supplement/assets/posters/gelina-comparison_wayne_0_3_3.jpg?v=1790793889",
+      "status": 200,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "/thesis-supplement/assets/posters/gelina-duck_female.jpg?v=1790793889",
+      "status": 200,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "/thesis-supplement/assets/posters/gelina-failure-2.jpg?v=1790793889",
+      "status": 200,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "/thesis-supplement/assets/posters/gelina-failure-wayne.jpg?v=1790793889",
+      "status": 200,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "/thesis-supplement/assets/posters/gelina-gelina-female.jpg?v=1790793889",
+      "status": 200,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "/thesis-supplement/assets/posters/gelina-kings-male.jpg?v=1790793889",
+      "status": 200,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "/thesis-supplement/assets/posters/letme_figure_out.jpg?v=1790793889",
+      "status": 200,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "/thesis-supplement/assets/posters/signals.jpg?v=1790793889",
+      "status": 200,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "/thesis-supplement/index.html",
+      "status": 200,
+      "type": "text/html"
+    },
+    {
+      "url": "/thesis-supplement/papers/",
+      "status": 200,
+      "type": "text/html"
+    },
+    {
+      "url": "/thesis-supplement/papers/index.html",
+      "status": 200,
+      "type": "text/html"
+    },
+    {
+      "url": "/thesis-supplement/papers/paper-01/",
+      "status": 200,
+      "type": "text/html"
+    },
+    {
+      "url": "/thesis-supplement/papers/paper-01/index.html",
+      "status": 200,
+      "type": "text/html"
+    },
+    {
+      "url": "/thesis-supplement/papers/paper-02/",
+      "status": 200,
+      "type": "text/html"
+    },
+    {
+      "url": "/thesis-supplement/papers/paper-02/index.html",
+      "status": 200,
+      "type": "text/html"
+    },
+    {
+      "url": "/thesis-supplement/papers/paper-03/",
+      "status": 200,
+      "type": "text/html"
+    },
+    {
+      "url": "/thesis-supplement/papers/paper-03/index.html",
+      "status": 200,
+      "type": "text/html"
+    },
+    {
+      "url": "/thesis-supplement/papers/paper-04/",
+      "status": 200,
+      "type": "text/html"
+    },
+    {
+      "url": "/thesis-supplement/papers/paper-04/index.html",
+      "status": 200,
+      "type": "text/html"
+    },
+    {
+      "url": "/thesis-supplement/papers/paper-05/",
+      "status": 200,
+      "type": "text/html"
+    },
+    {
+      "url": "/thesis-supplement/papers/paper-05/index.html",
+      "status": 200,
+      "type": "text/html"
+    },
+    {
+      "url": "/thesis-supplement/thesis/",
+      "status": 200,
+      "type": "text/html"
+    },
+    {
+      "url": "/thesis-supplement/thesis/chapter-02/",
+      "status": 200,
+      "type": "text/html"
+    },
+    {
+      "url": "/thesis-supplement/thesis/chapter-02/index.html",
+      "status": 200,
+      "type": "text/html"
+    },
+    {
+      "url": "/thesis-supplement/thesis/chapter-04/",
+      "status": 200,
+      "type": "text/html"
+    },
+    {
+      "url": "/thesis-supplement/thesis/chapter-04/index.html",
+      "status": 200,
+      "type": "text/html"
+    },
+    {
+      "url": "/thesis-supplement/thesis/chapter-05/",
+      "status": 200,
+      "type": "text/html"
+    },
+    {
+      "url": "/thesis-supplement/thesis/chapter-05/index.html",
+      "status": 200,
+      "type": "text/html"
+    },
+    {
+      "url": "/thesis-supplement/thesis/chapter-06/",
+      "status": 200,
+      "type": "text/html"
+    },
+    {
+      "url": "/thesis-supplement/thesis/chapter-06/index.html",
+      "status": 200,
+      "type": "text/html"
+    },
+    {
+      "url": "/thesis-supplement/thesis/index.html",
+      "status": 200,
+      "type": "text/html"
+    }
+  ],
+  "video_entries": 43,
+  "unique_referenced_posters": 40,
+  "html_pages": 13,
+  "home_title": "Téo Guichoux's personal space",
+  "rendered_video_occurrences": 55,
+  "browser": "Chromium 144.0.7559.96",
+  "passed": 109,
+  "failed": 0,
+  "pixel_comparisons": 220
+}

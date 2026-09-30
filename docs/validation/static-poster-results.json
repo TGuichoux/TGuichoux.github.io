@@ -1,0 +1,12 @@
+{
+  "passed": 5,
+  "failed": 0,
+  "tests": [
+    "matching manifest selected",
+    "base-path asset resolves",
+    "JPEG pixels rendered in native video player",
+    "no MP4 fetched before play",
+    "no local asset errors"
+  ],
+  "test_media": "synthetic fixture only"
+}

@@ -1,0 +1,71 @@
+{
+  "original_source_files": 160,
+  "unchanged_original_source_files": 156,
+  "changed_files": [
+    "README.md",
+    "assets/css/main.css",
+    "assets/js/carousel.js",
+    "scripts/test_carousel.py"
+  ],
+  "added_files": [
+    "scripts/test_video_link_urls.cjs",
+    "scripts/test_video_links.py"
+  ],
+  "missing_source_files": [],
+  "chapter_template_sha256": "580fb1877a77aef31acb8c5677059e3d894befb19db7df6d884cfb8620fc471c",
+  "chapter_template_identical": true,
+  "rendered_page_comparisons": [
+    {
+      "page": "404.html",
+      "text_ids_movie_urls_posters_unchanged": true
+    },
+    {
+      "page": "index.html",
+      "text_ids_movie_urls_posters_unchanged": true
+    },
+    {
+      "page": "papers/index.html",
+      "text_ids_movie_urls_posters_unchanged": true
+    },
+    {
+      "page": "papers/paper-01/index.html",
+      "text_ids_movie_urls_posters_unchanged": true
+    },
+    {
+      "page": "papers/paper-02/index.html",
+      "text_ids_movie_urls_posters_unchanged": true
+    },
+    {
+      "page": "papers/paper-03/index.html",
+      "text_ids_movie_urls_posters_unchanged": true
+    },
+    {
+      "page": "papers/paper-04/index.html",
+      "text_ids_movie_urls_posters_unchanged": true
+    },
+    {
+      "page": "papers/paper-05/index.html",
+      "text_ids_movie_urls_posters_unchanged": true
+    },
+    {
+      "page": "thesis/chapter-02/index.html",
+      "text_ids_movie_urls_posters_unchanged": true
+    },
+    {
+      "page": "thesis/chapter-04/index.html",
+      "text_ids_movie_urls_posters_unchanged": true
+    },
+    {
+      "page": "thesis/chapter-05/index.html",
+      "text_ids_movie_urls_posters_unchanged": true
+    },
+    {
+      "page": "thesis/chapter-06/index.html",
+      "text_ids_movie_urls_posters_unchanged": true
+    },
+    {
+      "page": "thesis/index.html",
+      "text_ids_movie_urls_posters_unchanged": true
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{% assign figure_label = include.label | default: include.id | slugify %}
+{% assign figure_src = include.src | default: '' | strip %}
+{% if figure_src != '' %}
+
+{% assign caption_html = include.caption | markdownify | strip %}
+{% assign caption_html = caption_html | remove: '<p>' | remove: '</p>' %}
+
+{% if include.alt %}
+  {% assign alt_text = include.alt %}
+{% else %}
+  {% assign alt_text = include.caption | markdownify | strip_html | strip %}
+{% endif %}
+
+<figure
+  class="media-figure{% if include.layout == 'wide' %} media-figure--wide{% endif %}"
+  id="{{ figure_label }}"
+  aria-labelledby="{{ figure_label }}-caption"
+  {% if include.width %}style="max-width: {{ include.width | plus: 0 }}px"{% endif %}
+>
+  <div class="figure-image">
+    <img
+      src="{% include url.html value=figure_src %}"
+      alt="{{ alt_text | escape }}"
+      loading="lazy"
+      decoding="async"
+    >
+  </div>
+
+  <figcaption id="{{ figure_label }}-caption">
+    <strong>{{ include.id | escape }}</strong>
+
+    <span>{{ caption_html }}</span>
+
+    {% if include.link and include.link != '' %}
+      <a
+        class="media-link"
+        href="{% include url.html value=include.link %}"
+      >
+        Full-resolution figure <span aria-hidden="true">↗</span>
+      </a>
+    {% endif %}
+  </figcaption>
+</figure>
+{% endif %}

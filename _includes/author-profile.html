@@ -1,0 +1,36 @@
+<aside class="sidebar" aria-label="Author and contextual navigation">
+  <div class="author-profile">
+    {% if site.data.author.avatar != '' %}
+      <img class="author__avatar" src="{% include url.html value=site.data.author.avatar %}" alt="{{ site.data.author.name | escape }}" width="136" height="136">
+    {% endif %}
+    <div class="author__details">
+      <p class="author__name">{{ site.data.author.name | escape }}</p>
+      <p class="author__role">{{ site.data.author.role | escape }}</p>
+      <p class="author__bio">{{ site.data.author.bio | escape }}</p>
+      <p class="author__affiliation">{{ site.data.author.institution | escape }}<br>{{ site.data.author.department | escape }}</p>
+      <div class="author__links">
+        {% if site.data.author.email != '' %}<a href="mailto:{{ site.data.author.email | escape }}">Email</a>{% endif %}
+        {% if site.data.author.orcid != '' %}<a href="{% include url.html value=site.data.author.orcid %}">ORCID</a>{% endif %}
+        {% if site.data.author.scholar != '' %}<a href="{% include url.html value=site.data.author.scholar %}">Google Scholar</a>{% endif %}
+        {% if site.data.author.github != '' %}<a href="{% include url.html value=site.data.author.github %}">GitHub</a>{% endif %}
+        {% if site.data.author.linkedin != '' %}<a href="{% include url.html value=site.data.author.linkedin %}">LinkedIn</a>{% endif %}
+      </div>
+    </div>
+  </div>
+  {% if page.collection == 'chapters' or page.url == '/thesis/' %}
+    {% assign ordered_chapters = site.chapters | sort: 'chapter_number' %}
+    <details class="chapter-nav" data-responsive-details open>
+      <summary>Thesis chapters</summary>
+      <nav aria-label="Thesis chapters">
+        <ol>
+          {% for chapter in ordered_chapters %}
+            <li><a href="{{ chapter.url | relative_url }}"{% if page.url == chapter.url %} aria-current="page"{% endif %}><span class="chapter-nav__number">{{ chapter.chapter_number | prepend: '0' | slice: -2, 2 }}</span><span>{{ chapter.title | escape }}</span></a></li>
+          {% endfor %}
+        </ol>
+        <a class="chapter-nav__overview" href="{{ '/thesis/' | relative_url }}">Thesis overview</a>
+      </nav>
+    </details>
+  {% else %}
+    <!-- <div class="sidebar-note">Thesis &amp; papers<br><span>Supplementary research material</span></div> -->
+  {% endif %}
+</aside>
