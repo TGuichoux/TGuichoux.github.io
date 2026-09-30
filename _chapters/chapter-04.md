@@ -24,7 +24,7 @@ code: ''
    src="/assets/images/gelina_mos.png"
    id="Figure 4.5"
    label="fig-ch04-4_5"
-   caption="Mean Opinion Scores with 95\% confidence intervals from user evaluation across three aspects: Voice human-likeness, speech-gesture synchrony, and Gesture human-likeness."
+   caption="Mean Opinion Scores with 95% confidence intervals from user evaluation across three aspects: Voice human-likeness, speech-gesture synchrony, and Gesture human-likeness."
    layout="wide"
 %}
 

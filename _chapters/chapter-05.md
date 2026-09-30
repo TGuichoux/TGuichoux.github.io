@@ -51,12 +51,12 @@ The associated speech-gesture animated sequence is provided bellow:
    src="/assets/images/gaspard_mos.png"
    id="Figure 5.11"
    label="fig-ch05-5_11"
-   caption="Mean Opinion Scores with 95\% confidence intervals from user evaluation across three aspects: Voice human-likeness, speech-gesture synchrony, and Gesture human-likeness."
+   caption="Mean Opinion Scores with 95% confidence intervals from user evaluation across three aspects: Voice human-likeness, speech-gesture synchrony, and Gesture human-likeness."
    layout="wide"
 %}
 
 
-### Example stimuli fromm the user study:
+### Example stimuli from the user study:
 
 We provide below illustrative samples from the user study conducted in Chapter 5.
 
